@@ -21,8 +21,8 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 
 # Url Link
 - App Frontend:[<a href="https://dist-project.netlify.app/signup"> main page</a>]()
-- App Backend:[<a href="http://DIST-1812480901.us-east-1.elb.amazonaws.com:8765/dstproject-application/dist/worker/administration">main route</a>]()
-- App Mobile:[<a href="https://play.google.com/store/games?hl=pt_BR&gl=US&pli=1">google play store</a>]()
+- App Backend:[<a href="http://DIST-1812480901.us-east-1.elb.amazonaws.com:8765/dstproject-application/dist/worker/administration"> main route</a>]()
+- App Mobile:[<a href="https://play.google.com/store/games?hl=pt_BR&gl=US&pli=1"> google play store</a>]()
 
 # Api documentation
 
