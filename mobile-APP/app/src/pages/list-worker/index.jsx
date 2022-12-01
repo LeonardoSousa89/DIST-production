@@ -124,53 +124,56 @@ export default (props) =>{
                     }
                 </View>
 
-                <View style={styles.pagination}>
+                {
+                    data.length<10 && page === 0? 
+                    (   
+                        <View></View>
+
+                    ) : (
+
+                        <View style={styles.pagination}>
                 
-                   {
-                    page<=0 ? 
-                        (
-                            data.length === 0 ? 
-                            (<Text></Text>) 
-                            
-                            : 
-                            
-                            (<Pressable
+                    {
+                        page<=0? 
+                            (   <Pressable
+                                    onPress={previewBtn}
                                 >
                                     <Image style={styles.preview} source={require('../../../assets/disable.png')} />
                                 </Pressable>
-                            )
-                        
-                        ) 
-                        
-                    :
-
-                        ( 
-                            <Pressable
+                            ) 
+                                
+                            : 
+                                
+                            (   <Pressable
                                 onPress={previewBtn}
-                            >
-                                <Image style={styles.preview} source={require('../../../assets/preview.png')} />
-                            </Pressable>
-                        )
-                   }
-                
+                                >
+                                    <Image style={styles.preview} source={require('../../../assets/preview.png')} />
+                                </Pressable>
+                            )
+                    }
+                    
 
-                   {
-                    lastPage === true? 
-                        (    <Image style={styles.next} source={require('../../../assets/disable2.png')} />   )
-                        
-                        : 
-                        
-                        (
-                            <Pressable
-                                onPress={nextBtn}
-                            >
-                                <Image style={styles.next} source={require('../../../assets/next.png')} />
-                            </Pressable>
-                        )
+                    {
+                        lastPage === true? 
+                            (    <Image style={styles.next} source={require('../../../assets/disable2.png')} />   )
+                            
+                            : 
+                            
+                            (
+                                <Pressable
+                                    onPress={nextBtn}
+                                >
+                                    <Image style={styles.next} source={require('../../../assets/next.png')} />
+                                </Pressable>
+                            )
 
-                   }
+                    }
 
                 </View>
+
+                    )
+                
+                }
     
                     <Pressable
                         onPress={back} 
