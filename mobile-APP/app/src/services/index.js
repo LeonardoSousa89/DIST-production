@@ -154,7 +154,7 @@ export async function insertWorker(workerName,
                 }
             }
                 
-    fetch(URL, config).then(response=>{
+    await fetch(URL, config).then(response=>{
         if(response.status === 201){
             response.json()
             alert('worker created')
@@ -180,7 +180,7 @@ export async function getProfileData(setUsername, setUserEmail){
     
     let config={method: 'GET'}
 
-    fetch(URL, config)
+    await fetch(URL, config)
         .then(response=>{
             if(response.status === 200){
                 response.json().then(response=>{
@@ -209,7 +209,7 @@ export async function getWorkersData(setData, page){
             
     let config={method: 'GET'}
 
-    fetch(URL, config)
+    await fetch(URL, config)
         .then(response=>{
             if(response.status === 200){
                 response.json().then(response=>{
@@ -235,7 +235,7 @@ export async function pagination(setData, page){
             
     let config={method: 'GET'}
 
-    fetch(URL, config)
+    await fetch(URL, config)
         .then(response=>{
             if(response.status === 200){
                 response.json().then(response=>{
@@ -298,7 +298,7 @@ export async function getProfilePhotoUploaded(userId, setImage){
     
     const reference=ref(storage, `/userProfilePhoto/${userId}/userProfile`)
 
-    getDownloadURL(reference).then(response=>{
+    await getDownloadURL(reference).then(response=>{
       setImage(response)
     })
 }
