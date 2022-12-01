@@ -46,12 +46,12 @@ export default (props) =>{
             /> 
 
 
-          <Button style={styles.btn}
-                  title="send" 
-                  color='#2976E6'
-                  trailing={props => <Icon name="send" {...props} />} 
-                  onPress={()=>signUp(name, auth, email, password, props)}
-           />
+            <Button style={styles.btn}
+                    title="send" 
+                    color='#2976E6'
+                    trailing={props => <Icon name="send" {...props} />} 
+                    onPress={()=>signUp(name, auth, email, password, props)}
+            />
 
         </View>
       </View>

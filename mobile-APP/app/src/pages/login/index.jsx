@@ -27,13 +27,15 @@ export default (props) =>{
             <TextInput placeholder='email'
                        color='#2196f3'
                        value={email}
-                       onChangeText={(e)=>{setEmail(e)}}/> 
+                       onChangeText={(e)=>{setEmail(e)}}
+            /> 
 
             <TextInput placeholder='password'
                        color='#2196f3'
                        secureTextEntry
                        value={password}
-                       onChangeText={(e)=>{setPassword(e)}}/> 
+                       onChangeText={(e)=>{setPassword(e)}}
+            /> 
 
 
             <Button style={styles.btn}
@@ -41,14 +43,14 @@ export default (props) =>{
                     color='#2976E6'
                     trailing={props => <Icon name="send" {...props} />} 
                     onPress={()=>signInWithEmailAndPass(auth, email, password, props)}
-                  />
+            />
           
           <View style={styles.textMessage}>
               <Text style={styles.link}
                     onPress={()=>props.navigation.navigate("signUp")
             }>do you haven't account? 
             
-              <Text style={styles.blue}>Create.</Text>
+              <Text style={styles.blue}> Create</Text>
             </Text>
 
           </View>

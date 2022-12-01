@@ -1,28 +1,18 @@
-import { TextInput,Button } from '@react-native-material/core';
 import { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, Image, ScrollView, 
-         Touchable, TouchableOpacity, FlatList } from 'react-native';
+import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
 
-import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 
 import { 
-        logOut, 
-        insertWorker, 
         getProfileData, 
-        getProfilePhotoUploaded, 
-        uploadProfilePhoto, 
+        getProfilePhotoUploaded,  
         pagination, 
         getWorkersData,
         getWorkersLastPage
         
 } from '../../services'
 
-import { auth, db, storage } from '../../services/db'
-
-import { API_URL } from '../../../.env.json'
-
-import * as ImagePicker from 'expo-image-picker';
+import { auth } from '../../services/db'
 
 export default (props) =>{
 
@@ -220,7 +210,6 @@ export default (props) =>{
         marginTop:30,
     },logoText:{
         marginTop:40,
-        // marginRight:'20%'
     },profileContainer:{
         backgroundColor:'#2976E61A',
         flex:1,
@@ -255,7 +244,6 @@ export default (props) =>{
         fontWeight: 'bold'
     },listWorker:{
         flex: 5,
-        // backgroundColor: 'red',
         padding: 20,
         justifyContent:'space-evenly',
         width:'90%',

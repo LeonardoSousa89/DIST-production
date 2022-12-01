@@ -63,6 +63,7 @@ export async function signUp(username, auth, email, password, props){
 
                 //all ok navigate to login page
                 props.navigation.navigate("login")
+
             })
 
         }).catch((e)=>{
@@ -90,7 +91,11 @@ export async function signUp(username, auth, email, password, props){
 export async function signInWithEmailAndPass(auth, email, password, props){
     await signInWithEmailAndPassword(auth, email, password)
         .then(()=>{
+            
             props.navigation.navigate("admin")
+            
+            alert("Change your profile photo here")
+
         }).catch((e)=>{
             
             switch (e.code){
@@ -270,7 +275,7 @@ export async function uploadProfilePhoto(auth ,storage, setImage, ImagePicker){
               const bytes = await img.blob()
         
               const uploadPhoto=uploadBytesResumable(storageRef, bytes)
-        
+
               uploadPhoto.on(
                 "state_changed",
                     snapshot => {},error => {
@@ -290,6 +295,7 @@ export async function uploadProfilePhoto(auth ,storage, setImage, ImagePicker){
 
 
 export async function getProfilePhotoUploaded(userId, setImage){
+    
     const reference=ref(storage, `/userProfilePhoto/${userId}/userProfile`)
 
     getDownloadURL(reference).then(response=>{

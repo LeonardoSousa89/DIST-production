@@ -20,10 +20,6 @@ export default (props) =>{
   const [image, setImage]=useState(null) 
 
   useEffect(()=>{
-    alert("Change your profile photo here")
-  },[])
-
-  useEffect(()=>{
 
     const userId=auth.currentUser.uid
     getProfilePhotoUploaded(userId, setImage)

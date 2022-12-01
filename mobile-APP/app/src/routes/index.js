@@ -19,10 +19,10 @@ export default (props)=>{
             <NavigationContainer>
                 <Stack.Navigator initialRouteName='dist'
                                     screenOptions={{headerShown: false}}>
-                    <Stack.Screen name='dist'   component={_dist} />
-                    <Stack.Screen name='login'  component={Login} />
-                    <Stack.Screen name='signUp' options={{headerShown: true, title:""}} component={signUp} />
-                    <Stack.Screen name='admin'   component={admin} />
+                    <Stack.Screen name='dist'           component={_dist} />
+                    <Stack.Screen name='login'          component={Login} />
+                    <Stack.Screen name='signUp'         options={{headerShown: true, title:""}} component={signUp} />
+                    <Stack.Screen name='admin'          component={admin} />
                     <Stack.Screen name='insert_worker'  component={insert_worker} />
                     <Stack.Screen name='list_workers'   component={list_workers} />
                 </Stack.Navigator>

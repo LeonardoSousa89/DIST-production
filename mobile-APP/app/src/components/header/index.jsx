@@ -1,12 +1,6 @@
-import { TextInput,Button } from '@react-native-material/core';
-import { StyleSheet, View, Text, Image } from 'react-native';
-
-
-import Icon from "@expo/vector-icons/MaterialCommunityIcons";
+import { StyleSheet, View, Image } from 'react-native';
 
 export default (props) =>{
-
-
 
   return (
     <View style={styles.container}>
@@ -17,10 +11,10 @@ export default (props) =>{
 
 const styles = StyleSheet.create({
   container: {
-    alignItems:'center',
-    justifyContent:'space-evenly',
-    backgroundColor: 'whitesmoke',
-    width:'100%',
+      alignItems:'center',
+      justifyContent:'space-evenly',
+      backgroundColor: 'whitesmoke',
+      width:'100%',
   },text:{
       color:'black',
   }

@@ -1,19 +1,19 @@
 import { TextInput,Button } from '@react-native-material/core';
+
 import { useEffect, useState } from 'react';
+
 import { StyleSheet, 
          View, 
          Text, 
          Image, 
-         ScrollView, 
-         Touchable, TouchableOpacity } from 'react-native';
+         ScrollView
+         } from 'react-native';
 
 import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 
-import { logOut, insertWorker, getProfileData, getProfilePhotoUploaded, uploadProfilePhoto } from '../../services'
-import { auth, db, storage } from '../../services/db'
-
-import * as ImagePicker from 'expo-image-picker';
+import { insertWorker, getProfileData, getProfilePhotoUploaded } from '../../services'
+import { auth } from '../../services/db'
 
 export default (props) =>{
  
@@ -51,7 +51,6 @@ export default (props) =>{
         insertWorker(workerName,workerEmail,workerPost,
                      workerAddress,workerPhoneNumber,workerAge,userId,navigate)
   }
-
   
   function changeProfilePhoto(){
     alert("Change your profile photo in admin page only")
@@ -185,7 +184,6 @@ const styles = StyleSheet.create({
       marginTop:30,
   },logoText:{
       marginTop:40,
-    //   marginRight:'20%'
   },profileContainer:{
       backgroundColor:'#2976E61A',
       flex:1,
