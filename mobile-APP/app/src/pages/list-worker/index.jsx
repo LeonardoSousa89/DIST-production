@@ -107,7 +107,7 @@ export default (props) =>{
                     { 
                        
                        data.length === 0? 
-                       (<Text style={styles.name}>no workers to show</Text>) 
+                       (<Text style={styles.name}>no records</Text>) 
                        
                        : 
                        
@@ -254,12 +254,12 @@ export default (props) =>{
     },field:{
         borderRadius:'12'
     },name:{
-        backgroundColor: 'white',
+        backgroundColor: '#2976E61A',
         borderStyle:'solid',
-        borderColor: 'rgba(0,0,0,0.5)',
+        borderColor: '#2976E6',
         borderWidth:0.5,
         fontSize: 20,
-        color:'rgba(0,0,0,0.5)' ,
+        color:'#2976E6' ,
         padding: 5,
     },pagination:{
         flexDirection: 'row',
