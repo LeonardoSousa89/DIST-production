@@ -155,8 +155,8 @@ export default (props) =>{
                 
 
                    {
-                    lastPage === true || data.length<10 ? 
-                        (   <Text></Text>   )
+                    lastPage === true? 
+                        (    <Image style={styles.next} source={require('../../../assets/disable2.png')} />   )
                         
                         : 
                         
