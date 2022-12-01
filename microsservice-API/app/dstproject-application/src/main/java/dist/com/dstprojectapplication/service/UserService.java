@@ -14,20 +14,14 @@ import dist.com.dstprojectapplication.repository.WorkersRepository;
 import dist.com.dstprojectapplication.service.exceptions.ResourceBadRequestException;
 import dist.com.dstprojectapplication.service.exceptions.ResourceNotFoundException;
 
-
-
 @Service
 public class UserService {
 	
 	@Autowired
 	private UserRepository repository;
 	
-	
-	
 	@Autowired
 	private WorkersRepository workersRepository;
-	
-	
 	
 	public Optional<User> findById(String id){
 		
@@ -40,8 +34,6 @@ public class UserService {
 		return user;
 	}
 	
-	
-	
 	public User createAccount(User account) {
 		try {
 			return repository.save(account);
@@ -50,16 +42,12 @@ public class UserService {
 		}
 	}
 	
-	
-	
 	public Page<WorkersProjection> findByUserData(String id,  PageRequest pageRequest) {
 		
 		Page<WorkersProjection> employee = workersRepository.findByUserData(id, pageRequest);
 
 		if(employee.isEmpty()) {
-			
-			throw new ResourceNotFoundException("Resource not found.");
-			
+			throw new ResourceNotFoundException("Resource not found.");		
 		}
 		
 		return employee;	
