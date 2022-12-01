@@ -1,5 +1,5 @@
 
-![alt text](/design/assets/DIST.png)
+![alt text](/assets/DIST.png)
 [<h1>Dist&reg;</h1>]()
 
 
@@ -17,7 +17,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 
 
 # Application arquitecture
-![alt text](/Arquitecture/DIST.png)
+![alt text](/assets/arquitecture.png)
 
 # Url Link
 - App Frontend:[<a href="https://dist-project.netlify.app/signup"> main page</a>]()
