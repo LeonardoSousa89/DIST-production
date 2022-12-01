@@ -101,9 +101,9 @@ git clone https://github.com/LeonardoSousa89/DIST-production.git
 ### docker:
 ```bash
 sudo docker network create distnetwork &&
-sudo docker run -d --name dstproject-eureka-server --network distnetwork -p 8761:8761 leozin89/dstproject-eureka-server:v1 &&
-sudo docker run -d --name dstproject-api-gateway   --network distnetwork -p 8765:8765 leozin89/dstproject-api-gateway:v3 &&
-sudo docker run -d --name dstproject-application   --network distnetwork -p 8762:8762 -e DB=your_db_url -e USER_DB=your_db_username -e PASSWORD_DB=your_db_password leozin89/dstproject-application:v3 
+sudo docker run -d --name dstproject-eureka-server --network distnetwork -p 8761:8761 leozin89/dstproject-eureka-server:v2 &&
+sudo docker run -d --name dstproject-api-gateway   --network distnetwork -p 8765:8765 leozin89/dstproject-api-gateway:v4 &&
+sudo docker run -d --name dstproject-application   --network distnetwork -p 8762:8762 -e DB=your_db_url -e USER_DB=your_db_username -e PASSWORD_DB=your_db_password leozin89/dstproject-application:v4 
 
 ```
 
