@@ -81,9 +81,6 @@ export default (props) =>{
 
             </View>
 
-
-
-
             <View style={styles.card}>
              
               <Pressable
