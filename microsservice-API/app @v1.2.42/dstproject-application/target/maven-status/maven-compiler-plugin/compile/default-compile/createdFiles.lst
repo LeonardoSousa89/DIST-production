@@ -1,0 +1,15 @@
+dist\com\dstprojectapplication\controller\exceptions\StandardError.class
+dist\com\dstprojectapplication\repository\UserRepository.class
+dist\com\dstprojectapplication\service\exceptions\ResourceNotFoundException.class
+dist\com\dstprojectapplication\model\Workers.class
+dist\com\dstprojectapplication\config\URL.class
+dist\com\dstprojectapplication\controller\WorkersController.class
+dist\com\dstprojectapplication\service\WorkersService.class
+dist\com\dstprojectapplication\projection\WorkersProjection.class
+dist\com\dstprojectapplication\service\UserService.class
+dist\com\dstprojectapplication\controller\exceptions\ResourceExceptionHandler.class
+dist\com\dstprojectapplication\DstprojectApplication.class
+dist\com\dstprojectapplication\repository\WorkersRepository.class
+dist\com\dstprojectapplication\controller\UserController.class
+dist\com\dstprojectapplication\service\exceptions\ResourceBadRequestException.class
+dist\com\dstprojectapplication\model\User.class

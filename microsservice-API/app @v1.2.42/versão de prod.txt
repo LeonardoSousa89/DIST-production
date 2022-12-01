@@ -1,0 +1,2 @@
+copiar as pastas dos projetos para um novo diretório 
+e enviar estas apis a um repositório de produção
