@@ -11,7 +11,7 @@ import {API_KEY,
         MESSAGING_SENDER_ID,
         APP_ID,
         MEASUREMENT_ID  
-      } from '../../../.env.json'
+} from '../../../.env.json'
 
 const firebaseConfig = {
   apiKey: API_KEY,

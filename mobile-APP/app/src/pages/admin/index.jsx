@@ -1,14 +1,10 @@
-import { TextInput,Button } from '@react-native-material/core';
 import { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, Image, ScrollView, Touchable, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
 
-import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 
 import { getProfileData, logOut, uploadProfilePhoto, getProfilePhotoUploaded } from '../../services'
-import { auth, db, storage } from '../../services/db'
-
-import { ref, uploadBytesResumable, getDownloadURL, StorageReference } from 'firebase/storage';
+import { auth, storage } from '../../services/db'
 
 import * as ImagePicker from 'expo-image-picker';
 
@@ -78,7 +74,6 @@ export default (props) =>{
                     <Text style={styles.textEmail}>{userEmail}</Text>
                   </View>
               </View>
-
             </View>
 
             <View style={styles.card}>
@@ -104,13 +99,11 @@ export default (props) =>{
                       source={require('../../../assets/btn-logout.png')}
                         />
              </Pressable>
-
             </View>
 
           </View>
 
-        </ScrollView>
-  
+        </ScrollView> 
     );
 }
 
