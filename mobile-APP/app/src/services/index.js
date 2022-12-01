@@ -49,9 +49,9 @@ export async function signUp(username, auth, email, password, props){
             let data={userId: response.user.uid, userName: username , email}
   
             let config={ method: 'POST', 
-                body: JSON.stringify(data),
-                headers:{
-                    'Content-type':'application/json'
+                         body: JSON.stringify(data),
+                         headers:{
+                            'Content-type':'application/json'
                 }
             }
 
