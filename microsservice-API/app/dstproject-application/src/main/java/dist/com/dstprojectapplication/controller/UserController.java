@@ -40,12 +40,11 @@ public class UserController {
 
 	@GetMapping(value = "/{id}/administration")
 	private ResponseEntity<Page<WorkersProjection>> findByUserData(@PathVariable String id,  
-																   @RequestParam(value = "page",  required = false,  defaultValue = "0") int page,
-																   @RequestParam(value = "size",  required = false, defaultValue = "10") int size){
-		PageRequest pageRequest = PageRequest.of(page, size);
-		Page<WorkersProjection> employee = service.findByUserData(id, pageRequest);
-		return ResponseEntity.status(org.springframework.http.HttpStatus.OK).body(employee);
-	
+		@RequestParam(value = "page",  required = false,  defaultValue = "0") int page, 
+		@RequestParam(value = "size",  required = false, defaultValue = "10") int size){
+			PageRequest pageRequest = PageRequest.of(page, size);
+			Page<WorkersProjection> employee = service.findByUserData(id, pageRequest);
+			return ResponseEntity.status(org.springframework.http.HttpStatus.OK).body(employee);
 	}
 	
 }
