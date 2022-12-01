@@ -56,13 +56,13 @@ export async function signUp(username, auth, email, password, props){
             }
 
             fetch(URL, config)
-            .then(response=>{
-                
-                //all ok the firebase backend will send data to spring API 
-                response.json()
+                .then(response=>{
+                    
+                    //all ok the firebase backend will send data to spring API 
+                    response.json()
 
-                //all ok navigate to login page
-                props.navigation.navigate("login")
+                    //all ok navigate to login page
+                    props.navigation.navigate("login")
 
             })
 
