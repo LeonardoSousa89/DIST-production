@@ -260,7 +260,7 @@ export default (props) =>{
         padding: 5,
     },pagination:{
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-evenly'
     },preview:{
         marginTop: 40,
         marginBottom: 40
