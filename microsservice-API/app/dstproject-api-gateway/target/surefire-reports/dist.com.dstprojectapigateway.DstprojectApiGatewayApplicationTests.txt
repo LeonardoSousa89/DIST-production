@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: dist.com.dstprojectapigateway.DstprojectApiGatewayApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.022 s - in dist.com.dstprojectapigateway.DstprojectApiGatewayApplicationTests
