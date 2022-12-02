@@ -1,4 +1,6 @@
-import { db, auth, storage } from './db'
+import { LogBox } from 'react-native'
+
+import { auth, storage } from './db'
 
 import { API_URL } from '../../.env.json'
 
@@ -190,12 +192,12 @@ export async function getWorkersData(setData, page){
                     setData(response.content)
                 })
             }
-            if(response.status === 404){}
-            if(response.status === 500 || 
-               response.status === 503 || 
-               response.status === 504){
-                alert("There's an error with server")
-            }
+            // if(response.status === 404){}
+            // if(response.status === 500 || 
+            //    response.status === 503 || 
+            //    response.status === 504){
+            //     alert("There's an error with server")
+            // }
         })
         .then(response=>response)
         .catch(e=>alert(e))
@@ -302,6 +304,12 @@ export async function getWorkersLastPage(setLastPage, page){
         .catch(e=>alert(e))
 }
 
+
+function ignoreAlert(){
+    LogBox.ignoreLogs(['Warning: ...']);
+    LogBox.ignoreAllLogs();
+}
+ignoreAlert()
 
 
 
