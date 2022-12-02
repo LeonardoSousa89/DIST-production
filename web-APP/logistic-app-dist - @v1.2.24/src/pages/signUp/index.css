@@ -1,0 +1,30 @@
+.size{
+    width: 30%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    height: 50px;
+}
+.text p{
+    font-weight: bold;
+}
+.text strong{
+    font-size: large;
+}
+.socialLogin{
+    width: 120px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+.facebook, .google{
+    cursor: pointer;
+}

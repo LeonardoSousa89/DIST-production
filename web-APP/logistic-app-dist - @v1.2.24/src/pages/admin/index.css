@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+
+
+.internalHeader{
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.logoContainer{
+    flex: 2;
+    /* background-color: red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoIcon{
+    height: 90px;
+    width: 90px;
+    margin-right: 25px;
+}
+.logoText{
+    height: 100px;
+}
+
+
+
+
+.profileContainer{
+    flex: 1;
+    /* background-color: brown; */
+
+    display: flex;
+}
+.profilePhotoContainer{
+    background-color: #2976E61A;
+    /* background-color: brown; */
+    padding: 5px;
+    flex: 1;
+}
+.clientPhoto{
+    height: 120px;
+    width:  120px;
+    
+    top: 102px;
+    position: absolute;
+    
+    margin-left: 5px;
+
+    border-radius:100%;
+    border: solid 5px rgba(0,0,0,0.2);
+}
+.profilePhotoUpload{
+    display: none;
+}
+.control_label_profilePhotoUpload{
+    background-color: #2976E6;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.4); 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.control_label_profilePhotoUpload:hover{
+    background-color: black;
+    color: #2976E6;
+}
+.formUpload{
+    /* background-color: black; */
+    width: 94%;
+    display: flex;
+}
+
+
+
+
+.profileInfoContainer{
+    background-color: #2976E61A;
+    padding: 5px;
+    flex: 2;
+}
+.profileContainer h1{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.profileContainer h1, .profileContainer h3{
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+.cardContaner{
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cardElements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardWorker{
+    margin-bottom: 20px;
+}
+.listWorker, .cardWorker{
+    cursor: pointer;
+}
+.logout{
+    width: 80%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+.formInsertWorker{
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: whitesmoke;
+}
+
+
+
+
+.formInsertWorker .size{
+    width: 50%;
+}
+.arrow{
+   width: 50%;
+   margin-top: 20px;
+}
+.arrow img{
+    cursor: pointer;
+}
+
+
+
+
+.getWorkers{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #2976E60F;
+}
+.header{
+
+}
+.main{
+    flex: 1;
+    height: 67%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    background-color: #2976E6;
+    box-shadow: 0px 0px 9px #2976E6;
+}
+table thead{
+    background-color: rgba(0,0,0,0.6);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+table tbody tr td{
+    font-size: small;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+}
+.paginationBtn{
+    width: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.previews, .next{
+    cursor: pointer;
+}
+.arrowList{
+    width: 66%;
+    margin-top: 60px;
+}
+.arrowList img{
+    cursor: pointer;
+}
+
+
+
+
+.logout{
+    cursor: pointer;
+}
+
+
+
+
+/* Responsividade*/
+@media (max-device-width:1339px){
+    .formInsertWorker, .getWorkers{
+      width: 50%;
+    }
+  }
+  
+  
+  
+  
+  @media (max-device-width:1024px){
+   .formInsertWorker, .getWorkers{
+      width: 80%;
+    }
+  }
+  
+  
+  
+  
+  @media (max-device-width:767px){
+    .formInsertWorker, .getWorkers{
+      width: 100%;
+    }
+  }

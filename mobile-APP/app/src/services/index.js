@@ -2,8 +2,6 @@ import { db, auth, storage } from './db'
 
 import { API_URL } from '../../.env.json'
 
-import { addDoc, collection } from 'firebase/firestore';
-
 import { createUserWithEmailAndPassword,
          signInWithEmailAndPassword, 
          signOut } from 'firebase/auth'
@@ -12,36 +10,10 @@ import { ref,
          uploadBytesResumable, 
          getDownloadURL } from 'firebase/storage';
 
-function _data(name, email){
-
-    auth.currentUser.getIdTokenResult(true)
-        .then(e=>{
-
-            let _AuthTime=e.authTime
-            let _Token=e.token
-            let _SignProvider=e.signInProvider
-            let _ExpTime=e.expirationTime
-            let ID=auth.currentUser.uid
-
-            addDoc(collection(db,"User"),{
-                ID,
-                name,
-                email, 
-                _AuthTime, 
-                _SignProvider,
-                _Token,
-                _ExpTime
-            })
-            .catch(e=>console.warn(e))
-        })        
-}
-
 
 export async function signUp(username, auth, email, password, props){
     await createUserWithEmailAndPassword(auth, email, password)
         .then(response=>{
-
-            _data(username, email)
 
             //spring API creation user
             let URL=`${API_URL}/user-account/administration`
@@ -63,6 +35,8 @@ export async function signUp(username, auth, email, password, props){
 
                     //all ok navigate to login page
                     props.navigation.navigate("login")
+
+                    alert("Account successfully created")
 
             })
 

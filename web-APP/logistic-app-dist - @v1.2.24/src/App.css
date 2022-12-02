@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+
+*{
+  margin: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Inter', sans-serif;
+  background-color: whitesmoke;
+}
+
+
+
+
+.form-container{
+  background-color: whitesmoke;
+  height: 55vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+
+
+.play-store{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.store{
+  margin-top: 4px;
+}
+
+
+
+
+/* component header */
+.Header{
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container-logo{
+  flex: 1;
+}
+.logo{
+  margin-left: 122px;
+  margin-top: 34px;
+}
+.container-dist{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.logo-dist{
+  margin-top: 15px;
+}
+.sub-container-logo{
+  flex: 1;    
+  overflow: hidden;
+}
+.internal-sub-container-logo{
+  height: 100%;
+  width: 303px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.social{
+  overflow: hidden;
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.in, .git{
+  margin-top: 46px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+.git{
+  margin-right: 10px;
+}
+.text-logo-container{
+  overflow: hidden;
+
+  flex-grow: 50;   
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;  
+}
+.text-logo{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+
+
+/* component Login */
+.signUp,.Login{
+  height: 90vh;
+}
+
+
+
+
+/* component footer */
+.Footer{
+  background-image: url('./assets/Rectangle.png');
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Ccopy{
+  margin-right: 5px;
+}
+
+
+
+
+/* component admin */
+.Admin{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.insertWorker{
+  height: 90vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2976E60F;
+}
+
+
+
+
+.listWorkers{
+  height: 90vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.border{
+  background-color: #2976E60F;
+  height: 90vh;
+  width: 40%;
+}
+
+
+
+
+/* responsividade */
+
+/* dispositivos abaixo de width 1339px com orientation:landscape*/
+@media (max-device-width:1339px){
+  @media(min-device-width:768px){
+    @media(orientation:landscape){
+      .signUp,.Login{
+        height: 100vh;
+      } 
+      .form-container{
+        height: 66vh;
+      } 
+      .container-logo{
+        display: flex;
+        justify-content: center;
+      }
+      .logo{
+        margin-left: 0;
+      }
+      .social{
+        align-items: center;
+        justify-content: center;
+      }
+      .text-logo-container{
+        justify-content: center;  
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-device-width:1339px){
+  .border{
+    width: 60%;
+  }
+}
+
+
+
+
+@media (max-device-width:1024px){
+ .border{
+    width: 80%;
+  }
+}
+
+
+
+
+@media (max-device-width:767px){
+  .border{
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* dispositivos abaixo de width 768px*/
+@media (max-device-width:767px){
+  .signUp, .Login{
+      height: 160vh;
+    }
+    .Header{
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .container-logo{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .logo{
+      margin-left: 0;
+      margin-bottom: 4vh;
+    }
+  
+    .social{
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5vh;
+    }
+  
+    .text-logo-container{
+      justify-content: center;  
+    }
+    .internal-sub-container-logo{
+      width: 100%;
+    }
+}
+
+
+
+
+/* dispositivos abaixo de width 768px com orientation: portrait*/
+@media (max-device-width:767px){
+  @media (orientation:portrait){
+    .signUp, .Login{
+      height: 170vh;
+    }
+    .form-container{
+      height: 74vh;  
+    } 
+    .Footer{
+      margin-top: 2vh;
+    }
+    
+  }
+}
+
+
+
+
+/* dispositivos abaixo de width 768px com orientation: landscape*/
+@media (max-device-width:767px){
+  @media (orientation:landscape){
+    .signUp, .Login{
+      height: 300vh;
+    }
+    .form-container{
+      height: 114vh;  
+    } 
+    .play-store{
+      height: 66px;
+    }.Footer{
+      height: 15vh;
+    }
+    .store{
+      margin-top: 22%;
+    }
+  }
+}
