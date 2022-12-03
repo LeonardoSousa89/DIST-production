@@ -74,7 +74,6 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 
 ### DevOps technologies
 - aws ec2
-- aws elb
 - aws rds
 - docker
 - netlify
@@ -129,7 +128,6 @@ sudo docker container inspect your_container_name_or_container_id_dstproject-app
 - docker-visualizer
 ```bash
 sudo docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
-
 ```
 
 # Author
