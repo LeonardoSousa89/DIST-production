@@ -102,7 +102,6 @@ git clone https://github.com/LeonardoSousa89/DIST-production.git
 sudo docker swarm init 
 ```
 - get the join code created to insert in instances workers
-
 ```bash
 sudo docker network create --driver overlay distnetworkcluster &&
 sudo docker service create --name dstproject-api-gateway --replicas 3 -p 8765:8765 --network distnetworkcluster leozin89/dstproject-api-gateway:v5 &&
@@ -115,7 +114,6 @@ sudo docker service create --name dstproject-application --replicas 3 -p 8762:87
 sudo docker container ls
 ```
 - get the container name or container id to update config
-
 ```bash
 sudo docker update -m 256m --cpus=0.3 your_container_name_or_id_dstproject-api-gateway &&
 sudo docker update -m 256m --cpus=0.3 your_container_name_or_id_dstproject-application
