@@ -7,7 +7,7 @@
 
 ## Hi 👋
 ### State
-- fase I
+- fase II
 
 ## About project
 - 🔭 This app simulating a logistics activities, create routes to delivery, insert worker, vehicles,
@@ -120,13 +120,11 @@ sudo docker container ls
 sudo docker update -m 256m --cpus=0.3 your_container_name_or_id_dstproject-api-gateway &&
 sudo docker update -m 256m --cpus=0.3 your_container_name_or_id_dstproject-application
 
-sudo docker container inspect dstproject-eureka-server | grep -i mem
-sudo docker container inspect dstproject-api-gateway   | grep -i mem
-sudo docker container inspect dstproject-application   | grep -i mem
+sudo docker container inspect your_container_name_or_id_dstproject-api-gateway   | grep -i mem
+sudo docker container inspect your_container_name_or_id_dstproject-application   | grep -i mem
 
-sudo docker container inspect dstproject-eureka-server | grep -i cpu
-sudo docker container inspect dstproject-api-gateway   | grep -i cpu
-sudo docker container inspect dstproject-application   | grep -i cpu
+sudo docker container inspect your_container_name_or_id_dstproject-api-gateway   | grep -i cpu
+sudo docker container inspect your_container_name_or_id_dstproject-application   | grep -i cpu
 ```
 
 ### Monitoring containers
