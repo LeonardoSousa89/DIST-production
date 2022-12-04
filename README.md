@@ -92,7 +92,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 
 ### git:
 ```bash
-git clone https://github.com/LeonardoSousa89/DIST-production.git
+git clone -b faseII https://github.com/LeonardoSousa89/DIST-production.git
 
 ```
 
