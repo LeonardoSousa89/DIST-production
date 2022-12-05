@@ -99,18 +99,10 @@ git clone https://github.com/LeonardoSousa89/DIST-production.git
 
 ### docker:
 ```bash
-sudo docker network create distnetwork --subnet=your.IP.main/CIDR --gateway=your.IP &&
+sudo docker network create --subnet=your.IP.main/CIDR --gateway=your.IP distnetwork &&
 sudo docker run -d --name dstproject-eureka-server --network distnetwork -p 8761:8761 --ip your.IP --memory 256M --cpus=0.2 leozin89/dstproject-eureka-server:v2 &&
 sudo docker run -d --name dstproject-api-gateway   --network distnetwork -p 8765:8765 --ip your.IP --memory 256M --cpus=0.2 leozin89/dstproject-api-gateway:v4 &&
 sudo docker run -d --name dstproject-application   --network distnetwork -p 8762:8762 --ip your.IP --memory 256M --cpus=0.2 -e DB=your_db_url -e USER_DB=your_db_username -e PASSWORD_DB=your_db_password leozin89/dstproject-application:v4
-
-sudo docker container inspect dstproject-eureka-server | grep -i mem
-sudo docker container inspect dstproject-api-gateway   | grep -i mem
-sudo docker container inspect dstproject-application   | grep -i mem
-
-sudo docker container inspect dstproject-eureka-server | grep -i cpu
-sudo docker container inspect dstproject-api-gateway   | grep -i cpu
-sudo docker container inspect dstproject-application   | grep -i cpu
 ```
 
 ### Monitoring containers
