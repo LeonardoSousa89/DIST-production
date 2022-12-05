@@ -103,7 +103,7 @@ sudo docker swarm init
 - get the join code created to insert in instances workers
 ```bash
 sudo docker network create --driver overlay distnetworkcluster &&
-sudo docker service create --name dstproject-api-gateway --replicas 3 -p 8765:8765 --network distnetworkcluster leozin89/dstproject-api-gateway:v5 &&
+sudo docker service create --name dstproject-api-gateway --replicas 3 -p 8765:8765 --network distnetworkcluster leozin89/dstproject-api-gateway:v6 &&
 sudo docker service create --name dstproject-application --replicas 3 -p 8762:8762 --network distnetworkcluster leozin89/dstproject-application:v5
 ```
 
