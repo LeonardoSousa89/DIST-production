@@ -185,8 +185,6 @@ sudo docker swarm init
 - get the join code created to insert in others instances at the cluster
 ```bash 
 
-
-
 ```
 - to run docker-swarm orquestred containers and services use this command:
 ```bash
