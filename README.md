@@ -182,10 +182,11 @@ networks:
 sudo docker swarm init 
 ```
 
-- get the join code created to insert in others instances at the cluster
+- get the join code created to insert in others instances at the cluster (insert a sudo command)
 ```bash 
-
+EX:  sudo docker swarm join --token SWMTKN-1-1tp5cgcittlmhimcjewcw4zhlo45cs9l36xatwpcvy9eqtnj5k-dj4ukw9w61tf0zz2qog4tu409 172.31.82.24:2377
 ```
+
 - to run docker-swarm orquestred containers and services use this command:
 ```bash
 sudo docker stack deploy --compose-file docker-compose.yaml dist
