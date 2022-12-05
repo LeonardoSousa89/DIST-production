@@ -108,7 +108,7 @@ services:
     image: leozin89/dstproject-api-gateway:v6
     restart: always
     environment:
-      - HOST=192.168.100.3:8762
+      - HOST=192.168.100.3
     ports:
       - 8765:8765
     networks:
