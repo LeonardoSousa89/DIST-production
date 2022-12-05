@@ -97,31 +97,97 @@ git clone -b faseII https://github.com/LeonardoSousa89/DIST-production.git
 ```
 
 ### docker-swarm:
+
+- first create a docker-compose.yaml:
+
+```bash
+version: '3.3'
+
+services:
+  dstproject-api-gateway:
+    image: leozin89/dstproject-api-gateway:v6
+    restart: always
+    environment:
+      - HOST=192.168.100.3:8762
+    ports:
+      - 8765:8765
+    networks:
+      distnetworkcluster:
+        ipv4_address: 192.168.100.2
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 256M
+      restart_policy:
+        condition: on-failure
+
+  dstproject-application:
+    image: leozin89/dstproject-application:v5
+    restart: always
+    environment:
+      - DB=your_db_credentials
+      - USER_DB=your_user_db
+      - PASSWORD_DB=your_password_db
+    ports:
+      - 8762:8762
+    networks:
+      distnetworkcluster:
+        ipv4_address: 192.168.100.3
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 256M
+      restart_policy:
+        condition: on-failure
+
+  visualizer:
+    image: dockersamples/visualizer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      distnetworkcluster:
+        ipv4_address: 192.168.100.4
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 256M
+     restart_policy:
+        condition: on-failure
+	 placement:
+        constraints:
+          - "node.role === manager"	
+
+networks:
+  distnetworkcluster:
+    driver: overlay
+    ipam:
+      config:
+        - subnet: 192.168.100.0/8
+
+
+```
+
+- in your instance after install docker
+
 ```bash
 sudo docker swarm init 
 ```
-- get the join code created to insert in instances workers
-```bash
-sudo docker network create --driver overlay distnetworkcluster &&
-sudo docker service create --name dstproject-api-gateway --replicas 3 -p 8765:8765 --network distnetworkcluster leozin89/dstproject-api-gateway:v6 &&
-sudo docker service create --name dstproject-application --replicas 3 -p 8762:8762 --network distnetworkcluster leozin89/dstproject-application:v5
-```
+- get the join code created to insert in others instances at the cluster
 
-### docker:
 
-```bash
-sudo docker container ls
-```
-- get the container name or container id to update config
-```bash
-sudo docker update -m 256m --cpus=0.3 your_container_name_or_container_id_dstproject-api-gateway &&
-sudo docker update -m 256m --cpus=0.3 your_container_name_or_container_id_dstproject-application
-```
 
-### Monitoring containers
-- docker-visualizer
+- to run docker-swarm orquestred containers and services use this command:
 ```bash
-sudo docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
+sudo docker stack deploy --compose-file docker-compose.yaml dist
 ```
 
 # Author
