@@ -185,6 +185,9 @@ sudo docker swarm init
 
 
 
+
+
+
 - to run docker-swarm orquestred containers and services use this command:
 ```bash
 sudo docker stack deploy --compose-file docker-compose.yaml dist
