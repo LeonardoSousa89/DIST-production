@@ -10,7 +10,7 @@ services:
       - 8765:8765
     networks:
       distnetworkcluster:
-        ipv4_address: 192.168.100.2
+        ipv4_address: 192.170.100.2
     deploy:
       replicas: 3
       resources:
@@ -31,7 +31,7 @@ services:
       - 8762:8762
     networks:
       distnetworkcluster:
-        ipv4_address: 192.168.100.3
+        ipv4_address: 192.170.100.3
     deploy:
       replicas: 3
       resources:
@@ -48,7 +48,7 @@ services:
       - 8080:8080
     networks:
       distnetworkcluster:
-        ipv4_address: 192.168.100.4
+        ipv4_address: 192.170.100.4
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     deploy:
@@ -61,12 +61,12 @@ services:
         condition: on-failure
       placement:
         constraints:
-          - "node.role === manager"
+          - node.role == manager
 
 networks:
   distnetworkcluster:
     driver: overlay
     ipam:
       config:
-        - subnet: 192.168.100.0/8
+        - subnet: 192.170.100.0/8
 

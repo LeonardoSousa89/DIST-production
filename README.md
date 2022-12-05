@@ -164,7 +164,7 @@ services:
         condition: on-failure
 	 placement:
         constraints:
-          - "node.role === manager"	
+          - node.role == manager
 
 networks:
   distnetworkcluster:
