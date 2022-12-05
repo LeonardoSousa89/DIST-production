@@ -182,9 +182,7 @@ networks:
 sudo docker swarm init 
 ```
 - get the join code created to insert in others instances at the cluster
-
-
-
+```bash ```
 
 
 
