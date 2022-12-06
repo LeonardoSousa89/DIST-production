@@ -91,6 +91,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
     - expo 46.0
 
 ### git:
+
 ```bash
 git clone -b faseII https://github.com/LeonardoSousa89/DIST-production.git
 
@@ -132,7 +133,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     deploy:
-      replicas: 3
+      replicas: 1
       resources:
         limits:
           cpus: '0.25'
@@ -146,6 +147,9 @@ services:
 networks:
   distnetworkcluster:
     driver: overlay
+    ipam:
+      config:
+        - subnet: 172.38.0.0/8
 ```
 
 - in your instance after install docker

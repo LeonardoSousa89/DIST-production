@@ -43,3 +43,6 @@ services:
 networks:
   distnetworkcluster:
     driver: overlay
+    ipam:
+      config:
+        - subnet: 172.38.0.0/8
