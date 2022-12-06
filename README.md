@@ -101,61 +101,38 @@ git clone -b faseII https://github.com/LeonardoSousa89/DIST-production.git
 - first create a docker-compose.yaml:
 
 ```bash
-version: '3.3'
+version: '3.9'
 
 services:
-  dstproject-api-gateway:
-    image: leozin89/dstproject-api-gateway:v6
-    restart: always
-    environment:
-      - HOST=192.170.100.3
-    ports:
-      - 8765:8765
-    networks:
-      distnetworkcluster:
-        ipv4_address: 192.170.100.2
-    deploy:
-      replicas: 3
-      resources:
-        limits:
-          cpus: '0.3'
-          memory: 256M
-      restart_policy:
-        condition: on-failure
-
   dstproject-application:
     image: leozin89/dstproject-application:v5
-    restart: always
     environment:
-      - DB=your_db_credentials
+      - DB=your_db
       - USER_DB=your_user_db
-      - PASSWORD_DB=your_password_db
+      - PASSWORD_DB=your_password
     ports:
       - 8762:8762
     networks:
-      distnetworkcluster:
-        ipv4_address: 192.170.100.3
+      - distnetworkcluster
     deploy:
       replicas: 3
       resources:
         limits:
-          cpus: '0.3'
+          cpus: '0.25'
           memory: 256M
       restart_policy:
         condition: on-failure
 
   visualizer:
     image: dockersamples/visualizer
-    restart: always
     ports:
       - 8080:8080
     networks:
-      distnetworkcluster:
-        ipv4_address: 192.170.100.4
+      - distnetworkcluster
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     deploy:
-      replicas: 1
+      replicas: 3
       resources:
         limits:
           cpus: '0.25'
@@ -169,9 +146,6 @@ services:
 networks:
   distnetworkcluster:
     driver: overlay
-    ipam:
-      config:
-        - subnet: 192.170.100.0/16
 ```
 
 - in your instance after install docker
