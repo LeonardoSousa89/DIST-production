@@ -168,11 +168,11 @@ EX:  sudo docker swarm join --token SWMTKN-1-1tp5cgcittlmhimcjewcw4zhlo45cs9l36x
 sudo docker stack deploy --compose-file docker-compose.yaml dist
 ```
 
-- get the ipv4 address of application container and insert into api-gateway env args HOST
+- get the ipv4 address of application container and insert into api gateway zull proxy env args HOST
 ```bash
 sudo docker ps 
 sudo docker inspect dstproject-application_id 
-sudo docker service create --name dstproject-api-gateway --network distnetworkcluster -e HOST=dstproject-application-ipv4-address leozin89/dstproject-api-gateway:v6
+sudo docker service create --name dstproject-api-gateway --replicas 3 --network distnetworkcluster -p 8765:8765 -e HOST=dstproject-application-ipv4-address leozin89/dstproject-api-gateway:v6
 ```
 
 # Author
