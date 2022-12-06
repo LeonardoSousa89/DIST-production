@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DstprojectApplication<dstproject-application>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "dist.com.dstprojectapplication.DstprojectApplication",
+            "projectName": "dstproject-application",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

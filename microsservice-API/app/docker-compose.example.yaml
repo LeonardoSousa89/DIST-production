@@ -1,37 +1,18 @@
 version: '3.9'
 
 services:
-  dstproject-api-gateway:
-    image: leozin89/dstproject-api-gateway:v6
-    environment:
-      - HOST=172.16.238.3
-    ports:
-      - 8765:8765
-    networks:
-      distnetworkcluster:
-        ipv4_address: 172.16.238.2
-    deploy:
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.25'
-          memory: 256M
-      restart_policy:
-        condition: on-failure
-
   dstproject-application:
     image: leozin89/dstproject-application:v5
     environment:
-      - DB=your_db_credentials
-      - USER_DB=user_db
-      - PASSWORD_DB=user_password
+      - DB=your_db
+      - USER_DB=your_user_db
+      - PASSWORD_DB=your_password
     ports:
       - 8762:8762
     networks:
-      distnetworkcluster:
-        ipv4_address: 172.16.238.3
+      - distnetworkcluster
     deploy:
-      replicas: 1
+      replicas: 3
       resources:
         limits:
           cpus: '0.25'
@@ -44,12 +25,11 @@ services:
     ports:
       - 8080:8080
     networks:
-      distnetworkcluster:
-        ipv4_address: 172.16.238.4
+      - distnetworkcluster
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     deploy:
-      replicas: 1
+      replicas: 3
       resources:
         limits:
           cpus: '0.25'
@@ -63,10 +43,3 @@ services:
 networks:
   distnetworkcluster:
     driver: overlay
-    ipam:
-      config:
-        - subnet: 172.16.238.0/24
-       
-
-          
-   
