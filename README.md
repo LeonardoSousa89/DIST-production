@@ -108,12 +108,12 @@ services:
     image: leozin89/dstproject-api-gateway:v6
     restart: always
     environment:
-      - HOST=192.168.100.3
+      - HOST=192.170.100.3
     ports:
       - 8765:8765
     networks:
       distnetworkcluster:
-        ipv4_address: 192.168.100.2
+        ipv4_address: 192.170.100.2
     deploy:
       replicas: 3
       resources:
@@ -134,7 +134,7 @@ services:
       - 8762:8762
     networks:
       distnetworkcluster:
-        ipv4_address: 192.168.100.3
+        ipv4_address: 192.170.100.3
     deploy:
       replicas: 3
       resources:
@@ -151,7 +151,7 @@ services:
       - 8080:8080
     networks:
       distnetworkcluster:
-        ipv4_address: 192.168.100.4
+        ipv4_address: 192.170.100.4
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     deploy:
@@ -160,9 +160,9 @@ services:
         limits:
           cpus: '0.25'
           memory: 256M
-     restart_policy:
+      restart_policy:
         condition: on-failure
-	 placement:
+      placement:
         constraints:
           - node.role == manager
 
@@ -171,7 +171,7 @@ networks:
     driver: overlay
     ipam:
       config:
-        - subnet: 192.168.100.0/8
+        - subnet: 192.170.100.0/16
 ```
 
 - in your instance after install docker
