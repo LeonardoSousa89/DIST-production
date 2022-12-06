@@ -172,7 +172,7 @@ sudo docker stack deploy --compose-file docker-compose.yaml dist
 ```bash
 sudo docker ps 
 sudo docker inspect dstproject-application_id 
-sudo docker service create --name dstproject-api-gateway --replicas 3 --network distnetworkcluster -p 8765:8765 -e HOST=dstproject-application-ipv4-address leozin89/dstproject-api-gateway:v6
+sudo docker service create --name dstproject-api-gateway --replicas 3 --network dist_distnetworkcluster -p 8765:8765 -e HOST=dstproject-application-ipv4-address leozin89/dstproject-api-gateway:v6
 ```
 
 # Author
