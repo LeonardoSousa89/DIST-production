@@ -110,7 +110,7 @@ services:
     environment:
       - DB=your_db
       - USER_DB=your_user_db
-      - PASSWORD_DB=your_password
+      - PASSWORD_DB=your_password_db
     ports:
       - 8762:8762
     networks:

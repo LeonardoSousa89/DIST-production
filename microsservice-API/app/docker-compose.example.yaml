@@ -6,7 +6,7 @@ services:
     environment:
       - DB=your_db
       - USER_DB=user_db
-      - PASSWORD_DB=password_db
+      - PASSWORD_DB=your_password_db
     ports:
       - 8762:8762
     networks:
