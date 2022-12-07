@@ -173,17 +173,6 @@ sudo docker stack deploy --compose-file docker-compose.yaml dist
 sudo docker service ls 
 ```
 
-- get the ipv4 address of application container and insert into api gateway zull proxy env args HOST
-```bash
-sudo docker ps 
-```
-```bash
-sudo docker inspect dstproject-application_id 
-```
-```bash
-sudo docker service create --name dstproject-api-gateway --replicas 3 --network dist_distnetworkcluster -p 8765:8765 -e HOST=dstproject-application-ipv4-address leozin89/dstproject-api-gateway:v6
-```
-
 # Author
 
 Leonardo Sousa
