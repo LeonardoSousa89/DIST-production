@@ -5,8 +5,8 @@ services:
     image: leozin89/dstproject-application:v5
     environment:
       - DB=your_db
-      - USER_DB=your_user_db
-      - PASSWORD_DB=your_password
+      - USER_DB=user_db
+      - PASSWORD_DB=password_db
     ports:
       - 8762:8762
     networks:
@@ -45,4 +45,8 @@ networks:
     driver: overlay
     ipam:
       config:
-        - subnet: 172.38.0.0/8
+        - subnet: 172.16.238.0/24
+       
+
+          
+   

@@ -149,7 +149,7 @@ networks:
     driver: overlay
     ipam:
       config:
-        - subnet: 172.38.0.0/8
+        - subnet: 172.16.238.0/24
 ```
 
 - in your instance after install docker
