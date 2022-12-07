@@ -168,7 +168,7 @@ EX:  sudo docker swarm join --token SWMTKN-1-1tp5cgcittlmhimcjewcw4zhlo45cs9l36x
 sudo docker stack deploy --compose-file docker-compose.yaml dist
 ```
 
-- verify if service is running
+- verify if your services is running
 ```bash
 sudo docker service ls 
 ```
