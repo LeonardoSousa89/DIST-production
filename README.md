@@ -168,10 +168,12 @@ EX:  sudo docker swarm join --token SWMTKN-1-1tp5cgcittlmhimcjewcw4zhlo45cs9l36x
 sudo docker stack deploy --compose-file docker-compose.yaml dist
 ```
 
-- get the ipv4 address of application container and insert into api gateway zull proxy env args HOST
+- verify if service is running
 ```bash
 sudo docker service ls 
 ```
+
+- get the ipv4 address of application container and insert into api gateway zull proxy env args HOST
 ```bash
 sudo docker ps 
 ```
