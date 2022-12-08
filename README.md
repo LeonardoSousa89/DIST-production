@@ -50,6 +50,9 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 - sts 4
 - notepad ++
 
+### Tests
+- postman
+
 ### Project management
 - trello
 - swagger
