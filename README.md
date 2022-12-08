@@ -1,7 +1,5 @@
-
 ![alt text](/assets/DIST.png)
 [<h1>Dist&reg;</h1>]()
-
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/LeonardoSousa89/DIST-project_development/blob/main/LICENSE.LICENSE) 
 
@@ -14,7 +12,6 @@
 list elements and payment services.
 Your development wll be serve, to show my skills and learning about
 many kind of tecnologies, techniques to build software and think how to solve problems.
-
 
 # Application arquitecture
 ![alt text](/assets/arquitecture.png)
