@@ -1,7 +1,5 @@
-
 ![alt text](/assets/DIST.png)
 [<h1>Dist&reg;</h1>]()
-
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/LeonardoSousa89/DIST-project_development/blob/main/LICENSE.LICENSE) 
 
@@ -14,7 +12,6 @@
 list elements and payment services.
 Your development wll be serve, to show my skills and learning about
 many kind of tecnologies, techniques to build software and think how to solve problems.
-
 
 # Application arquitecture
 ![alt text](/assets/arquitecture.png)
@@ -97,7 +94,6 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 ### git:
 ```bash
 git clone https://github.com/LeonardoSousa89/DIST-production.git
-
 ```
 
 ### docker:
@@ -112,7 +108,6 @@ sudo docker run -d --name dstproject-application   --network distnetwork -p 8762
 - docker-visualizer
 ```bash
 sudo docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
-
 ```
 
 # Author
