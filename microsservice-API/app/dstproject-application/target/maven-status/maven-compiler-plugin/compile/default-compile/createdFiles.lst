@@ -1,4 +1,5 @@
 dist\com\dstprojectapplication\controller\exceptions\StandardError.class
+dist\com\dstprojectapplication\config\CorsPolicy.class
 dist\com\dstprojectapplication\repository\UserRepository.class
 dist\com\dstprojectapplication\service\exceptions\ResourceNotFoundException.class
 dist\com\dstprojectapplication\model\Workers.class

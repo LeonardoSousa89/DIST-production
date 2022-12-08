@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: dist.com.dstprojectapplication.DstprojectApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.974 s - in dist.com.dstprojectapplication.DstprojectApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.584 s - in dist.com.dstprojectapplication.DstprojectApplicationTests
