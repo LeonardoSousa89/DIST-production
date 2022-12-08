@@ -24,19 +24,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.leodev89.logisticappdist"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-      "expo": {
-        "plugins": ["expo-image-picker", {
+    "expo": {
+      "plugins": [
+        "expo-image-picker",
+        {
           "photosPermission": "custom photos permission",
           "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera",
-
           "//": "Disables the microphone permission",
           "microphonePermission": false
-        }]
+        }
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b405a62d-b236-4807-861f-4cdf0d1ea589"
+      }
     }
   }
 }

@@ -281,10 +281,7 @@ export async function uploadProfilePhoto(e, storage, setImage){
     let ID=localStorage.getItem("ID")
     let userId=JSON.parse(ID)
 
-    //pegar o primeiro arquivo em um array de files(pode-se usar qualquer um dos dois metodos)
-    //URL do código: https://www.youtube.com/watch?v=zoISjlKYUQ8&t=831s
     const file=e.target[0]?.files[0]
-    // const file=e.target[0].files[0]
 
     if(!file) return
 
