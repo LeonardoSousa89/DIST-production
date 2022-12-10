@@ -19,7 +19,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 # Url Link
 - App Frontend:[<a href="https://www.distproject.com.br"> site</a>]()
 - App Backend:[<a href="https://www.distproject-api.com.br"> API</a>]()
-- App Mobile:[<a href="https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG"> get the APK</a>]()
+- App Mobile:[<a href="https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG"> get the APK *[get permision to android make install this app on your device]</a>]()
 
 # Api documentation
 
