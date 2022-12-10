@@ -19,7 +19,8 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 # Url Link
 - App Frontend:[<a href="https://www.distproject.com.br"> site</a>]()
 - App Backend:[<a href="https://www.distproject-api.com.br"> API</a>]()
-- App Mobile:[<a href="https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG"> get the APK</a>]()
+
+- App Mobile:[<a href="https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG"> get the APK *[get permision to android make install this app on your device]</a>]()
 
 # Api documentation
 
@@ -69,7 +70,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 	- eureka-server
 	- zull
 	
-### mobile tecnologies
+### Mobile tecnologies
 - react-native
 
 ### DevOps technologies
@@ -83,7 +84,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 - git
 - github
 
-### get project
+### Get project
 - requirements: 
   - java 11
   - node 16
@@ -91,12 +92,12 @@ many kind of tecnologies, techniques to build software and think how to solve pr
   - react-native
     - expo 46.0
 
-### git:
+### Git:
 ```bash
 git clone https://github.com/LeonardoSousa89/DIST-production.git
 ```
 
-### docker:
+### Docker:
 ```bash
 sudo docker network create --subnet=your.IP.main/CIDR --gateway=your.IP distnetwork &&
 sudo docker run -d --name dstproject-eureka-server --network distnetwork -p 8761:8761 --ip your.IP --memory 256M --cpus=0.2 leozin89/dstproject-eureka-server:v2 &&
