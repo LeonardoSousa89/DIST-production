@@ -184,6 +184,32 @@ body{
 
 
 /* responsividade */
+@media (max-device-width:1339px){
+  .border{
+    width: 60%;
+  }
+}
+
+
+
+
+@media (max-device-width:1024px){
+ .border{
+    width: 80%;
+  }
+}
+
+
+
+
+@media (max-device-width:767px){
+  .border{
+    width: 100%;
+  }
+}
+
+
+
 
 /* dispositivos abaixo de width 1339px com orientation:landscape*/
 @media (max-device-width:1339px){
@@ -212,34 +238,6 @@ body{
     }
   }
 }
-
-
-
-
-@media (max-device-width:1339px){
-  .border{
-    width: 60%;
-  }
-}
-
-
-
-
-@media (max-device-width:1024px){
- .border{
-    width: 80%;
-  }
-}
-
-
-
-
-@media (max-device-width:767px){
-  .border{
-    width: 100%;
-  }
-}
-
 
 
 
