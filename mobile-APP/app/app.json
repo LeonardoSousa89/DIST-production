@@ -7,7 +7,7 @@
     "icon": "./assets/adaptive-dist-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/blank.png",
       "resizeMode": "contain",
       "backgroundColor": "#f5f5f5"
     },
@@ -22,13 +22,14 @@
     },
     "android": {
       "adaptiveIcon": {
+
         "foregroundImage": "./assets/adaptive-dist-icon.png",
         "backgroundColor": "#f5f5f5"
       },
       "package": "com.leodev89.logisticappdist"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon-dist-icon.png"
     },
     "expo": {
       "plugins": [
