@@ -4,12 +4,12 @@
     "slug": "logistic-app-dist",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/adaptive-dist-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/blank.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f5f5f5"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,21 +22,30 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+
+        "foregroundImage": "./assets/adaptive-dist-icon.png",
+        "backgroundColor": "#f5f5f5"
+      },
+      "package": "com.leodev89.logisticappdist"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon-dist-icon.png"
     },
-      "expo": {
-        "plugins": ["expo-image-picker", {
+    "expo": {
+      "plugins": [
+        "expo-image-picker",
+        {
           "photosPermission": "custom photos permission",
           "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera",
-
           "//": "Disables the microphone permission",
           "microphonePermission": false
-        }]
+        }
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b405a62d-b236-4807-861f-4cdf0d1ea589"
+      }
     }
   }
 }
