@@ -14,7 +14,8 @@ import { ref,
 
 
 export async function signUp(username, auth, email, password, props){
-    await createUserWithEmailAndPassword(auth, email, password)
+
+    await createUserWithEmailAndPassword(auth, email.trim(), password.trim())
         .then(response=>{
 
             //spring API creation user
@@ -26,7 +27,7 @@ export async function signUp(username, auth, email, password, props){
                          body: JSON.stringify(data),
                          headers:{
                             'Content-type':'application/json'
-                }
+                }   
             }
 
             fetch(URL, config)
@@ -65,7 +66,7 @@ export async function signUp(username, auth, email, password, props){
 
 
 export async function signInWithEmailAndPass(auth, email, password, props){
-    await signInWithEmailAndPassword(auth, email, password)
+    await signInWithEmailAndPassword(auth, email.trim(), password.trim())
         .then(()=>{
             
             props.navigation.navigate("admin")
@@ -304,6 +305,9 @@ function ignoreAlert(){
     LogBox.ignoreAllLogs();
 }
 ignoreAlert()
+
+
+  
 
 
 

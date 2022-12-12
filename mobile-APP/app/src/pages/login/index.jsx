@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 
 import { auth } from '../../services/db'; 
-import { signInWithEmailAndPass } from '../../services';
+import { signInWithEmailAndPass, conn } from '../../services';
 
 import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import Header from '../../components/header';
