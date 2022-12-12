@@ -91,7 +91,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
   - node 14, 16
   - react 18.2
   - react-native
-    - expo 46.0
+    - expo 46.0.17
 
 ### git:
 
