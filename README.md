@@ -65,18 +65,20 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 - spring-boot
 	- jpa
 	- hibernate
-- spring-cloud
-	- eureka-server
-	- zull
 	
 ### mobile tecnologies
 - react-native
 - expo
 
-### DevOps technologies
+### Cloud computing and DevOps technologies
 - aws ec2
+- aws elb
 - aws rds
+- aws manager credentials
+- aws route 53
 - docker
+- docker-compose
+- docker-swarm
 - netlify
 
 ### Version control technologies
@@ -86,7 +88,7 @@ many kind of tecnologies, techniques to build software and think how to solve pr
 ### get project
 - requirements: 
   - java 11
-  - node 16
+  - node 14, 16
   - react 18.2
   - react-native
     - expo 46.0
