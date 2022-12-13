@@ -38,7 +38,7 @@ export default (props)=>{
     
     const showToast = () => {
        Toast.show({
-            type: 'error',
+            type: 'info',
             text1:'verify your connection',
        })
     }
