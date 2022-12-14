@@ -219,6 +219,9 @@ table tbody tr td{
 .arrowList img{
     cursor: pointer;
 }
+#disable{
+    cursor: no-drop;
+}
 
 
 

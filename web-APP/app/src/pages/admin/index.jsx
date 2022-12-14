@@ -22,11 +22,8 @@ import { useEffect, useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-import { toast } from 'react-toastify';
-
 import InternalHeader from '../../components/internalHeader'
 
-import Rachel from '../../assets/Rachel.png'
 import Arrow from '../../assets/Arrow.png'
 import cardWorker from '../../assets/card-worker.png'
 import listWorker from '../../assets/workers-list-btn.png'
@@ -35,7 +32,6 @@ import disable from '../../assets/disable.png'
 import disable2 from '../../assets/disable2.png'
 import preview from '../../assets/preview.png'
 import next from '../../assets/next.png'
-import camera from '../../assets/camera.png'
 
 import SignOut from '../../assets/btn-logout.png' 
 
@@ -236,9 +232,6 @@ export default (props)=>{
 
          ) : (
           //List of workers display
-            //to ready:
-              // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality
-              // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality
           <div className='listWorkers'>
               <div className='getWorkers'>
                   <div className='header'>
@@ -297,13 +290,13 @@ export default (props)=>{
                               page>0? (
                                 <img className='previews' src={preview} alt='preview' onClick={previewBtn} />
                               ):(
-                                <img className='previews' src={disable} alt='button disable' />
+                                <img className='previews' id='disable' src={disable} alt='button disable' />
                               )
                             }
 
                             {
                               lastPage === true || data.length == []? (
-                                  <img className='next' src={disable2} alt='button disable' />
+                                  <img className='next' id='disable' src={disable2} alt='button disable' />
                                 ):(
                                   <img className='next' src={next} alt='next' onClick={nextBtn} />
                                 )

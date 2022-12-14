@@ -14,34 +14,10 @@ import { ref,
          getDownloadURL,
          uploadBytes } from 'firebase/storage';
 
-function _data(name, email){
-    auth.currentUser.getIdTokenResult(true)
-        .then(e=>{
-
-            let _AuthTime=e.authTime
-            let _Token=e.token
-            let _SignProvider=e.signInProvider
-            let _ExpTime=e.expirationTime
-            let ID=auth.currentUser.uid
-
-            addDoc(collection(db,"User"),{
-                ID,
-                name,
-                email, 
-                _AuthTime, 
-                _SignProvider,
-                _Token,
-                _ExpTime
-            })
-            .catch(e=> toast.error(e.code))
-    })
-}
-
 
 export async function signUp(username, auth, email, password,  navigation){
-    await createUserWithEmailAndPassword(auth, email, password)
+    await createUserWithEmailAndPassword(auth, email.trim(), password.trim())
         .then(response=>{
-            _data(username, email)
 
             localStorage.setItem("Admin", JSON.stringify(response))
             localStorage.setItem("ID", JSON.stringify(response.user.uid))
@@ -100,8 +76,6 @@ export async function createUserWithProvider(auth, provider, providerNavigation)
              let name=response.user.displayName
              let email=response.user.email
 
-            _data(name, email)
-
             localStorage.setItem("Admin", JSON.stringify(response))
             localStorage.setItem("ID", JSON.stringify(response.user.uid)) 
             
@@ -151,7 +125,7 @@ export async function createUserWithProvider(auth, provider, providerNavigation)
 
 
 export async function signInWithEmailAndPass(auth, email, password, navigation){
-    await signInWithEmailAndPassword(auth, email, password)
+    await signInWithEmailAndPassword(auth, email.trim(), password.trim())
         .then((response)=>{
 
             let msg="Welcome to admin page."
@@ -452,7 +426,7 @@ export async function getWorkersLastPage(setLastPage, page){
     await fetch(URL, config)
         .then(response=>{
             if(response.status === 200){
-                response.json().then(response=>{
+               response.json().then(response=>{
                     if(response.last === false){
                         setLastPage(false)
                     }else{
@@ -463,6 +437,7 @@ export async function getWorkersLastPage(setLastPage, page){
         })
         .catch(e=>toast.error(e))
 }
+
 
 
 

@@ -11,9 +11,8 @@ import SendIcon from '@material-ui/icons/Send';
 
 import Logo from '../../assets/Login.png' 
 import Google from '../../assets/google.png'
-import Facebook from '../../assets/facebook.png'
 
-import Store from '../../assets/google-play.png'
+import Store from '../../assets/get_apk.png'
 
 import { useEffect, useState } from 'react';
 
@@ -21,7 +20,7 @@ import { createUserWithProvider, signUp, verifyRoute } from '../../services'
 import { auth } from '../../services/db'
 import { useNavigate } from 'react-router-dom';
 
-import { FacebookAuthProvider, GoogleAuthProvider } from 'firebase/auth';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 
 export default (props)=>{
@@ -48,11 +47,6 @@ export default (props)=>{
   function providerNavigation(){
     let URL=`/login`
     navigate(URL, {replace:true})
-  }
-
-  function accessUsingFacebook(){
-      let provider=new FacebookAuthProvider()
-      createUserWithProvider(auth, provider, providerNavigation)
   }
 
     function accessUsingGoogle(){
@@ -106,7 +100,7 @@ export default (props)=>{
                             }}
                         endIcon={<SendIcon  />}
                         onClick={createUser}
-                > send
+            > send
             </Button>
 
             <div className='text'>
@@ -115,24 +109,20 @@ export default (props)=>{
             </div>
 
             <div className='socialLogin'>
-               <img className='facebook' 
-                    src={Facebook}      
-                    alt='facebook icon'
-                    onClick={accessUsingFacebook}
-                    /> 
 
                <img className='google' 
                     src={Google} 
                     alt='google icon' 
                     onClick={accessUsingGoogle}
-                    /> 
+                /> 
+
            </div>                  
                 
             </Grid>
 
             <div className='play-store' >
                 <a  
-                href='https://play.google.com/store/games?hl=pt_BR&gl=US' 
+                href='https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG' 
                 target='blank'>
                         <img className='store' 
                                 src={Store} 

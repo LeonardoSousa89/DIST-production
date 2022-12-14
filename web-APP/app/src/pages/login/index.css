@@ -21,11 +21,11 @@
     width: 120px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-top: 20px;
 }
-.facebook, .google{
+.google{
     cursor: pointer;
 }
 
