@@ -22,7 +22,7 @@ export default (props)=>{
         <div className='sub-container-logo'>
             <div className='internal-sub-container-logo'>
                 <div className='social'>
-                    <a href='https://github.com/LeonardoSousa89?tab=repositories' target='blank'>
+                    <a href='https://github.com/LeonardoSousa89' target='blank'>
                         <img className='git' src={Git} alt='git-logo' />
                     </a>
 

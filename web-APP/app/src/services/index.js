@@ -1,6 +1,4 @@
-import { db, auth, storage } from './db'
-
-import { addDoc, collection } from 'firebase/firestore';
+import { storage } from './db'
 
 import { toast } from 'react-toastify';
 
@@ -11,8 +9,8 @@ import { createUserWithEmailAndPassword,
 
 import { ref, 
          uploadBytesResumable, 
-         getDownloadURL,
-         uploadBytes } from 'firebase/storage';
+         getDownloadURL
+         } from 'firebase/storage';
 
 
 export async function signUp(username, auth, email, password,  navigation){
@@ -240,7 +238,7 @@ export function verifyRoute(){
         currentURL===deniedStorageRouteSignUp2 ||
         currentURL===deniedStorageRouteSignUp3 ||
         currentURL===deniedStorageRouteSignUp4 ||
-        currentURL===deniedStorageRouteLogin1   ||
+        currentURL===deniedStorageRouteLogin1  ||
         currentURL===deniedStorageRouteLogin2  ){
         
         localStorage.removeItem("Admin")
