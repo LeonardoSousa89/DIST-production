@@ -1,0 +1,15 @@
+.advise{
+    height: 256px;
+    width: 256px;
+}
+.error h1{
+    margin-bottom: 10px;
+}
+.error h5{
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2976E6;
+}
