@@ -1,5 +1,15 @@
-.size{
-    width: 30%;
+#field_name, #field_email, #field_password{
+    width: 30vh;
+}
+#email, #password{
+    margin-top: 10px;
+}
+#btn_send{
+    font-weight: bold;
+    background-color: #2976E6;
+    margin-top: 10px;
+
+    width: 33vh;
 }
 .text{
     display: flex;
@@ -31,3 +41,156 @@
 .store{
     margin-top: -15px;
 }
+
+
+
+
+/* responsividade */
+
+@media (max-device-width:600px){
+    #name, #email, #password{}
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+    @media (max-device-height:1366px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 32vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
+@media (max-device-width:912px){
+    @media (max-device-height:1368px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 32vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 820px por height 1280px com orientation: portrait*/
+@media (max-device-width:820px){
+    @media (max-device-height:1280px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 32vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
+@media (max-device-width:800px){
+    @media (max-device-height:1280px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 32vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 540px com orientation: portrait*/
+@media (max-device-width:540px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 33vh;
+        }
+    }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 480px com orientation: portrait*/
+/* @media (max-device-width:480px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 33vh;
+        }
+    }
+} */
+
+
+
+
+/* dispositivos abaixo de ou até width 412px com orientation: portrait*/
+/* @media (max-device-width:412px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 33vh;
+        }
+    }
+} */
+
+
+
+
+/* dispositivos abaixo de ou até width 393px com orientation: portrait*/
+/* @media (max-device-width:393px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 33vh;
+        }
+    }
+  } */
+
+
+
+
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+/* @media (max-device-width:384px){
+    @media (max-device-height:640px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 33vh;
+            }
+        }
+    }
+} */
+
+
+
+
+
+/* dispositivos abaixo de ou até width 360px com orientation: portrait*/
+/* @media (max-device-width:360px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 33vh;
+        }
+    }
+} */
+
+
+
+
+/* dispositivos abaixo de ou até width 320px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 34vh;
+        }
+    }
+}
+   

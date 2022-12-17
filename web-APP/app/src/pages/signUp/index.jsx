@@ -62,42 +62,38 @@ export default (props)=>{
 
         <Grid className='form-container' id='form-container' container>
             
-            <TextField  label="name"
-                        id="name"
-                        variant="filled"
-                        className='size'
-                        value={username}
-                        onChange={(e)=>setName(e.target.value)}
-                        />
+            <div id="name">
+              <TextField  label="name"
+                          variant="filled"
+                          id="field_name"
+                          value={username}
+                          onChange={(e)=>setName(e.target.value)}
+                />
+            </div>
 
-            <TextField  label="email"
-                        id="email"
-                        variant="filled"
-                        className='size'
-                        style={{marginTop:'10px'}}
-                        value={email}
-                        onChange={(e)=>setEmail(e.target.value)}
-                        />
+            <div  id="email">
+              <TextField  label="email"
+                          id="field_email"
+                          variant="filled"
+                          value={email}
+                          onChange={(e)=>setEmail(e.target.value)}
+                />
+            </div>
             
-            <TextField  label="password"
-                        id="password"
-                        type={'password'}
-                        variant="filled"    
-                        className='size'
-                        style={{marginTop:'10px'}}
-                        value={password}
-                        onChange={(e)=>setPassword(e.target.value)}
-                        />
+            <div  id="password">
+              <TextField  label="password"
+                          id="field_password"
+                          type={'password'}
+                          variant="filled"    
+                          value={password}
+                          onChange={(e)=>setPassword(e.target.value)}
+              />
+            </div>
             
             <Button     type="submit"
                         variant="contained" 
                         size="large"
-                        className='size'
-                        style={{    
-                                fontWeight:'bold', 
-                                background:'#2976E6',
-                                marginTop:'10px'
-                            }}
+                        id="btn_send"
                         endIcon={<SendIcon  />}
                         onClick={createUser}
             > send
