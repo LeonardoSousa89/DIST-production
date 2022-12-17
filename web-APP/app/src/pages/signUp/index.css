@@ -47,6 +47,13 @@
 
 /* responsividade */
 
+/* há uma circunstancia curiosa
+   elementos do componente login são estilizados,
+   mesmo sem serem chamados em seu próprio index.css ou App.css,
+   como ex: .store
+   está recebendo as mudanças atribuídas ao elemento do componente signUp e
+   não com estilo direcionado ao componente login.
+*/
 @media (max-device-width:1024px){
     #field_name, #field_email, #field_password{
         width: 30vh;
@@ -76,6 +83,21 @@
 
 
 
+/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+@media (max-device-width:1024px){
+    @media (max-device-height:600px){
+            #btn_send{
+                width: 34vh;
+            }
+            .store{
+                margin-top: 0px;
+        }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
 @media (max-device-width:912px){
     @media (max-device-height:1368px){
@@ -93,6 +115,20 @@
 /* dispositivos especifícos width 820px por height 1280px com orientation: portrait*/
 @media (max-device-width:820px){
     @media (max-device-height:1280px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 32.5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 820px por height 1180px com orientation: portrait*/
+@media (max-device-width:820px){
+    @media (max-device-height:1180px){
       @media (orientation:portrait){
             #btn_send{
                 width: 32vh;
@@ -118,8 +154,202 @@
 
 
 
+/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
+@media (max-device-width:768px){
+    @media (max-device-height:1024px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 32.5vh;
+            }
+        }
+    }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 540px com orientation: portrait*/
 @media (max-device-width:540px){
+    @media (orientation:portrait){
+        #btn_send{
+            width: 34vh;
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+@media (max-device-width:540px){
+    @media (max-device-height:720px){
+      @media (orientation:portrait){
+            #btn_send{
+                width: 33.5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
+@media (max-device-width:480px){
+    @media (max-device-height:854px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 896px com orientation: portrait*/
+@media (max-device-width:414px){
+    @media (max-device-height:896px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 32.5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 736px com orientation: portrait*/
+@media (max-device-width:414px){
+    @media (max-device-height:736px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 34vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 915px com orientation: portrait*/
+@media (max-device-width:412px){
+    @media (max-device-height:915px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 32.5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 732px com orientation: portrait*/
+@media (max-device-width:412px){
+    @media (max-device-height:732px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33.5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 411px por height 823px com orientation: portrait*/
+@media (max-device-width:411px){
+    @media (max-device-height:823px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33.5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 393px por height 851px com orientation: portrait*/
+@media (max-device-width:393px){
+    @media (max-device-height:851px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 393px por height 786px com orientation: portrait*/
+@media (max-device-width:393px){
+    @media (max-device-height:786px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 390px por height 844px com orientation: portrait*/
+@media (max-device-width:390px){
+    @media (max-device-height:844px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+@media (max-device-width:384px){
+    @media (max-device-height:640px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 34vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 375px por height 667px com orientation: portrait*/
+@media (max-device-width:375px){
+    @media (max-device-height:667px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 34vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 360px com orientation: portrait*/
+@media (max-device-width:360px){
     @media (orientation:portrait){
         #btn_send{
             width: 33vh;
@@ -130,65 +360,31 @@
 
 
 
-/* dispositivos abaixo de ou até width 480px com orientation: portrait*/
-/* @media (max-device-width:480px){
-    @media (orientation:portrait){
-        #btn_send{
-            width: 33vh;
-        }
-    }
-} */
 
-
-
-
-/* dispositivos abaixo de ou até width 412px com orientation: portrait*/
-/* @media (max-device-width:412px){
-    @media (orientation:portrait){
-        #btn_send{
-            width: 33vh;
-        }
-    }
-} */
-
-
-
-
-/* dispositivos abaixo de ou até width 393px com orientation: portrait*/
-/* @media (max-device-width:393px){
-    @media (orientation:portrait){
-        #btn_send{
-            width: 33vh;
-        }
-    }
-  } */
-
-
-
-
-/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
-/* @media (max-device-width:384px){
+/* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
+@media (max-device-width:360px){
     @media (max-device-height:640px){
-      @media (orientation:portrait){
+        @media (orientation:portrait){
             #btn_send{
-                width: 33vh;
+                width: 34vh;
             }
         }
     }
-} */
+}
 
 
 
 
-
-/* dispositivos abaixo de ou até width 360px com orientation: portrait*/
-/* @media (max-device-width:360px){
-    @media (orientation:portrait){
-        #btn_send{
-            width: 33vh;
+/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
+@media (max-device-width:360px){
+    @media (max-device-height:740px){
+        @media (orientation:portrait){
+            #btn_send{
+                width: 33.5vh;
+            }
         }
     }
-} */
+}
 
 
 

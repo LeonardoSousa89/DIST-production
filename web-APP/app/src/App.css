@@ -197,16 +197,6 @@ body{
 
 /* responsividade */
 
-/*
-  OBS* 
-  
-  1 - para hoje, a width dos campos deve ser há definida no figma
-  2 - recalcular os widths do button
-  3 - reduzir a imagem get apk(btn) no ambiente de responsividade
-  5 - finalizar responsividade login e signOut
-
-*/
-
 @media (max-device-width:1339px){
   .border{
     width: 60%;
@@ -234,7 +224,7 @@ body{
 
 
 
-/* dispositivos abaixo de ou até width 1339px com orientation:landscape*/
+/* dispositivos especifícos width 1339px por height 768px com orientation: landscape*/
 @media (max-device-width:1339px){
   @media(min-device-width:768px){
     @media(orientation:landscape){
@@ -259,6 +249,18 @@ body{
         justify-content: center;  
       }
     }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 600px */
+@media (max-device-width:1024px){
+  @media (max-device-height:600px){
+   .signUp, .Login{
+      height: 120vh;
+   }
   }
 }
 
