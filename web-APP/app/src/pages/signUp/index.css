@@ -1,5 +1,5 @@
 #field_name, #field_email, #field_password{
-    width: 30vh;
+    width: 50vh;
 }
 #email, #password{
     margin-top: 10px;
@@ -9,7 +9,7 @@
     background-color: #2976E6;
     margin-top: 10px;
 
-    width: 33vh;
+    width: 53vh;
 }
 .text{
     display: flex;
@@ -47,8 +47,16 @@
 
 /* responsividade */
 
-@media (max-device-width:600px){
-    #name, #email, #password{}
+@media (max-device-width:1024px){
+    #field_name, #field_email, #field_password{
+        width: 30vh;
+    }
+    #btn_send{
+        width: 33vh;
+    }
+    .store{
+      height: 40px;
+    }
 }
 
 
