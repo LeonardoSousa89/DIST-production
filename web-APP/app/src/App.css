@@ -265,6 +265,20 @@ body{
 
 
 
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+  @media (max-device-height:1366px){
+    @media (orientation:portrait){
+      .form-container{
+        height: 50vh;
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 1339px*/
 @media (max-device-width:1339px){
   .border{
@@ -279,6 +293,21 @@ body{
 @media (max-device-width:1024px){
  .border{
     width: 80%;
+  }
+}
+
+
+
+
+
+/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
+@media (max-device-width:768px){
+  @media (max-device-height:1024px){
+    @media (orientation:portrait){
+      .form-container{
+        height: 50vh;
+      }
+    }
   }
 }
 
@@ -330,8 +359,11 @@ body{
 @media (max-device-width:1024px){
   @media (max-device-height:600px){
    .signUp, .Login{
-      height: 120vh;
-   }
+      height: 180vh;
+    }
+    .store{
+      margin-bottom: -10vh;
+    }
   }
 }
 
@@ -610,6 +642,34 @@ body{
 
 
 
+/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
+@media (max-device-width:360px){
+  @media (max-device-height:740px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 160vh;
+      }
+    }
+  }
+}
+
+
+
+/* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
+@media (max-device-width:360px){
+  @media (max-device-height:640px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 180vh;
+      }
+    }
+  }
+}
+
+
+
+
+
 /* dispositivos abaixo de ou até width 320px com orientation: portrait*/
 @media (max-device-width:320px){
     @media (orientation:portrait){
@@ -637,11 +697,73 @@ body{
 
 
 
+/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:533px){
+    @media (orientation:portrait){
+      .Footer{
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:658px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 180vh;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 568px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:568px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 190vh;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:480px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 220vh;
+      }
+      .form-container{
+        height: 90vh;
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 240px com orientation: portrait*/
 @media (max-device-width:240px){
   @media (orientation:portrait){
-      .signUp, .Login{
+      .logo-dist{
         display: none;
+      }
+      .form-container{
+        height: 120vh;
       }
   }
 }

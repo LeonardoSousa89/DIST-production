@@ -37,6 +37,7 @@
 }
 .google{
     cursor: pointer;
+    height: 40px;
 }
 .store{
     margin-top: -15px;
@@ -57,15 +58,6 @@
   }
 }
 
-
-
-
-/* dispositivos gerais abaixo de ou até width 1024px*/
-@media (max-width:1024px){
-    .store{
-      margin-top: 0vh;
-    }
-  }
 
 
 
@@ -104,9 +96,6 @@
     @media (max-device-height:600px){
             #btn_send{
                 width: 34vh;
-            }
-            .store{
-                margin-top: 0px;
         }
     }
 }
@@ -413,4 +402,17 @@
         }
     }
 }
-   
+ 
+
+
+
+/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:533px){
+      @media (orientation:portrait){
+            .store{
+                margin-top: 0;
+            }
+        }
+    }
+}
