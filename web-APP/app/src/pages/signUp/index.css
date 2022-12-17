@@ -47,13 +47,6 @@
 
 /* responsividade */
 
-/* há uma circunstancia curiosa
-   elementos do componente login são estilizados,
-   mesmo sem serem chamados em seu próprio index.css ou App.css,
-   como ex: .store
-   está recebendo as mudanças atribuídas ao elemento do componente signUp e
-   não com estilo direcionado ao componente login.
-*/
 @media (max-device-width:1024px){
     #field_name, #field_email, #field_password{
         width: 30vh;
