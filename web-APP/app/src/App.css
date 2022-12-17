@@ -232,7 +232,7 @@ body{
   .signUp, .Login{
     height: 160vh;
   }
-  
+
   .Header{
     flex-direction: column;
     justify-content: space-between;

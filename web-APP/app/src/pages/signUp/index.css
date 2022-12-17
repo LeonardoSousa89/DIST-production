@@ -45,8 +45,31 @@
 
 
 
-/* responsividade */
+/* responsividade                                   */
 
+
+
+
+/* dispositivos gerais abaixo de ou até width 1339px*/
+@media (max-width:1339px){
+  .store{
+    margin-top: -10vh;
+  }
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1024px){
+    .store{
+      margin-top: 0vh;
+    }
+  }
+
+
+
+/* dispositivos abaixo de ou até width 1024px*/
 @media (max-device-width:1024px){
     #field_name, #field_email, #field_password{
         width: 30vh;
@@ -76,7 +99,7 @@
 
 
 
-/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+/* dispositivos especifícos width 1024px por height 600px com orientation: portrait*/
 @media (max-device-width:1024px){
     @media (max-device-height:600px){
             #btn_send{
