@@ -303,7 +303,6 @@ body{
     .Footer{
       margin-top: 2vh;
     }
-    
   }
 }
 
@@ -329,3 +328,61 @@ body{
     }
   }
 }
+
+
+
+
+/* dispositivos abaixo de width 786px com orientation: landscape*/
+@media (max-device-width:915px){
+  @media (orientation:landscape){
+    .error{
+      height: 130vh;
+    }
+  }
+}
+
+
+
+
+/* dispositivos abaixo de width 653px com orientation: landscape*/
+@media (max-device-width:653px){
+  @media (orientation:landscape){
+    .error{
+      height: 150vh;
+    }
+  }
+}
+
+
+
+
+/* dispositivos abaixo de width 320px com orientation: landscape*/
+@media (max-device-width:320px){
+    .error{
+      height: 170vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

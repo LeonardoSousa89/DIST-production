@@ -13,3 +13,15 @@ a{
     font-weight: bold;
     color: #2976E6;
 }
+
+
+
+
+/* responsividade */
+/* dispositivos abaixo de width 320px */
+@media (max-device-width:320px){
+    .advise{
+        height: 128px;
+        width: 128px;
+    }
+}
