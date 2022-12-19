@@ -20,7 +20,9 @@ import { signInWithEmailAndPass, signInWithProvider, verifyRoute } from '../../s
 import { auth } from '../../services/db'
 import { useNavigate } from 'react-router-dom';
 
-import { FacebookAuthProvider, GoogleAuthProvider } from 'firebase/auth';
+import { 
+          // FacebookAuthProvider, 
+          GoogleAuthProvider } from 'firebase/auth';
 
 export default (props)=>{
   
@@ -50,10 +52,10 @@ export default (props)=>{
       navigate(URL, {replace:true})
     }
   
-    function accessUsingFacebook(){
-        let provider=new FacebookAuthProvider()
-        signInWithProvider(auth, provider, providerNavigation)
-    }
+    // function accessUsingFacebook(){
+    //     let provider=new FacebookAuthProvider()
+    //     signInWithProvider(auth, provider, providerNavigation)
+    // }
   
       function accessUsingGoogle(){
         let provider=new GoogleAuthProvider()
@@ -66,36 +68,31 @@ export default (props)=>{
         
         <Divider  style={{height:'1px', background: '#2976E6'}} />
         
-             <Grid className='form-container' id='form-container' container>
+            <Grid className='form-container' id='form-container' container>
             
-            <TextField  label="email"
-                        id="email"
-                        variant="filled"
-                        className='size'
-                        style={{marginTop:'80px'}}
-                        value={email}
-                        onChange={(e)=>setEmail(e.target.value)}
-                        />
+            <div  id="email">
+              <TextField  label="email"
+                          id="field_email"
+                          variant="filled"
+                          value={email}
+                          onChange={(e)=>setEmail(e.target.value)}
+                />
+            </div>
             
-            <TextField  label="password"
-                        id="password"
-                        type={'password'}
-                        variant="filled"    
-                        className='size'
-                        style={{marginTop:'10px'}}
-                        value={password}
-                        onChange={(e)=>setPassword(e.target.value)}
-                        />
+            <div  id="password">
+              <TextField  label="password"
+                          id="field_password"
+                          type={'password'}
+                          variant="filled"    
+                          value={password}
+                          onChange={(e)=>setPassword(e.target.value)}
+              />
+            </div>
             
             <Button     type="submit"
                         variant="contained" 
                         size="large"
-                        className='size'
-                        style={{    
-                                fontWeight:'bold', 
-                                background:'#2976E6',
-                                marginTop:'10px'
-                            }}
+                        id="btn_send"
                         endIcon={<SendIcon  />}
                         onClick={login}
                 > login
