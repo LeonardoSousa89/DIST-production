@@ -195,7 +195,10 @@ body{
 
 
 
-/*  responsividade                                  */
+/*  responsividade                                  
+
+   foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
 
 
 
@@ -265,59 +268,10 @@ body{
 
 
 
-/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
-@media (max-device-width:1024px){
-  @media (max-device-height:1366px){
-    @media (orientation:portrait){
-      .form-container{
-        height: 50vh;
-      }
-    }
-  }
-}
-
-
-
-
 /* dispositivos abaixo de ou até width 1339px*/
 @media (max-device-width:1339px){
   .border{
     width: 60%;
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 1024px*/
-@media (max-device-width:1024px){
- .border{
-    width: 80%;
-  }
-}
-
-
-
-
-
-/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
-@media (max-device-width:768px){
-  @media (max-device-height:1024px){
-    @media (orientation:portrait){
-      .form-container{
-        height: 50vh;
-      }
-    }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 767px*/
-@media (max-device-width:767px){
-  .border{
-    width: 100%;
   }
 }
 
@@ -355,6 +309,16 @@ body{
 
 
 
+/* dispositivos abaixo de ou até width 1024px*/
+@media (max-device-width:1024px){
+  .border{
+     width: 80%;
+   }
+ }
+
+
+
+
 /* dispositivos especifícos width 1024px por height 600px */
 @media (max-device-width:1024px){
   @media (max-device-height:600px){
@@ -363,166 +327,6 @@ body{
     }
     .store{
       margin-bottom: -10vh;
-    }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 767px*/
-@media (max-device-width:767px){
-  .signUp, .Login{
-      height: 160vh;
-    }
-    .Header{
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .container-logo{
-      display: flex;
-      justify-content: center;
-    }
-    
-    .logo{
-      margin-left: 0;
-      margin-bottom: 4vh;
-    }
-  
-    .social{
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 5vh;
-    }
-  
-    .text-logo-container{
-      justify-content: center;  
-    }
-    .internal-sub-container-logo{
-      width: 100%;
-    }
-}
-
-
-
-
-
-/* dispositivos especifícos width 854px por height 480px com orientation: landscape*/
-@media (max-device-width:854px){
-  @media (max-device-height:480px){
-    @media (orientation:landscape){
-         .signUp, .Login{
-          height: 230vh;
-         }
-         .form-container{
-          height: 90vh;  
-        } 
-      }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 786px por height 393px com orientation: landscape*/
-@media (max-device-width:786px){
-  @media (max-device-height:393px){
-    @media (orientation:landscape){
-         .signUp, .Login{
-          height: 270vh;
-         }
-         .form-container{
-          height: 110vh;  
-        } 
-      }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 767px com orientation: portrait*/
-@media (max-device-width:767px){
-  @media (orientation:portrait){
-    .signUp, .Login{
-      height: 170vh;
-    }
-    .form-container{
-      height: 74vh;  
-    } 
-    .Footer{
-      margin-top: 2vh;
-    }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 767px com orientation: landscape*/
-@media (max-device-width:767px){
-  @media (orientation:landscape){
-    .signUp, .Login{
-      height: 300vh;
-    }
-    .form-container{
-      height: 114vh;  
-    } 
-    .play-store{
-      height: 66px;
-    }.Footer{
-      height: 15vh;
-    }
-    .store{
-      margin-top: 22%;
-    }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 915px com orientation: landscape*/
-@media (max-device-width:915px){
-  @media (orientation:landscape){
-    .error{
-      height: 130vh;
-    }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 653px com orientation: landscape*/
-@media (max-device-width:653px){
-  @media (orientation:landscape){
-    .error{
-      height: 150vh;
-    }
-  }
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 320px*/
-@media (max-device-width:320px){
-    .error{
-      height: 170vh;
-  }
-}
-
-
-
-
-
-/* dispositivos abaixo de ou até width 360px com orientation: portrait*/
-@media (max-device-width:360px){
-  @media (orientation:portrait){
-    .signUp{
-      height: 190vh;
     }
   }
 }
@@ -564,6 +368,74 @@ body{
           width: 100%;
         }
     }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+  @media (max-device-height:1366px){
+    @media (orientation:portrait){
+      .form-container{
+        height: 50vh;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 768px com orientation: landscape*/
+@media (max-device-width:1024px){
+  @media (max-device-height:768px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 150vh;
+         }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 600px com orientation: landscape*/
+@media (max-device-width:1024px){
+  @media (max-device-height:600px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 180vh;
+         }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 960px por height 600px com orientation: landscape*/
+@media (max-device-width:960px){
+  @media (max-device-height:600px){
+    @media (orientation:landscape){
+      .signUp, .Login{
+        height: 180vh;
+       }
+    }
+  }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 915px com orientation: landscape*/
+@media (max-device-width:915px){
+  @media (orientation:landscape){
+    .error{
+      height: 130vh;
+    }
+  }
 }
 
 
@@ -615,12 +487,32 @@ body{
 
 
 
+/* dispositivos especifícos width 854px por height 480px com orientation: landscape*/
+@media (max-device-width:854px){
+  @media (max-device-height:480px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 230vh;
+         }
+         .form-container{
+          height: 90vh;  
+        } 
+      }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 851px por height 393px com orientation: landscape*/
 @media (max-device-width:851px){
   @media (max-device-height:393px){
     @media (orientation:landscape){
       .signUp, .Login{
-        height: 280vh;
+        height: 290vh;
+       }
+       .form-container{
+        height: 125vh;
        }
     }
   }
@@ -636,6 +528,40 @@ body{
       .signUp, .Login{
         height: 280vh;
        }
+       .form-container{
+        height: 120vh;
+       }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 823px por height 411px com orientation: landscape*/
+@media (max-device-width:823px){
+  @media (max-device-height:411px){
+    @media (orientation:landscape){
+      .signUp, .Login{
+        height: 270vh;
+       }
+       .form-container{
+        height: 115vh;
+       }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 812px por height 375px com orientation: landscape*/
+@media (max-device-width:812px){
+  @media (max-device-height:375px){
+    @media (orientation:landscape){
+      .signUp, .Login{
+        height: 280vh;
+       }
     }
   }
 }
@@ -647,13 +573,124 @@ body{
 @media (max-device-width:786px){
   @media (max-device-height:393px){
     @media (orientation:landscape){
-      .signUp, .Login{
-        height: 280vh;
-       }
+         .signUp, .Login{
+          height: 280vh;
+         }
+         .form-container{
+          height: 110vh;  
+        } 
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
+@media (max-device-width:768px){
+  @media (max-device-height:1024px){
+    @media (orientation:portrait){
+      .form-container{
+        height: 50vh;
+      }
     }
   }
 }
 
+
+
+
+/* dispositivos abaixo de ou até width 767px*/
+@media (max-device-width:767px){
+   .signUp, .Login{
+      height: 160vh;
+    }
+    .Header{
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .container-logo{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .logo{
+      margin-left: 0;
+      margin-bottom: 4vh;
+    }
+  
+    .social{
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5vh;
+    }
+  
+    .text-logo-container{
+      justify-content: center;  
+    }
+    .internal-sub-container-logo{
+      width: 100%;
+    }
+    .border{
+      width: 100%;
+    }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 767px com orientation: landscape*/
+@media (max-device-width:767px){
+  @media (orientation:landscape){
+    .signUp, .Login{
+      height: 300vh;
+    }
+    .form-container{
+      height: 114vh;  
+    } 
+    .play-store{
+      height: 66px;
+    }.Footer{
+      height: 15vh;
+    }
+    .store{
+      margin-top: 22%;
+    }
+  }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 767px com orientation: portrait*/
+@media (max-device-width:767px){
+  @media (orientation:portrait){
+    .signUp, .Login{
+      height: 170vh;
+    }
+    .form-container{
+      height: 74vh;  
+    } 
+    .Footer{
+      margin-top: 2vh;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 745px por height 353px com orientation: landscape*/
+@media (max-device-width:745px){
+  @media (max-device-height:353px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 300vh;
+         }
+    }
+  }
+}
 
 
 
@@ -672,11 +709,124 @@ body{
 
 
 
+/* dispositivos especifícos width 732px por height 412px com orientation: landscape*/
+@media (max-device-width:732px){
+  @media (max-device-height:412px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 280vh;
+         }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 720px por height 540px com orientation: landscape*/
+@media (max-device-width:720px){
+  @media (max-device-height:540px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 240vh;
+         }
+    }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 712px com orientation: portrait*/
 @media (max-device-width:712px){
   @media (orientation:portrait){
       .signUp, .Login{
         height: 140vh;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 667px por height 375px com orientation: landscape*/
+@media (max-device-width:667px){
+  @media (max-device-height:375px){
+    @media (orientation:landscape){
+      .signUp, .Login{
+        height: 280vh;
+       }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 658px por height 320px com orientation: landscape*/
+@media (max-device-width:658px){
+  @media (max-device-height:320px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 310vh;
+         }
+    }
+  }
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 653px com orientation: landscape*/
+@media (max-device-width:653px){
+  @media (orientation:landscape){
+    .error{
+      height: 150vh;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 653px por height 280px com orientation: landscape*/
+@media (max-device-width:653px){
+  @media (max-device-height:280px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 380vh;
+         }
+         .form-container{
+          height: 150vh;
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 640px por height 384px com orientation: landscape*/
+@media (max-device-width:640px){
+  @media (max-device-height:384px){
+    @media (orientation:landscape){
+      .signUp, .Login{
+        height: 280vh;
+       }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 640px por height 360px com orientation: landscape*/
+@media (max-device-width:640px){
+  @media (max-device-height:360px){
+    @media (orientation:landscape){
+         .signUp, .Login{
+          height: 310vh;
+         }
     }
   }
 }
@@ -781,6 +931,7 @@ body{
 
 
 
+
 /* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
 @media (max-device-width:360px){
   @media (max-device-height:640px){
@@ -795,6 +946,15 @@ body{
 
 
 
+/* dispositivos abaixo de ou até width 320px*/
+@media (max-device-width:320px){
+  .error{
+    height: 170vh;
+  }
+}
+
+
+
 
 /* dispositivos abaixo de ou até width 320px com orientation: portrait*/
 @media (max-device-width:320px){
@@ -804,7 +964,6 @@ body{
         }
     }
 }
-
 
 
 
