@@ -1,5 +1,5 @@
 #field_name, #field_email, #field_password{
-    width: 50vh;
+    width: 50vw;
 }
 #email, #password{
     margin-top: 10px;
@@ -9,7 +9,7 @@
     background-color: #2976E6;
     margin-top: 10px;
 
-    width: 53vh;
+    width: 53vw;
 }
 .text{
     display: flex;
@@ -54,10 +54,10 @@
 /* dispositivos abaixo de ou até width 1024px*/
 @media (max-device-width:1024px){
     #field_name, #field_email, #field_password{
-        width: 30vh;
+        width: 30vw;
     }
     #btn_send{
-        width: 33vh;
+        width: 33vw;
     }
 }
 
@@ -69,7 +69,7 @@
     @media (max-device-height:1366px){
       @media (orientation:portrait){
             #btn_send{
-                width: 32vh;
+                width: 32vw;
             }
         }
     }
@@ -82,7 +82,7 @@
 @media (max-device-width:1024px){
     @media (max-device-height:600px){
             #btn_send{
-                width: 34vh;
+                width: 34vw;
         }
     }
 }
@@ -95,10 +95,10 @@
     @media (max-device-height:412px){
       @media (orientation:landscape){
         #field_name, #field_email, #field_password{
-            width: 60vh;
+            width: 60vw;
         }
         #btn_send{
-            width: 66vh;
+            width: 66vw;
         } 
       }
     }
@@ -111,7 +111,7 @@
     @media (max-device-height:1368px){
       @media (orientation:portrait){
             #btn_send{
-                width: 32vh;
+                width: 32vw;
             }
         }
     }
@@ -125,10 +125,10 @@
     @media (max-device-height:414px){
       @media (orientation:landscape){
         #field_name, #field_email, #field_password{
-            width: 60vh;
+            width: 60vw;
         }
         #btn_send{
-            width: 65vh;
+            width: 65vw;
         } 
       }
     }
@@ -142,10 +142,10 @@
     @media (max-device-height:480px){
       @media (orientation:landscape){
             #field_name, #field_email, #field_password{
-                width: 60vh;
+                width: 60vw;
             }
             #btn_send{
-                width: 65vh;
+                width: 65vw;
             }
         }
     }
@@ -159,7 +159,7 @@
     @media (max-device-height:1280px){
       @media (orientation:portrait){
             #btn_send{
-                width: 32.5vh;
+                width: 32.5vw;
             }
         }
     }
@@ -173,7 +173,7 @@
     @media (max-device-height:1180px){
       @media (orientation:portrait){
             #btn_send{
-                width: 32vh;
+                width: 32vw;
             }
         }
     }
@@ -187,7 +187,7 @@
     @media (max-device-height:1280px){
       @media (orientation:portrait){
             #btn_send{
-                width: 32vh;
+                width: 32vw;
             }
         }
     }
@@ -201,7 +201,7 @@
     @media (max-device-height:1024px){
       @media (orientation:portrait){
             #btn_send{
-                width: 32.5vh;
+                width: 32.5vw;
             }
         }
     }
@@ -215,10 +215,10 @@
     @media (max-device-height:360px){
       @media (orientation:landscape){
             #field_name, #field_email, #field_password{
-                width: 60vh;
+                width: 60vw;
             }
             #btn_send{
-                width: 67.5vh;
+                width: 67.5vw;
             }
         }
     }
@@ -232,10 +232,10 @@
     @media (max-device-height:412px){
       @media (orientation:landscape){
             #field_name, #field_email, #field_password{
-                width: 60vh;
+                width: 60vw;
             }
             #btn_send{
-                width: 67.5vh;
+                width: 67.5vw;
             }
         }
     }
@@ -249,10 +249,10 @@
     @media (max-device-height:384px){
       @media (orientation:landscape){
             #field_name, #field_email, #field_password{
-                width: 60vh;
+                width: 60vw;
             }
             #btn_send{
-                width: 67.5vh;
+                width: 67.5vw;
             }
         }
     }
@@ -266,10 +266,10 @@
     @media (max-device-height:360px){
       @media (orientation:landscape){
             #field_name, #field_email, #field_password{
-                width: 60vh;
+                width: 60vw;
             }
             #btn_send{
-                width: 67.5vh;
+                width: 67.5vw;
             }
         }
     }
@@ -282,7 +282,7 @@
 @media (max-device-width:540px){
     @media (orientation:portrait){
         #btn_send{
-            width: 34vh;
+            width: 34vw;
         }
     }
 }
@@ -295,7 +295,7 @@
     @media (max-device-height:720px){
       @media (orientation:portrait){
             #btn_send{
-                width: 33.5vh;
+                width: 33.5vw;
             }
         }
     }
@@ -309,7 +309,7 @@
     @media (max-device-height:854px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33vh;
+                width: 33vw;
             }
         }
     }
@@ -323,7 +323,7 @@
     @media (max-device-height:896px){
         @media (orientation:portrait){
             #btn_send{
-                width: 32.5vh;
+                width: 32.5vw;
             }
         }
     }
@@ -337,7 +337,7 @@
     @media (max-device-height:736px){
         @media (orientation:portrait){
             #btn_send{
-                width: 34vh;
+                width: 34vw;
             }
         }
     }
@@ -351,7 +351,7 @@
     @media (max-device-height:915px){
         @media (orientation:portrait){
             #btn_send{
-                width: 32.5vh;
+                width: 32.5vw;
             }
         }
     }
@@ -365,7 +365,7 @@
     @media (max-device-height:732px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33.5vh;
+                width: 33.5vw;
             }
         }
     }
@@ -379,7 +379,7 @@
     @media (max-device-height:823px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33.5vh;
+                width: 33.5vw;
             }
         }
     }
@@ -393,7 +393,7 @@
     @media (max-device-height:851px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33vh;
+                width: 33vw;
             }
         }
     }
@@ -407,7 +407,7 @@
     @media (max-device-height:786px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33vh;
+                width: 33vw;
             }
         }
     }
@@ -421,7 +421,7 @@
     @media (max-device-height:844px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33vh;
+                width: 33vw;
             }
         }
     }
@@ -435,7 +435,7 @@
     @media (max-device-height:640px){
         @media (orientation:portrait){
             #btn_send{
-                width: 34vh;
+                width: 34vw;
             }
         }
     }
@@ -449,7 +449,7 @@
     @media (max-device-height:667px){
         @media (orientation:portrait){
             #btn_send{
-                width: 34vh;
+                width: 34vw;
             }
         }
     }
@@ -462,7 +462,7 @@
 @media (max-device-width:360px){
     @media (orientation:portrait){
         #btn_send{
-            width: 33vh;
+            width: 33vw;
         }
     }
 }
@@ -476,7 +476,7 @@
     @media (max-device-height:640px){
         @media (orientation:portrait){
             #btn_send{
-                width: 34vh;
+                width: 34vw;
             }
         }
     }
@@ -490,7 +490,7 @@
     @media (max-device-height:740px){
         @media (orientation:portrait){
             #btn_send{
-                width: 33.5vh;
+                width: 33.5vw;
             }
         }
     }
@@ -503,7 +503,7 @@
 @media (max-device-width:320px){
     @media (orientation:portrait){
         #btn_send{
-            width: 34vh;
+            width: 34vw;
         }
     }
 }
@@ -516,7 +516,7 @@
     @media (max-device-height:240px){
       @media (orientation:landscape){
         #btn_send{
-            width: 70vh;
+            width: 70vw;
         }
       }
     }
@@ -530,7 +530,7 @@
     @media (max-device-height:320px){
       @media (orientation:portrait){
         #btn_send{
-            width: 37.5vh;
+            width: 37.5vw;
         }
       }
     }
