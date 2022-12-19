@@ -42,7 +42,7 @@ body{
 
 
 .store{
-  margin-top: 4px;
+  margin-top: -15px;
 }
 
 
@@ -225,6 +225,9 @@ body{
   .text-logo-container{
     justify-content: center;  
   }
+  .store{
+    margin-top: -10vh;
+  }
 }
 
 
@@ -260,8 +263,13 @@ body{
   .text-logo-container{
     justify-content: center;  
   }
+
   .internal-sub-container-logo{
     width: 100%;
+  }
+  
+  .store{
+    height: 40px;
   }
 }
 
@@ -1018,6 +1026,20 @@ body{
         height: 190vh;
       }
     }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:533px){
+    @media (orientation:portrait){
+          .store{
+              margin-top: 0;
+          }
+      }
   }
 }
 

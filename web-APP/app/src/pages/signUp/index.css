@@ -39,24 +39,14 @@
     cursor: pointer;
     height: 40px;
 }
-.store{
-    margin-top: -15px;
-}
 
 
 
 
-/* responsividade                                   */
+/*  responsividade                                  
 
-
-/*o elemento .store é de responsabilidade do APP.css*/
-
-/* dispositivos gerais abaixo de ou até width 1339px*/
-@media (max-width:1339px){
-  .store{
-    margin-top: -10vh;
-  }
-}
+   foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
 
 
 
@@ -68,9 +58,6 @@
     }
     #btn_send{
         width: 33vh;
-    }
-    .store{
-      height: 40px;
     }
 }
 
@@ -521,20 +508,6 @@
     }
 }
  
-
-
-
-/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
-@media (max-device-width:320px){
-    @media (max-device-height:533px){
-      @media (orientation:portrait){
-            .store{
-                margin-top: 0;
-            }
-        }
-    }
-}
-
 
 
 
