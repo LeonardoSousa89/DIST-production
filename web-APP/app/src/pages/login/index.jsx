@@ -20,9 +20,7 @@ import { signInWithEmailAndPass, signInWithProvider, verifyRoute } from '../../s
 import { auth } from '../../services/db'
 import { useNavigate } from 'react-router-dom';
 
-import { 
-          // FacebookAuthProvider, 
-          GoogleAuthProvider } from 'firebase/auth';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 export default (props)=>{
   
@@ -41,26 +39,20 @@ export default (props)=>{
   }
 
   function login(){
-        
         signInWithEmailAndPass(auth, email, password, navigation)
-        
   }
   
   
-    function providerNavigation(id){
+  function providerNavigation(id){
       let URL=`/dist/${id}/administration`
       navigate(URL, {replace:true})
-    }
+  }
   
-    // function accessUsingFacebook(){
-    //     let provider=new FacebookAuthProvider()
-    //     signInWithProvider(auth, provider, providerNavigation)
-    // }
   
-      function accessUsingGoogle(){
+  function accessUsingGoogle(){
         let provider=new GoogleAuthProvider()
         signInWithProvider(auth, provider, providerNavigation)
-    }
+  }
 
   return (
       <div className="Login">
