@@ -257,9 +257,9 @@ export default (props)=>{
                                   return(
                                     <tbody key={e.workerId}>
                                       <tr>
-                                        <td id='workername' >{e.workerName.substring(0, 16)}</td>
-                                        <td id='workeraddress' >{e.workerAddress.substring(0, 16)}</td>
-                                        <td id='workeremail' >{e.workerEmail.substring(0, 32)}</td>
+                                        <td id='workername'>{e.workerName.substring(0, 16)}</td>
+                                        <td id='workeraddress'>{e.workerAddress.substring(0, 16)}</td>
+                                        <td id='workeremail'>{e.workerEmail.substring(0, 24)}</td>
                                       </tr>
                                     </tbody>
                                       )
@@ -267,9 +267,9 @@ export default (props)=>{
                                   ) : (
                                     <tbody>
                                       <tr>
-                                        <td id='workername' >no records</td>
-                                        <td id='workeraddress' >no records</td>
-                                        <td id='workeremail'  >no records</td>
+                                        <td id='workername'>no records</td>
+                                        <td id='workeraddress'>no records</td>
+                                        <td id='workeremail'>no records</td>
                                       </tr>
                                     </tbody>
                             )

@@ -10,7 +10,7 @@ import { createUserWithEmailAndPassword,
 import { ref, 
          uploadBytesResumable, 
          getDownloadURL
-         } from 'firebase/storage';
+       } from 'firebase/storage';
 
 
 export async function signUp(username, auth, email, password,  navigation){
@@ -301,8 +301,8 @@ export async function getProfileData(setUserName, setUserEmail){
         .then(response=>{
             if(response.status === 200){
                 response.json().then(response=>{
-                    setUserName(response.userName.substring(0, 15))
-                    setUserEmail(response.email.substring(0, 22))
+                    setUserName(response.userName.substring(0, 16))
+                    setUserEmail(response.email.substring(0, 32))
                 })
             }
             if(response.status === 404){
