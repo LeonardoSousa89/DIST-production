@@ -123,6 +123,23 @@ body{
 
 
 
+#field_name, #field_email, #field_password{
+  width: 30vw;
+}
+#email, #password{
+  margin-top: 10px;
+}
+#btn_send{
+  font-weight: bold;
+  background-color: #2976E6;
+  margin-top: 10px;
+
+  width: 32vw;
+}
+
+
+
+
 /* component footer */
 .Footer{
   background-image: url('./assets/Rectangle.png');
@@ -271,6 +288,41 @@ body{
   .store{
     height: 40px;
   }
+
+  #btn_send{
+    width: 32.5vw;
+  }
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 712px*/
+@media (max-width:712px){
+  #btn_send{
+    width: 34vw;
+  }
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 515px*/
+@media (max-width:515px){
+  #btn_send{
+    width: 34.5vw;
+  }
+}
+
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 478px*/
+@media (max-width:478px){
+  #btn_send{
+    width: 35vw;
+  }
 }
 
 
@@ -322,6 +374,12 @@ body{
   .border{
      width: 80%;
    }
+   #field_name, #field_email, #field_password{
+    width: 30vw;
+  }
+  #btn_send{
+      width: 33vw;
+  }
  }
 
 
@@ -335,6 +393,23 @@ body{
     }
     .store{
       margin-bottom: -10vh;
+    }
+    #btn_send{
+      width: 34vw;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 600px */
+@media (max-device-width:1024px){
+  @media (max-device-height:600px){
+    @media (orientation:landscape){
+      #btn_send{
+          width: 32.5vw;
+      }
     }
   }
 }
@@ -388,6 +463,9 @@ body{
       .form-container{
         height: 50vh;
       }
+      #btn_send{
+        width: 32vw;
+      }
     }
   }
 }
@@ -402,6 +480,9 @@ body{
          .signUp, .Login{
           height: 150vh;
          }
+         #btn_send{
+          width: 32.5vw;
+      }
     }
   }
 }
@@ -458,7 +539,13 @@ body{
          }
          .form-container{
           height: 120vh;  
-      } 
+        }
+        #field_name, #field_email, #field_password{
+          width: 40vw;
+        }
+        #btn_send{
+          width: 43vw;
+      }  
     }
   }
 }
@@ -478,6 +565,20 @@ body{
 
 
 
+/* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
+@media (max-device-width:912px){
+  @media (max-device-height:1368px){
+    @media (orientation:portrait){
+          #btn_send{
+              width: 32vw;
+          }
+      }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 896px por height 414px com orientation: landscape*/
 @media (max-device-width:896px){
   @media (max-device-height:414px){
@@ -487,7 +588,13 @@ body{
          }
          .form-container{
           height: 120vh;  
-      } 
+        }
+         #field_name, #field_email, #field_password{
+          width: 40vw;
+        }
+         #btn_send{
+          width: 43vw;
+      }  
     }
   }
 }
@@ -505,7 +612,13 @@ body{
          .form-container{
           height: 90vh;  
         } 
+         #field_name, #field_email, #field_password{
+          width: 40vw;
+        }
+         #btn_send{
+          width: 43vw;
       }
+    }
   }
 }
 
@@ -563,6 +676,34 @@ body{
 
 
 
+/* dispositivos especifícos width 820px por height 1280px com orientation: portrait*/
+@media (max-device-width:820px){
+  @media (max-device-height:1280px){
+    @media (orientation:portrait){
+          #btn_send{
+              width: 32.5vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 820px por height 1180px com orientation: portrait*/
+@media (max-device-width:820px){
+  @media (max-device-height:1180px){
+    @media (orientation:portrait){
+          #btn_send{
+              width: 33vw;
+          }
+      }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 812px por height 375px com orientation: landscape*/
 @media (max-device-width:812px){
   @media (max-device-height:375px){
@@ -571,6 +712,20 @@ body{
         height: 280vh;
        }
     }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
+@media (max-device-width:800px){
+  @media (max-device-height:1280px){
+    @media (orientation:portrait){
+          #btn_send{
+              width: 33vw;
+          }
+      }
   }
 }
 
@@ -600,6 +755,9 @@ body{
     @media (orientation:portrait){
       .form-container{
         height: 50vh;
+      }
+      #btn_send{
+        width: 33vw;
       }
     }
   }
@@ -703,6 +861,23 @@ body{
 
 
 
+/* dispositivos especifícos width 740px por height 540px com orientation: landscape*/
+@media (max-device-width:740px){
+  @media (max-device-height:540px){
+    @media (orientation:landscape){
+       #field_name, #field_email, #field_password{
+        width: 40vw;
+      }
+      #btn_send{
+        width: 43.5vw;
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 740px por height 360px com orientation: landscape*/
 @media (max-device-width:740px){
   @media (max-device-height:360px){
@@ -710,6 +885,12 @@ body{
       .signUp, .Login{
         height: 290vh;
        }
+       #field_name, #field_email, #field_password{
+        width: 40vw;
+      }
+      #btn_send{
+        width: 43.5vw;
+      }
     }
   }
 }
@@ -724,6 +905,12 @@ body{
          .signUp, .Login{
           height: 280vh;
          }
+         #field_name, #field_email, #field_password{
+          width: 40vw;
+         }
+         #btn_send{
+          width: 43.5vw;
+      }
     }
   }
 }
@@ -756,6 +943,22 @@ body{
 
 
 
+/* dispositivos especifícos width 712px por height 1138px com orientation: portrait*/
+@media (max-device-width:712px){
+  @media (max-device-height:1138px){
+    @media (orientation:portrait){
+        .signUp, .Login{
+          height: 130vh;
+        }
+        #btn_send{
+          width: 33.5vw;
+      }
+    }
+  }
+}
+
+
+
 
 /* dispositivos especifícos width 667px por height 375px com orientation: landscape*/
 @media (max-device-width:667px){
@@ -776,8 +979,17 @@ body{
   @media (max-device-height:320px){
     @media (orientation:landscape){
          .signUp, .Login{
-          height: 310vh;
+          height: 350vh;
          }
+         .form-container{
+          height: 150vh;
+         }
+         #field_name, #field_email, #field_password{
+          width: 40vw;
+         }
+         #btn_send{
+          width: 44vw;
+      }
     }
   }
 }
@@ -806,7 +1018,7 @@ body{
          }
          .form-container{
           height: 150vh;
-        }
+      }
     }
   }
 }
@@ -821,6 +1033,12 @@ body{
       .signUp, .Login{
         height: 280vh;
        }
+       #field_name, #field_email, #field_password{
+        width: 40vw;
+       }
+       #btn_send{
+        width: 44vw;
+      }
     }
   }
 }
@@ -835,6 +1053,12 @@ body{
          .signUp, .Login{
           height: 310vh;
          }
+         #field_name, #field_email, #field_password{
+          width: 40vw;
+         }
+         #btn_send{
+          width: 44vw;
+      }
     }
   }
 }
@@ -854,12 +1078,75 @@ body{
 
 
 
+/* dispositivos abaixo de ou até width 600px com orientation: portrait*/
+@media (max-device-width:600px){
+  @media (max-device-height:960px){
+    @media (orientation:portrait){
+      #field_name, #field_email, #field_password{
+        width: 40vw;
+       }
+      #btn_send{
+       width: 44vw;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* dispositivos especifícos width 568px por height 320px com orientation: landscape*/
+@media (max-device-width:568px){
+  @media (max-device-height:320px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 350vh;
+        }
+      }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 540px com orientation: portrait*/
 @media (max-device-width:540px){
   @media (orientation:portrait){
       .signUp, .Login{
         height: 170vh;
     }
+      #btn_send{
+       width: 34vw;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+@media (max-device-width:540px){
+  @media (max-device-height:720px){
+    @media (orientation:portrait){
+          #btn_send{
+              width: 44.5vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 533px por height 320px com orientation: landscape*/
+@media (max-device-width:533px){
+  @media (max-device-height:320px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 350vh;
+        }
+      }
   }
 }
 
@@ -878,12 +1165,156 @@ body{
 
 
 
+
+/* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
+@media (max-device-width:480px){
+  @media (max-device-height:854px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 45vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 896px com orientation: portrait*/
+@media (max-device-width:414px){
+  @media (max-device-height:896px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 736px com orientation: portrait*/
+@media (max-device-width:414px){
+  @media (max-device-height:736px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 412px com orientation: portrait*/
 @media (max-device-width:412px){
   @media (orientation:portrait){
       .signUp, .Login{
         height: 170vh;
     }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 915px com orientation: portrait*/
+@media (max-device-width:412px){
+  @media (max-device-height:915px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 732px com orientation: portrait*/
+@media (max-device-width:412px){
+  @media (max-device-height:732px){
+      @media (orientation:portrait){
+        #field_name, #field_email, #field_password{
+          width: 40vw;
+         }
+        #btn_send{
+              width: 46vw;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 411px por height 823px com orientation: portrait*/
+@media (max-device-width:411px){
+  @media (max-device-height:823px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 411px por height 731px com orientation: portrait*/
+@media (max-device-width:411px){
+  @media (max-device-height:731px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 393px por height 851px com orientation: portrait*/
+@media (max-device-width:393px){
+  @media (max-device-height:851px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 393px por height 786px com orientation: portrait*/
+@media (max-device-width:393px){
+  @media (max-device-height:786px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 390px por height 844px com orientation: portrait*/
+@media (max-device-width:390px){
+  @media (max-device-height:844px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
   }
 }
 
@@ -902,6 +1333,23 @@ body{
 
 
 
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+@media (max-device-width:384px){
+  @media (max-device-height:640px){
+      @media (orientation:portrait){
+        #field_name, #field_email, #field_password{
+          width: 60vw;
+         }
+         #btn_send{
+          width: 66vw;
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 375px com orientation: portrait*/
 @media (max-device-width:375px){
   @media (orientation:portrait){
@@ -914,10 +1362,24 @@ body{
 
 
 
+/* dispositivos especifícos width 375px por height 667px com orientation: portrait*/
+@media (max-device-width:375px){
+  @media (max-device-height:667px){
+      @media (orientation:portrait){
+          #btn_send{
+              width: 46vw;
+          }
+      }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 360px com orientation: portrait*/
 @media (max-device-width:360px){
   @media (orientation:portrait){
-      .signUp, .Login{
+    .signUp, .Login{
         height: 180vh;
     }
   }
@@ -933,6 +1395,12 @@ body{
       .signUp, .Login{
         height: 160vh;
       }
+      #field_name, #field_email, #field_password{
+        width: 60vw;
+      }
+      #btn_send{
+        width: 67vw;
+      }
     }
   }
 }
@@ -946,6 +1414,29 @@ body{
     @media (orientation:portrait){
       .signUp, .Login{
         height: 180vh;
+      }
+      #field_name, #field_email, #field_password{
+        width: 60vw;
+      }
+      #btn_send{
+        width: 66.5vw;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 353px por height 745px com orientation: portrait*/
+@media (max-device-width:353px){
+  @media (max-device-height:745px){
+    @media (orientation:portrait){
+      #field_name, #field_email, #field_password{
+        width: 60vw;
+      }
+      #btn_send{
+        width: 66.5vw;
       }
     }
   }
@@ -990,26 +1481,15 @@ body{
 
 
 
-/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
-@media (max-device-width:320px){
-  @media (max-device-height:533px){
-    @media (orientation:portrait){
-      .Footer{
-        display: none;
-      }
-    }
-  }
-}
-
-
-
-
 /* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
 @media (max-device-width:320px){
   @media (max-device-height:658px){
     @media (orientation:portrait){
       .signUp, .Login{
         height: 180vh;
+      }
+      #btn_send{
+        width: 67.5vw;
       }
     }
   }
@@ -1025,6 +1505,9 @@ body{
       .signUp, .Login{
         height: 190vh;
       }
+      #btn_send{
+        width: 68vw;
+      }
     }
   }
 }
@@ -1036,10 +1519,19 @@ body{
 @media (max-device-width:320px){
   @media (max-device-height:533px){
     @media (orientation:portrait){
-          .store{
-              margin-top: 0;
-          }
+      .Footer{
+        display: none;
       }
+      #field_name, #field_email, #field_password{
+        width: 55vw;
+       }
+       .store{
+        margin-top: 0;
+      }
+      #btn_send{
+        width: 62.5vw;
+      }
+    }
   }
 }
 
@@ -1072,6 +1564,23 @@ body{
          }
          .form-container{
           height: 180vh;  
+        } 
+         #btn_send{
+          width: 48vw;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
+@media (max-device-width:280px){
+  @media (max-device-height:653px){
+    @media (orientation:portrait){
+         #btn_send{
+          width: 69vw;
       } 
     }
   }
@@ -1092,6 +1601,20 @@ body{
   }
 }
 
+
+
+
+
+/* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
+@media (max-device-width:240px){
+  @media (max-device-height:320px){
+    @media (orientation:portrait){
+      #btn_send{
+          width: 65vw;
+      }
+    }
+  }
+}
 
 
 
