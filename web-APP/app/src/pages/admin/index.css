@@ -15,7 +15,6 @@
 
 .logoContainer{
     flex: 2;
-    /* background-color: red; */
 
     display: flex;
     align-items: center;
@@ -35,13 +34,11 @@
 
 .profileContainer{
     flex: 1;
-    /* background-color: brown; */
 
     display: flex;
 }
 .profilePhotoContainer{
     background-color: #2976E61A;
-    /* background-color: brown; */
     padding: 5px;
     flex: 1;
 }
@@ -83,7 +80,6 @@
     color: #2976E6;
 }
 .formUpload{
-    /* background-color: black; */
     width: 94%;
     display: flex;
 }
@@ -94,7 +90,7 @@
 .profileInfoContainer{
     background-color: #2976E61A;
     padding: 5px;
-    flex: 2;
+    flex: 3;
 }
 .profileContainer h1{
     margin-top: 5px;
@@ -133,7 +129,6 @@
     display: flex;
     justify-content: flex-end;
 }
-
 
 
 
@@ -233,30 +228,113 @@ table tbody tr td{
 
 
 
-/* Responsividade*/
+/*  responsividade                                  
+
+    foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1339px*/
+@media (max-width:1339px){
+    .formInsertWorker, .getWorkers{
+      width: 50%;
+    }
+}
+  
+  
+  
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1024px){
+    .formInsertWorker, .getWorkers{
+      width: 60%;
+    }
+    .profileInfoContainer{
+        flex: 2;
+    }
+}
+  
+  
+  
+
+/* dispositivos gerais abaixo de ou até width 767px*/
+@media (max-width:767px){
+    .formInsertWorker, .getWorkers{
+      width: 100%;
+    }
+    #workeraddress, #addressthead{
+        display: none;
+    }
+    .logoContainer{
+        display: none;
+    }
+    .clientPhoto{
+        margin: 0;
+        position: inherit;
+    } 
+}
+
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 350px*/
+@media (max-width:350px){
+    .cardWorker{
+        width: 280px;
+    }
+    .listWorker{
+        width: 180px;
+    }
+    
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 350px*/
+@media (max-width:240px){
+    .cardWorker{
+        width: 220px;
+    }
+    
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 1339px */
 @media (max-device-width:1339px){
     .formInsertWorker, .getWorkers{
       width: 50%;
     }
-  }
+}
   
   
   
   
-  @media (max-device-width:1024px){
+/* dispositivos abaixo de ou até width 1024px */
+@media (max-device-width:1024px){
    .formInsertWorker, .getWorkers{
       width: 80%;
     }
-  }
+}
   
   
   
   
-  @media (max-device-width:767px){
+/* dispositivos abaixo de ou até width 767px */
+@media (max-device-width:767px){
     .formInsertWorker, .getWorkers{
       width: 100%;
     }
-  }
+}
+
+
+
+
 
 
 

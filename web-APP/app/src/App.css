@@ -246,6 +246,9 @@ body{
   .store{
     margin-top: -10vh;
   }
+  .border{
+    width: 50%;
+  }
 }
 
 
@@ -292,6 +295,35 @@ body{
 
   #btn_send{
     width: 32.5vw;
+  }
+  
+  .border{
+    width: 60%;
+  }
+}
+
+
+
+/* dispositivos gerais abaixo de ou até width 767px*/
+@media (max-width:767px){
+  .border{
+    width: 100%;
+  }
+  .profileContainer{
+    flex-direction: column;
+  }
+  .profilePhotoContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .profileInfoContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
   }
 }
 

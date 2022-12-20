@@ -245,9 +245,9 @@ export default (props)=>{
                       <table>
                         <thead>
                           <tr>
-                            <th>name</th>
-                            <th>address</th>
-                            <th>email</th>
+                            <th id='namethead' >name</th>
+                            <th id='addressthead' >address</th>
+                            <th id='emailthead' >email</th>
                           </tr>
                         </thead>
                           { 
@@ -257,9 +257,9 @@ export default (props)=>{
                                   return(
                                     <tbody key={e.workerId}>
                                       <tr>
-                                        <td>{e.workerName.substring(0, 16)}</td>
-                                        <td>{e.workerAddress.substring(0, 16)}</td>
-                                        <td>{e.workerEmail.substring(0, 24)}</td>
+                                        <td id='workername' >{e.workerName.substring(0, 16)}</td>
+                                        <td id='workeraddress' >{e.workerAddress.substring(0, 16)}</td>
+                                        <td id='workeremail' >{e.workerEmail.substring(0, 32)}</td>
                                       </tr>
                                     </tbody>
                                       )
@@ -267,9 +267,9 @@ export default (props)=>{
                                   ) : (
                                     <tbody>
                                       <tr>
-                                        <td>no records</td>
-                                        <td>no records</td>
-                                        <td>no records</td>
+                                        <td id='workername' >no records</td>
+                                        <td id='workeraddress' >no records</td>
+                                        <td id='workeremail'  >no records</td>
                                       </tr>
                                     </tbody>
                             )
@@ -320,7 +320,6 @@ export default (props)=>{
         ) : (
           //Card operation workers display (default)
           <div className='border'>
-        
               <InternalHeader profilePhoto={image}
                               profileName={userName} 
                               profileEmail={userEmail} />
@@ -345,7 +344,6 @@ export default (props)=>{
                   <Button type="submit"
                           variant="contained" 
                           size="large"
-                          className='load'
                           style={{ fontWeight:'bold', 
                                    background:'#2976E6', 
                                    height:'40px', 
@@ -378,7 +376,7 @@ export default (props)=>{
                 </div>
                 
               </div>
-    
+
           </div>
         )
       }

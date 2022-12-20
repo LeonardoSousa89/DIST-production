@@ -4,7 +4,7 @@ import '../../pages/admin/index.css'
 import Logo from '../../assets/dist-icon.png'
 import Logo_text from '../../assets/DIST.png'
 import camera from '../../assets/camera.png'
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 export default (props)=>{ 
   
@@ -32,8 +32,8 @@ export default (props)=>{
         </div>
 
         <div className='profileInfoContainer'>
-          <h1>{props.profileName}</h1> 
-          <h4>{props.profileEmail}</h4> 
+          <h1 id='profileName' >{props.profileName}</h1> 
+          <h4 id='profileEmail' >{props.profileEmail}</h4> 
         </div>
 
       </div>
