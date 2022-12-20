@@ -1184,6 +1184,9 @@ body{
 @media (max-device-width:414px){
   @media (max-device-height:896px){
       @media (orientation:portrait){
+          .signUp, .Login{
+          height: 140vh;
+          }
           #btn_send{
               width: 46vw;
           }
@@ -1198,6 +1201,9 @@ body{
 @media (max-device-width:414px){
   @media (max-device-height:736px){
       @media (orientation:portrait){
+        .signUp, .Login{
+          height: 160vh;
+        }
           #btn_send{
               width: 46vw;
           }
@@ -1224,6 +1230,9 @@ body{
 @media (max-device-width:412px){
   @media (max-device-height:915px){
       @media (orientation:portrait){
+          .signUp, .Login{
+          height: 140vh;
+          }
           #btn_send{
               width: 46vw;
           }
@@ -1238,6 +1247,9 @@ body{
 @media (max-device-width:412px){
   @media (max-device-height:732px){
       @media (orientation:portrait){
+        .signUp, .Login{
+          height: 170vh;
+        }
         #field_name, #field_email, #field_password{
           width: 40vw;
          }
@@ -1255,6 +1267,9 @@ body{
 @media (max-device-width:411px){
   @media (max-device-height:823px){
       @media (orientation:portrait){
+          .signUp, .Login{
+            height: 150vh;
+          }
           #btn_send{
               width: 46vw;
           }
@@ -1269,6 +1284,9 @@ body{
 @media (max-device-width:411px){
   @media (max-device-height:731px){
       @media (orientation:portrait){
+         .signUp, .Login{
+            height: 160vh;
+          }
           #btn_send{
               width: 46vw;
           }
@@ -1283,6 +1301,9 @@ body{
 @media (max-device-width:393px){
   @media (max-device-height:851px){
       @media (orientation:portrait){
+        .signUp, .Login{
+          height: 150vh;
+         }
           #btn_send{
               width: 46vw;
           }
@@ -1297,6 +1318,9 @@ body{
 @media (max-device-width:393px){
   @media (max-device-height:786px){
       @media (orientation:portrait){
+         .signUp, .Login{
+          height: 150vh;
+         }
           #btn_send{
               width: 46vw;
           }
@@ -1311,6 +1335,9 @@ body{
 @media (max-device-width:390px){
   @media (max-device-height:844px){
       @media (orientation:portrait){
+         .signUp, .Login{
+          height: 150vh;
+          }
           #btn_send{
               width: 46vw;
           }
@@ -1560,7 +1587,7 @@ body{
   @media (max-device-height:240px){
     @media (orientation:landscape){
          .signUp, .Login{
-          height: 430vh;
+          height: 440vh;
          }
          .form-container{
           height: 180vh;  
