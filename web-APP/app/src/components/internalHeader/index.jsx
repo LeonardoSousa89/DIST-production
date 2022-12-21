@@ -4,7 +4,6 @@ import '../../pages/admin/index.css'
 import Logo from '../../assets/dist-icon.png'
 import Logo_text from '../../assets/DIST.png'
 import camera from '../../assets/camera.png'
-// import { useEffect, useState } from 'react';
 
 export default (props)=>{ 
   

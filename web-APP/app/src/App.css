@@ -1402,6 +1402,9 @@ body{
          }
          #btn_send{
           width: 66vw;
+        }
+        .Admin{
+          height: 110vh;
       }
     }
   }
@@ -1608,6 +1611,9 @@ body{
       .form-container{
         height: 90vh;
       }
+      .Admin{
+        height: 125vh;
+      }
     }
   }
 }
@@ -1671,6 +1677,9 @@ body{
     @media (orientation:portrait){
       #btn_send{
           width: 65vw;
+      }
+      .Admin{
+        height: 190vh;
       }
     }
   }

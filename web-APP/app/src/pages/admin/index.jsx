@@ -151,7 +151,7 @@ export default (props)=>{
               <div className='formInsertWorker'>
 
               <div>
-                <img src={logo} alt='logo icon' />
+                <img id='logo' src={logo} alt='logo icon' />
               </div>
 
               <TextField  label="Name"

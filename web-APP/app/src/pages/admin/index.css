@@ -167,9 +167,6 @@
     overflow: hidden;
     background-color: #2976E60F;
 }
-.header{
-
-}
 .main{
     flex: 1;
     height: 67%;
@@ -335,6 +332,199 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+@media (max-device-width:540px){
+    @media (max-device-height:720px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+      }
+    }
+}
 
 
 
+
+/* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
+@media (max-device-width:480px){
+    @media (max-device-height:854px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 736px com orientation: portrait*/
+@media (max-device-width:414px){
+    @media (max-device-height:736px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 732px com orientation: portrait*/
+@media (max-device-width:412px){
+    @media (max-device-height:732px){
+        @media (orientation:portrait){
+            #logo{
+                height: 80px;
+                width: 80px;
+                margin-bottom: 1vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+@media (max-device-width:384px){
+    @media (max-device-height:640px){
+        @media (orientation:portrait){
+            #logo{
+                height: 100px;
+                width: 100px;
+                margin-top: 16vh;
+                margin-bottom: 2vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 375px por height 812px com orientation: portrait*/
+@media (max-device-width:375px){
+    @media (max-device-height:812px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
+@media (max-device-width:360px){
+    @media (max-device-height:740px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+           margin-top: 6vh;
+           margin-bottom: 2vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
+@media (max-device-width:360px){
+    @media (max-device-height:640px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+           margin-top: 16vh;
+           margin-bottom: 2vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:658px){
+      @media (orientation:portrait){
+        #logo{
+           height: 60px;
+           width: 60px;
+           margin-top: 6vh;
+           margin-bottom: 1vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 568px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:568px){
+      @media (orientation:portrait){
+        #logo{
+           margin-top: 18vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:533px){
+        @media (orientation:portrait){
+            #logo{
+                margin-top: 16vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:480px){
+      @media (orientation:portrait){
+        #logo{
+            margin-top: 28vh;
+        }        
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
+@media (max-device-width:240px){
+    @media (max-device-height:320px){
+      @media (orientation:portrait){
+        #logo{
+            margin-top: 100vh;
+        }  
+      }
+    }
+}
