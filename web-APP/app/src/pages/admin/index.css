@@ -319,13 +319,55 @@ table tbody tr td{
     }
 }
   
-  
-  
-  
+
+
+
+/* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
+@media (max-device-width:800px){
+    @media (max-device-height:1280px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 230px;
+        }
+      }
+    }
+}   
+
+
+
+
 /* dispositivos abaixo de ou até width 767px */
 @media (max-device-width:767px){
     .formInsertWorker, .getWorkers{
       width: 100%;
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 712px por height 1138px com orientation: portrait*/
+@media (max-device-width:712px){
+    @media (max-device-height:1138px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            margin-top: 5vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 600px por height 1024px com orientation: portrait*/
+@media (max-device-width:600px){
+    @media (max-device-height:1024px){
+      @media (orientation:portrait){
+        .listWorkers{
+            height: 90vh;
+        }
+      }
     }
 }
 
@@ -339,6 +381,15 @@ table tbody tr td{
         #logo{
            height: 100px;
            width: 100px;
+        }
+        .cardContaner{
+            height: 80vh;
+        }
+        #logo{
+            margin-top: 25vh;
+        }
+        .listWorkers{
+            height: 110vh;
         }
       }
     }
@@ -386,6 +437,21 @@ table tbody tr td{
                 width: 80px;
                 margin-bottom: 1vh;
         }
+        .listWorkers{
+            height: 100vh;
+        }
+        table{
+            margin-top: 10vh;
+        }
+        #logo{
+            margin-top: 10vh;
+        }
+        .formUpload{
+            margin-top: 14vh;
+        }
+        .cardWorker{
+            margin-top: 3vh;
+        }
       }
     }
 }
@@ -402,6 +468,12 @@ table tbody tr td{
                 width: 100px;
                 margin-top: 16vh;
                 margin-bottom: 2vh;
+        }
+        .listWorkers{
+            height: 120vh;
+        }
+        .formUpload{
+            margin-top: 20vh;
         }
       }
     }
@@ -429,11 +501,21 @@ table tbody tr td{
 @media (max-device-width:360px){
     @media (max-device-height:740px){
       @media (orientation:portrait){
+        .formUpload{
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+        .signOut{
+            margin-top: 5vh;
+        }
         #logo{
            height: 100px;
            width: 100px;
-           margin-top: 6vh;
+           margin-top: 4vh;
            margin-bottom: 2vh;
+        }
+        table{
+            margin-top: 5vh;
         }
       }
     }
@@ -446,11 +528,41 @@ table tbody tr td{
 @media (max-device-width:360px){
     @media (max-device-height:640px){
       @media (orientation:portrait){
+        .cardContaner{
+            height: 80vh;
+        }
+        .formUpload{
+            margin-top: 25vh;
+            margin-bottom: 0;
+        }
         #logo{
            height: 100px;
            width: 100px;
-           margin-top: 16vh;
+           margin-top: 25vh;
            margin-bottom: 2vh;
+        }
+        .listWorkers{
+            height: 120vh;
+        }
+        table{
+            margin-top: 20vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 353px por height 745px com orientation: portrait*/
+@media (max-device-width:353px){
+    @media (max-device-height:745px){
+        @media (orientation:portrait){
+        .formUpload{
+            margin-top: 5vh;
+        }
+        table{
+            margin-top: 5vh;
         }
       }
     }
@@ -463,11 +575,24 @@ table tbody tr td{
 @media (max-device-width:320px){
     @media (max-device-height:658px){
       @media (orientation:portrait){
+        .formUpload{
+            margin-top: -1vh;
+            margin-bottom: -8vh;
+        }
+        .signOut{
+            margin-top: -5vh;
+        }
         #logo{
            height: 60px;
            width: 60px;
            margin-top: 6vh;
            margin-bottom: 1vh;
+        }
+        .listWorkers{
+            height: 100vh;
+        }
+        table{
+            margin-top: 10vh;
         }
       }
     }
@@ -490,12 +615,45 @@ table tbody tr td{
 
 
 
+
+/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:480px){
+      @media (orientation:portrait){  
+        .cardContaner{
+            height: 60vh;
+        }  
+        table{
+            margin-bottom: 3vh;
+        } 
+        .paginationBtn{
+            margin-bottom: -10vh;
+        }
+      }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
 @media (max-device-width:320px){
     @media (max-device-height:533px){
         @media (orientation:portrait){
-            #logo{
-                margin-top: 16vh;
+        .formUpload{
+            margin-top: 45vh;
+        }
+        .signOut{
+            margin-top: 5vh;
+        }
+        #logo{
+            margin-top: 50vh;
+        }
+        .listWorkers{
+            height: 135vh;
+        }
+        table{
+            margin-top: 25vh;
         }
       }
     }
@@ -522,9 +680,31 @@ table tbody tr td{
 @media (max-device-width:240px){
     @media (max-device-height:320px){
       @media (orientation:portrait){
+        .formInsertWorker{
+            height: 280vh;
+        }
+        .cardContaner{
+            height: 120vh;
+        }
+        .formUpload{
+            margin-top: 80vh;
+            margin-bottom: 5vh;
+        }
         #logo{
             margin-top: 100vh;
-        }  
+        }
+        .signOut{
+            margin-top: 20vh;
+        }
+        .listWorkers{
+            height: 200vh;
+        }
+        table{
+            margin-top: 80vh;
+        }
+        tbody #workername, #namethead{
+            display: none;
+        }
       }
     }
 }

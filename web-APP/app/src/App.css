@@ -985,6 +985,9 @@ body{
         }
         #btn_send{
           width: 33.5vw;
+        }
+        .Footer{
+          margin: 0;
       }
     }
   }
@@ -1111,6 +1114,20 @@ body{
 
 
 
+/* dispositivos especifícos width 600px por height 1024px com orientation: portrait*/
+@media (max-device-width:600px){
+  @media (max-device-height:1024px){
+    @media (orientation:portrait){
+      .Footer{
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos abaixo de ou até width 600px com orientation: portrait*/
 @media (max-device-width:600px){
   @media (max-device-height:960px){
@@ -1164,6 +1181,12 @@ body{
     @media (orientation:portrait){
           #btn_send{
               width: 44.5vw;
+          }
+          .Admin{
+            height: 110vh;
+          }
+          .border{
+            height: 110vh;
           }
       }
   }
@@ -1285,10 +1308,16 @@ body{
         }
         #field_name, #field_email, #field_password{
           width: 40vw;
-         }
+        }
         #btn_send{
               width: 46vw;
-      }
+        }
+        .Admin{
+          height: 100vh;
+        }
+        .border{
+          height: 100vh;
+        }
     }
   }
 }
@@ -1405,6 +1434,9 @@ body{
         }
         .Admin{
           height: 110vh;
+        }
+        .border{
+          height: 110vh;
       }
     }
   }
@@ -1464,6 +1496,9 @@ body{
       #btn_send{
         width: 67vw;
       }
+      .border{
+        height: 100vh;
+      }
     }
   }
 }
@@ -1483,6 +1518,12 @@ body{
       }
       #btn_send{
         width: 66.5vw;
+      }
+      .Admin{
+        height: 120vh;
+      }
+      .border{
+        height: 120vh;
       }
     }
   }
@@ -1554,6 +1595,9 @@ body{
       #btn_send{
         width: 67.5vw;
       }
+      .Admin{
+        height: 100vh;
+      }
     }
   }
 }
@@ -1582,9 +1626,6 @@ body{
 @media (max-device-width:320px){
   @media (max-device-height:533px){
     @media (orientation:portrait){
-      .Footer{
-        display: none;
-      }
       #field_name, #field_email, #field_password{
         width: 55vw;
        }
@@ -1593,6 +1634,12 @@ body{
       }
       #btn_send{
         width: 62.5vw;
+      }
+      .border{
+        height: 130vh;
+      }
+      .Admin{
+        height: 130vh;
       }
     }
   }
@@ -1605,6 +1652,9 @@ body{
 @media (max-device-width:320px){
   @media (max-device-height:480px){
     @media (orientation:portrait){
+      #profileName{
+        display: none;
+      }
       .signUp, .Login{
         height: 220vh;
       }
@@ -1675,11 +1725,14 @@ body{
 @media (max-device-width:240px){
   @media (max-device-height:320px){
     @media (orientation:portrait){
+      .border{
+        height: 200vh;
+      }
       #btn_send{
           width: 65vw;
       }
       .Admin{
-        height: 190vh;
+        height: 200vh;
       }
     }
   }
