@@ -197,6 +197,209 @@ body{
 
 
 
+/* dispositivos especifícos width 414px por height 896px com orientation: portrait*/
+@media (max-device-width:414px){
+  @media (max-device-height:896px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 140vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 736px com orientation: portrait*/
+@media (max-device-width:414px){
+  @media (max-device-height:736px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 160vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 915px com orientation: portrait*/
+@media (max-device-width:412px){
+  @media (max-device-height:915px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 140vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 732px com orientation: portrait*/
+@media (max-device-width:412px){
+  @media (max-device-height:732px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 180vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 393px por height 786px com orientation: portrait*/
+@media (max-device-width:393px){
+  @media (max-device-height:786px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 160vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 375px por height 812px com orientation: portrait*/
+@media (max-device-width:375px){
+  @media (max-device-height:812px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 160vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+/* @media (max-device-width:384px){
+  @media (max-device-height:640px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 180vh;
+        }
+    }
+  }
+} */
+
+
+
+
+/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
+/* @media (max-device-width:360px){
+  @media (max-device-height:740px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 180vh;
+      }
+    }
+  }
+} */
+
+
+
+
+/* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
+@media (max-device-width:360px){
+  @media (max-device-height:640px){
+    @media (orientation:portrait){
+      .signUp, .Login{
+        height: 200vh;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:658px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 180vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:533px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 220vh;
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
+@media (max-device-width:320px){
+  @media (max-device-height:480px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 240vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
+@media (max-device-width:280px){
+  @media (max-device-height:653px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 180vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
+@media (max-device-width:240px){
+  @media (max-device-height:320px){
+      @media (orientation:portrait){
+        .signUp, .Login{
+          height: 340vh;
+          /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
 
 
 
