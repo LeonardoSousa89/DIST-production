@@ -535,9 +535,6 @@ table tbody tr td{
         .listWorkers{
             height: 120vh;
         }
-        .formUpload{
-            margin-top: 20vh;
-        }
       }
     }
 }
@@ -613,7 +610,7 @@ table tbody tr td{
             height: 80vh;
         }
         .formUpload{
-            margin-top: 25vh;
+            margin-top: 5vh;
             margin-bottom: 0;
         }
         #logo{
@@ -760,6 +757,20 @@ table tbody tr td{
       }
     }
 }
+
+
+
+
+/* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
+@media (max-device-width:280px){
+    @media (max-device-height:653px){
+      @media (orientation:portrait){
+        tbody #workername, #namethead{
+            display: none;
+        }
+      }
+    }
+  }
 
 
 

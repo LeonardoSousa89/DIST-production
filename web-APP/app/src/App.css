@@ -1323,6 +1323,9 @@ body{
 @media (max-device-width:412px){
   @media (max-device-height:732px){
       @media (orientation:portrait){
+        #profileName{
+          display: none;
+        }
         .signUp, .Login{
           height: 170vh;
         }
@@ -1446,6 +1449,9 @@ body{
 @media (max-device-width:384px){
   @media (max-device-height:640px){
       @media (orientation:portrait){
+        #profileName{
+          display: none;
+        }
         #field_name, #field_email, #field_password{
           width: 60vw;
          }
@@ -1721,7 +1727,7 @@ body{
 @media (max-device-width:280px){
   @media (max-device-height:653px){
     @media (orientation:portrait){
-         #btn_send{
+        #btn_send{
           width: 69vw;
       } 
     }
