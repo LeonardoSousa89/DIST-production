@@ -120,21 +120,39 @@
 
 
 
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+    @media (max-device-height:1366px){
+        .signUp-header{
+            height: 45vh;
+        }
+        .signUp-main{
+            height: 45vh;
+        }
+        .signUp-footer{
+            height: 10vh;
+        }
+    }
+  }
+
+
+
+
 /* dispositivos especifícos width 1024px por height 600px com orientation: portrait*/
 @media (max-device-width:1024px){
     @media (max-device-height:600px){
         .signUp-header{
             height: 95vh;
-           }
-           .signUp-main{
+        }
+        .signUp-main{
             height: 95vh;
-           }
-           .form-container{
+        }
+        .form-container{
             max-width: 30%;
-           }
-           .signUp-footer{
+        }
+        .signUp-footer{
             height: 10vh;
-           }
+        }
     }
 }
 

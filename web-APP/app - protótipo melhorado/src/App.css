@@ -197,6 +197,19 @@ body{
 
 
 
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+  @media (max-device-height:1366px){
+        .signUp, .Login{
+          height: 100vh;
+          /* border: solid 1px red; */
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 1024px por height 600px com orientation: portrait*/
 @media (max-device-width:1024px){
   @media (max-device-height:600px){
