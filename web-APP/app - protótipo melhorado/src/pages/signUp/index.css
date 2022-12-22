@@ -120,6 +120,188 @@
 
 
 
+/* dispositivos especifícos width 1024px por height 600px com orientation: portrait*/
+@media (max-device-width:1024px){
+    @media (max-device-height:600px){
+        .signUp-header{
+            height: 95vh;
+           }
+           .signUp-main{
+            height: 95vh;
+           }
+           .form-container{
+            max-width: 30%;
+           }
+           .signUp-footer{
+            height: 10vh;
+           }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
+@media (max-device-width:912px){
+    @media (max-device-height:1368px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 45vh;
+            }
+            .signUp-main{
+                height: 45vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 820px por height 1180px com orientation: portrait*/
+@media (max-device-width:820px){
+    @media (max-device-height:1180px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 50vh;
+            }
+            .signUp-main{
+                height: 50vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
+@media (max-device-width:800px){
+    @media (max-device-height:1280px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 50vh;
+            }
+            .signUp-main{
+                height: 50vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+
+/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
+@media (max-device-width:768px){
+    @media (max-device-height:1024px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 60vh;
+            }
+            .signUp-main{
+                height: 60vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 712px por height 1138px com orientation: portrait*/
+@media (max-device-width:712px){
+  @media (max-device-height:1138px){
+      @media (orientation:portrait){
+        .signUp-header{
+            height: 55vh;
+        }
+        .signUp-main{
+            height: 55vh;
+        }
+        .signUp-footer{
+            height: 10vh;
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 600px por height 1024px com orientation: portrait*/
+@media (max-device-width:600px){
+    @media (max-device-height:1024px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 60vh;
+            }
+            .signUp-main{
+                height: 60vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+@media (max-device-width:540px){
+    @media (max-device-height:720px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 75vh;
+            }
+            .signUp-main{
+                height: 75vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
+@media (max-device-width:480px){
+    @media (max-device-height:854px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 65vh;
+            }
+            .signUp-main{
+                height: 65vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 414px por height 896px com orientation: portrait*/
 @media (max-device-width:414px){
     @media (max-device-height:896px){
@@ -209,6 +391,29 @@
 
 
 
+/* dispositivos especifícos width 411px por height 823px com orientation: portrait*/
+@media (max-device-width:411px){
+    @media (max-device-height:823px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 75vh;
+            }
+            .signUp-main{
+                height: 75vh;
+            }
+            /* .form-container{
+                max-width: 50%;
+            } */
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
 /* @media (max-device-width:384px){
     @media (max-device-height:640px){
@@ -268,10 +473,30 @@
             }
             .signUp-footer{
                 height: 10vh;
-            }
+        }
       }
     }
 }
+
+
+
+
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+@media (max-device-width:384px){
+    @media (max-device-height:640px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 85vh;
+            }
+            .signUp-main{
+                height: 85vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+  }
 
 
 
@@ -292,6 +517,28 @@
       }
     }
 }
+
+
+
+
+
+
+/* dispositivos especifícos width 375px por height 667px com orientation: portrait*/
+@media (max-device-width:375px){
+    @media (max-device-height:667px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 85vh;
+            }
+            .signUp-main{
+                height: 85vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+  }
 
 
 
@@ -335,6 +582,27 @@
       }
     }
 }
+
+
+
+
+
+/* dispositivos especifícos width 320px por height 568px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:568px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 95vh;
+            }
+            .signUp-main{
+                height: 95vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+            }
+      }
+    }
+  }
 
 
 
@@ -385,15 +653,18 @@
         @media (orientation:portrait){
             .signUp-header{
                 height: 165vh;
+                border:solid 1px blueviolet;
             }
             .signUp-main{
                 height: 165vh;
+                border:solid 1px goldenrod;
             }
             .form-container{
                 max-width: 60%;
             }
             .signUp-footer{
                 height: 10vh;
+                border:solid 1px black;
         }
       }
     }
