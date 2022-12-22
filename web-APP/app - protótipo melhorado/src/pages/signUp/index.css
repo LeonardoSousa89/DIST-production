@@ -584,6 +584,15 @@
 
 
 
+/* dispositivos abaixo de ou até width 320px */
+@media (max-device-width:320px){
+   .store{
+    height: 35px;
+   }
+}
+
+
+
 /* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
 @media (max-device-width:320px){
     @media (max-device-height:658px){
@@ -665,6 +674,26 @@
 
 
 
+/* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
+@media (max-device-width:280px){
+    @media (max-device-height:653px){
+        @media (orientation:portrait){
+            .signUp-header{
+                height: 85vh;
+            }
+            .signUp-main{
+                height: 85vh;
+            }
+            .signUp-footer{
+                height: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
 @media (max-device-width:240px){
     @media (max-device-height:320px){
@@ -691,19 +720,3 @@
 
 
 
-/* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
-@media (max-device-width:280px){
-    @media (max-device-height:653px){
-        @media (orientation:portrait){
-            .signUp-header{
-                height: 85vh;
-            }
-            .signUp-main{
-                height: 85vh;
-            }
-            .signUp-footer{
-                height: 10vh;
-        }
-      }
-    }
-}
