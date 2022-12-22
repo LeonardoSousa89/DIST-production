@@ -256,6 +256,34 @@ table tbody tr td{
   
   
 
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+    @media (max-device-height:1366px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 250px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 1366pxpx por height 1024px com orientation: landscape*/
+@media (max-device-width:1366px){
+    @media (max-device-height:1024px){
+      @media (orientation:landscape){
+        .clientPhoto{
+            top: 170px;
+        }
+      }
+    }
+}
+
+
+
+
 /* dispositivos gerais abaixo de ou até width 767px*/
 @media (max-width:767px){
     .formInsertWorker, .getWorkers{
@@ -322,6 +350,20 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
+@media (max-device-width:912px){
+    @media (max-device-height:1368px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 250px;
+        }
+      }
+    }
+}  
+
+
+
+
 /* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
 @media (max-device-width:800px){
     @media (max-device-height:1280px){
@@ -332,6 +374,20 @@ table tbody tr td{
       }
     }
 }   
+
+
+
+
+/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
+@media (max-device-width:768px){
+    @media (max-device-height:1024px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 160px;
+        }
+      }
+    }
+}  
 
 
 
@@ -421,6 +477,13 @@ table tbody tr td{
            height: 100px;
            width: 100px;
         }
+        .formUpload{
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+        table{
+            margin-top: 3vh;
+        }
       }
     }
 }
@@ -491,6 +554,24 @@ table tbody tr td{
            width: 100px;
         }
       }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 375px por height 667px com orientation: portrait*/
+@media (max-device-width:375px){
+    @media (max-device-height:667px){
+        @media (orientation:portrait){
+           .formUpload{
+            margin-top: -7vh;
+            margin-bottom: -7vh;
+           }
+           .signOut{
+            margin-top: -5vh;
+           }
+        }
     }
 }
 
@@ -608,6 +689,9 @@ table tbody tr td{
         #logo{
            margin-top: 18vh;
         }
+        .listWorkers{
+            height: 120vh;
+        }
       }
     }
 }
@@ -641,7 +725,8 @@ table tbody tr td{
     @media (max-device-height:533px){
         @media (orientation:portrait){
         .formUpload{
-            margin-top: 45vh;
+            margin-top: 35vh;
+            margin-bottom: 5vh;
         }
         .signOut{
             margin-top: 5vh;
@@ -668,7 +753,10 @@ table tbody tr td{
       @media (orientation:portrait){
         #logo{
             margin-top: 28vh;
-        }        
+        }  
+        .formUpload{
+            margin-top: 45vh;
+        }      
       }
     }
 }

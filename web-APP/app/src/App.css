@@ -1121,6 +1121,9 @@ body{
       .Footer{
         margin: 0;
       }
+      .border{
+        height: 100vh;
+      }
     }
   }
 }
@@ -1222,6 +1225,20 @@ body{
 
 
 
+/* dispositivos especifícos width 480px por height 896px com orientation: portrait*/
+@media (max-device-width:480px){
+  @media (max-device-height:896px){
+    @media (orientation:portrait){
+     .border{
+      height: 100vh;
+     }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
 @media (max-device-width:480px){
   @media (max-device-height:854px){
@@ -1291,6 +1308,9 @@ body{
           }
           #btn_send{
               width: 46vw;
+          }
+          .border{
+            height: 100vh;
           }
       }
   }
@@ -1464,6 +1484,9 @@ body{
           #btn_send{
               width: 46vw;
           }
+          #profileName{
+            display: none;
+          }
       }
   }
 }
@@ -1614,6 +1637,9 @@ body{
       }
       #btn_send{
         width: 68vw;
+      }
+      .Admin{
+        height: 110vh;
       }
     }
   }
