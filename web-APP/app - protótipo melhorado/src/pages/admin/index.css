@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+
+
+.internalHeader{
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.logoContainer{
+    flex: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoIcon{
+    height: 90px;
+    width: 90px;
+    margin-right: 25px;
+}
+.logoText{
+    height: 100px;
+}
+
+
+
+
+.profileContainer{
+    flex: 1;
+
+    display: flex;
+}
+.profilePhotoContainer{
+    background-color: #2976E61A;
+    padding: 5px;
+    flex: 1;
+}
+.clientPhoto{
+    height: 120px;
+    width:  120px;
+    
+    top: 102px;
+    position: absolute;
+    
+    margin-left: 5px;
+
+    border-radius:100%;
+    border: solid 5px rgba(0,0,0,0.2);
+}
+.profilePhotoUpload{
+    display: none;
+}
+.control_label_profilePhotoUpload{
+    background-color: #2976E6;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.4); 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.control_label_profilePhotoUpload:hover{
+    background-color: black;
+    color: #2976E6;
+}
+.formUpload{
+    width: 94%;
+    display: flex;
+}
+
+
+
+
+.profileInfoContainer{
+    background-color: #2976E61A;
+    padding: 5px;
+    flex: 3;
+}
+.profileContainer h1{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.profileContainer h1, .profileContainer h3{
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+.cardContaner{
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cardElements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardWorker{
+    margin-bottom: 20px;
+}
+.listWorker, .cardWorker{
+    cursor: pointer;
+}
+.logout{
+    width: 80%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.formInsertWorker{
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: whitesmoke;
+}
+
+
+
+
+.formInsertWorker .size{
+    width: 50%;
+}
+.arrow{
+   width: 50%;
+   margin-top: 20px;
+}
+.arrow img{
+    cursor: pointer;
+}
+
+
+
+
+.getWorkers{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #2976E60F;
+}
+.main{
+    flex: 1;
+    height: 67%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    background-color: #2976E6;
+    box-shadow: 0px 0px 9px #2976E6;
+}
+table thead{
+    background-color: rgba(0,0,0,0.6);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+table tbody tr td{
+    font-size: small;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+}
+.paginationBtn{
+    width: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.previews, .next{
+    cursor: pointer;
+}
+.arrowList{
+    width: 66%;
+    margin-top: 60px;
+}
+.arrowList img{
+    cursor: pointer;
+}
+#disable{
+    cursor: no-drop;
+}
+
+
+
+
+.logout{
+    cursor: pointer;
+}
+
+
+
+
+/*  responsividade                                  
+
+    foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1339px*/
+@media (max-width:1339px){
+    .formInsertWorker, .getWorkers{
+      width: 50%;
+    }
+}
+  
+  
+  
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1024px){
+    .formInsertWorker, .getWorkers{
+      width: 60%;
+    }
+    .profileInfoContainer{
+        flex: 2;
+    }
+}
+  
+  
+  
+
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+    @media (max-device-height:1366px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 250px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 1366pxpx por height 1024px com orientation: landscape*/
+@media (max-device-width:1366px){
+    @media (max-device-height:1024px){
+      @media (orientation:landscape){
+        .clientPhoto{
+            top: 170px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 767px*/
+@media (max-width:767px){
+    .formInsertWorker, .getWorkers{
+      width: 100%;
+    }
+    #workeraddress, #addressthead{
+        display: none;
+    }
+    .logoContainer{
+        display: none;
+    }
+    .clientPhoto{
+        margin: 0;
+        position: inherit;
+    } 
+}
+
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 350px*/
+@media (max-width:350px){
+    .cardWorker{
+        width: 280px;
+    }
+    .listWorker{
+        width: 180px;
+    }
+    
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 350px*/
+@media (max-width:240px){
+    .cardWorker{
+        width: 220px;
+    }
+    
+}
+
+
+
+
+/* dispositivos abaixo de ou até width 1339px */
+@media (max-device-width:1339px){
+    .formInsertWorker, .getWorkers{
+      width: 50%;
+    }
+}
+  
+  
+  
+  
+/* dispositivos abaixo de ou até width 1024px */
+@media (max-device-width:1024px){
+   .formInsertWorker, .getWorkers{
+      width: 80%;
+    }
+}
+  
+
+
+
+/* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
+@media (max-device-width:912px){
+    @media (max-device-height:1368px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 250px;
+        }
+      }
+    }
+}  
+
+
+
+
+/* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
+@media (max-device-width:800px){
+    @media (max-device-height:1280px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 230px;
+        }
+      }
+    }
+}   
+
+
+
+
+/* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
+@media (max-device-width:768px){
+    @media (max-device-height:1024px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            top: 160px;
+        }
+      }
+    }
+}  
+
+
+
+
+/* dispositivos abaixo de ou até width 767px */
+@media (max-device-width:767px){
+    .formInsertWorker, .getWorkers{
+      width: 100%;
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 712px por height 1138px com orientation: portrait*/
+@media (max-device-width:712px){
+    @media (max-device-height:1138px){
+      @media (orientation:portrait){
+        .clientPhoto{
+            margin-top: 5vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 600px por height 1024px com orientation: portrait*/
+@media (max-device-width:600px){
+    @media (max-device-height:1024px){
+      @media (orientation:portrait){
+        .listWorkers{
+            height: 90vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
+@media (max-device-width:540px){
+    @media (max-device-height:720px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+        .cardContaner{
+            height: 80vh;
+        }
+        #logo{
+            margin-top: 25vh;
+        }
+        .listWorkers{
+            height: 110vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
+@media (max-device-width:480px){
+    @media (max-device-height:854px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 414px por height 736px com orientation: portrait*/
+@media (max-device-width:414px){
+    @media (max-device-height:736px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+        .formUpload{
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+        table{
+            margin-top: 3vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 412px por height 732px com orientation: portrait*/
+@media (max-device-width:412px){
+    @media (max-device-height:732px){
+        @media (orientation:portrait){
+            #logo{
+                height: 80px;
+                width: 80px;
+                margin-bottom: 1vh;
+        }
+        .listWorkers{
+            height: 100vh;
+        }
+        table{
+            margin-top: 10vh;
+        }
+        #logo{
+            margin-top: 10vh;
+        }
+        .formUpload{
+            margin-top: 14vh;
+        }
+        .cardWorker{
+            margin-top: 3vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+@media (max-device-width:384px){
+    @media (max-device-height:640px){
+        @media (orientation:portrait){
+            #logo{
+                height: 100px;
+                width: 100px;
+                margin-top: 16vh;
+                margin-bottom: 2vh;
+        }
+        .listWorkers{
+            height: 120vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 375px por height 812px com orientation: portrait*/
+@media (max-device-width:375px){
+    @media (max-device-height:812px){
+      @media (orientation:portrait){
+        #logo{
+           height: 100px;
+           width: 100px;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 375px por height 667px com orientation: portrait*/
+@media (max-device-width:375px){
+    @media (max-device-height:667px){
+        @media (orientation:portrait){
+           .formUpload{
+            margin-top: -7vh;
+            margin-bottom: -7vh;
+           }
+           .signOut{
+            margin-top: -5vh;
+           }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
+@media (max-device-width:360px){
+    @media (max-device-height:740px){
+      @media (orientation:portrait){
+        .formUpload{
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+        }
+        .signOut{
+            margin-top: 5vh;
+        }
+        #logo{
+           height: 100px;
+           width: 100px;
+           margin-top: 4vh;
+           margin-bottom: 2vh;
+        }
+        table{
+            margin-top: 5vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
+@media (max-device-width:360px){
+    @media (max-device-height:640px){
+      @media (orientation:portrait){
+        .cardContaner{
+            height: 80vh;
+        }
+        .formUpload{
+            margin-top: 5vh;
+            margin-bottom: 0;
+        }
+        #logo{
+           height: 100px;
+           width: 100px;
+           margin-top: 25vh;
+           margin-bottom: 2vh;
+        }
+        .listWorkers{
+            height: 120vh;
+        }
+        table{
+            margin-top: 20vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 353px por height 745px com orientation: portrait*/
+@media (max-device-width:353px){
+    @media (max-device-height:745px){
+        @media (orientation:portrait){
+        .formUpload{
+            margin-top: 5vh;
+        }
+        table{
+            margin-top: 5vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:658px){
+      @media (orientation:portrait){
+        .formUpload{
+            margin-top: -1vh;
+            margin-bottom: -8vh;
+        }
+        .signOut{
+            margin-top: -5vh;
+        }
+        #logo{
+           height: 60px;
+           width: 60px;
+           margin-top: 6vh;
+           margin-bottom: 1vh;
+        }
+        .listWorkers{
+            height: 100vh;
+        }
+        table{
+            margin-top: 10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 568px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:568px){
+      @media (orientation:portrait){
+        #logo{
+           margin-top: 18vh;
+        }
+        .listWorkers{
+            height: 120vh;
+        }
+      }
+    }
+}
+
+
+
+
+
+/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:480px){
+      @media (orientation:portrait){  
+        .cardContaner{
+            height: 60vh;
+        }  
+        table{
+            margin-bottom: 3vh;
+        } 
+        .paginationBtn{
+            margin-bottom: -10vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 533px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:533px){
+        @media (orientation:portrait){
+        .formUpload{
+            margin-top: 35vh;
+            margin-bottom: 5vh;
+        }
+        .signOut{
+            margin-top: 5vh;
+        }
+        #logo{
+            margin-top: 50vh;
+        }
+        .listWorkers{
+            height: 135vh;
+        }
+        table{
+            margin-top: 25vh;
+        }
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:480px){
+      @media (orientation:portrait){
+        #logo{
+            margin-top: 28vh;
+        }  
+        .formUpload{
+            margin-top: 45vh;
+        }      
+      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
+@media (max-device-width:280px){
+    @media (max-device-height:653px){
+      @media (orientation:portrait){
+        tbody #workername, #namethead{
+            display: none;
+        }
+      }
+    }
+  }
+
+
+
+
+/* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
+@media (max-device-width:240px){
+    @media (max-device-height:320px){
+      @media (orientation:portrait){
+        .formInsertWorker{
+            height: 280vh;
+        }
+        .cardContaner{
+            height: 120vh;
+        }
+        .formUpload{
+            margin-top: 80vh;
+            margin-bottom: 5vh;
+        }
+        #logo{
+            margin-top: 100vh;
+        }
+        .signOut{
+            margin-top: 20vh;
+        }
+        .listWorkers{
+            height: 200vh;
+        }
+        table{
+            margin-top: 80vh;
+        }
+        tbody #workername, #namethead{
+            display: none;
+        }
+      }
+    }
+}

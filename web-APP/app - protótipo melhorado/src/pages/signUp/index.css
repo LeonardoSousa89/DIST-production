@@ -1,0 +1,112 @@
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    height: 50px;
+}
+.text p{
+    font-weight: bold;
+}
+.text strong{
+    font-size: large;
+}
+.socialLogin{
+    width: 120px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+.google{
+    cursor: pointer;
+    height: 40px;
+}
+
+
+
+
+.signUp-header{
+    height: 30%;
+}
+
+
+
+
+.signUp-main{
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    height: 85%;
+    max-width: 30%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name, #email, #password{
+   width: 100%;
+   margin: 5px 0;
+}
+#field_name, #field_email, #field_password{
+    width: 100vh;
+}
+#btn_send{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #2976E6;
+    font-weight: bold;
+}
+.play-store{
+    height: 15%;
+}
+
+
+
+
+.signUp-footer{
+    height: 10%;
+}
+
+
+
+
+/*  responsividade                                  
+
+    foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1024px){
+   .signUp-header{
+    height: 75vh;
+   }
+   .signUp-main{
+    height: 75vh;
+   }
+   .form-container{
+    max-width: 40%;
+    }
+    .store{
+        height: 50px;
+    }
+   .signUp-footer{
+    height: 10vh;
+   }
+}
+  

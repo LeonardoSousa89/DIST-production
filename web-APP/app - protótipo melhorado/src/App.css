@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+
+*{
+  margin: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Inter', sans-serif;
+  background-color: whitesmoke;
+}
+
+
+
+
+/* component header */
+.Header{
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container-logo{
+  flex: 1;
+}
+.logo{
+  margin-left: 122px;
+  margin-top: 34px;
+}
+.container-dist{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.logo-dist{
+  margin-top: 15px;
+}
+.sub-container-logo{
+  flex: 1;    
+  overflow: hidden;
+}
+.internal-sub-container-logo{
+  height: 100%;
+  width: 303px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.social{
+  overflow: hidden;
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.in, .git{
+  margin-top: 46px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+.git{
+  margin-right: 10px;
+}
+.text-logo-container{
+  overflow: hidden;
+
+  flex-grow: 50;   
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;  
+}
+.text-logo{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+
+
+/* component footer */
+.Footer{
+  background-image: url('./assets/Rectangle.png');
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Ccopy{
+  margin-right: 5px;
+}
+
+
+
+
+/* component Login */
+.signUp,.Login{
+  height: 100vh;
+}
+
+
+
+
+/* component admin */
+.Admin{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.error{
+  background-color: #f5f5f5;
+  height: 90vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/*  responsividade                                  
+
+    foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1339px*/
+@media (max-width:1339px){
+  .container-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .social{
+    align-items: center;
+    justify-content: center;
+  }
+  .text-logo-container{
+    justify-content: center;  
+  }
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1024px){
+  .signUp, .Login{
+    height: 160vh;
+  }
+
+  .Header{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container-logo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo{
+    margin-left: 0;
+    margin-bottom: 4vh;
+  }
+
+  .social{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+
+  .text-logo-container{
+    justify-content: center;  
+  }
+
+  .internal-sub-container-logo{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
