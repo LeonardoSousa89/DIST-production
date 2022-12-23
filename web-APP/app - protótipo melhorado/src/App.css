@@ -551,7 +551,7 @@ body{
 
 
 
-/* dispositivos especifícos width 640px por height 360px com orientation: portrait*/
+/* dispositivos especifícos width 640px por height 360px */
 @media (max-device-width:640px){
   @media (max-device-height:360px){
         .signUp, .Login{

@@ -17,11 +17,30 @@ a{
 
 
 
-/* responsividade */
-/* dispositivos abaixo de width 320px */
-@media (max-device-width:320px){
+/*  responsividade                                  
+
+    foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
+
+
+
+
+/* dispositivos abaixo ou até 1024px */
+@media (max-device-width:1024px){
     .advise{
         height: 128px;
         width: 128px;
     }
 }
+
+
+
+
+/* dispositivos abaixo ou até 320px */
+@media (max-device-width:320px){
+    .advise{
+        height: 64px;
+        width: 64px;
+    }
+}
+
