@@ -210,6 +210,21 @@ body{
 
 
 
+/* dispositivos especifícos width 1024px por height 768px com orientation: landscape*/
+@media (max-device-width:1024px){
+  @media (max-device-height:768px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 160vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 1024px por height 600px com orientation: portrait*/
 @media (max-device-width:1024px){
   @media (max-device-height:600px){
@@ -223,12 +238,102 @@ body{
 
 
 
+/* dispositivos especifícos width 915px por height 412px com orientation: landscape*/
+@media (max-device-width:915px){
+  @media (max-device-height:412px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 280vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
 @media (max-device-width:912px){
   @media (max-device-height:1368px){
       @media (orientation:portrait){
         .signUp, .Login{
           height: 100vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 896px por height 414px com orientation: landscape*/
+@media (max-device-width:896px){
+  @media (max-device-height:414px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 280vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 854px por height 480px com orientation: landscape*/
+@media (max-device-width:854px){
+  @media (max-device-height:480px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 240vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 851px por height 393px com orientation: landscape*/
+@media (max-device-width:851px){
+  @media (max-device-height:393px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 844px por height 390px com orientation: landscape*/
+@media (max-device-width:844px){
+  @media (max-device-height:390px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 823px por height 411px com orientation: landscape*/
+@media (max-device-width:823px){
+  @media (max-device-height:411px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 280vh;
           /* border: solid 1px red; */
       }
     }
@@ -254,12 +359,42 @@ body{
 
 
 
+/* dispositivos especifícos width 812px por height 375px com orientation: landscape*/
+@media (max-device-width:812px){
+  @media (max-device-height:375px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
 @media (max-device-width:800px){
   @media (max-device-height:1280px){
       @media (orientation:portrait){
         .signUp, .Login{
           height: 110vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 786px por height 393px com orientation: landscape*/
+@media (max-device-width:786px){
+  @media (max-device-height:393px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
           /* border: solid 1px red; */
       }
     }
@@ -284,12 +419,132 @@ body{
 
 
 
+/* dispositivos especifícos width 740px por height 360px com orientation: landscape*/
+@media (max-device-width:740px){
+  @media (max-device-height:360px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 736px por height 414px com orientation: landscape*/
+@media (max-device-width:736px){
+  @media (max-device-height:414px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 280vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 732px por height 412px com orientation: landscape*/
+@media (max-device-width:732px){
+  @media (max-device-height:412px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 720px por height 540px com orientation: landscape*/
+@media (max-device-width:720px){
+  @media (max-device-height:540px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 220vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 712px por height 1138px com orientation: portrait*/
 @media (max-device-width:712px){
   @media (max-device-height:1138px){
       @media (orientation:portrait){
         .signUp, .Login{
           height: 120vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 667px por height 375px com orientation: landscape*/
+@media (max-device-width:667px){
+  @media (max-device-height:375px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 300vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 658px por height 320px com orientation: landscape*/
+@media (max-device-width:658px){
+  @media (max-device-height:320px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 340vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 653px por height 280px com orientation: landscape*/
+@media (max-device-width:653px){
+  @media (max-device-height:280px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 400vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 640px por height 384px com orientation: landscape*/
+@media (max-device-width:640px){
+  @media (max-device-height:384px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 280vh;
           /* border: solid 1px red; */
       }
     }
@@ -327,12 +582,42 @@ body{
 
 
 
+/* dispositivos especifícos width 568px por height 320px com orientation: landscape*/
+@media (max-device-width:568px){
+  @media (max-device-height:320px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 340vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
 @media (max-device-width:540px){
   @media (max-device-height:720px){
       @media (orientation:portrait){
         .signUp, .Login{
           height: 160vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 533px por height 320px com orientation: landscape*/
+@media (max-device-width:533px){
+  @media (max-device-height:320px){
+    @media (orientation:landscape){
+        .signUp, .Login{
+          height: 340vh;
           /* border: solid 1px red; */
       }
     }
@@ -557,6 +842,21 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 240vh;
+          /* border: solid 1px red; */
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 240px com orientation: landscape*/
+@media (max-device-width:320px){
+  @media (max-device-height:240px){
+      @media (orientation:landscape){
+        .signUp, .Login{
+          height: 480vh;
           /* border: solid 1px red; */
       }
     }
