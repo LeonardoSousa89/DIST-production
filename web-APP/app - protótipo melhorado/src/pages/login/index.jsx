@@ -3,6 +3,7 @@ import '../../App.css';
 import './index.css'
 
 import Header from '../../components/header'
+import Footer from '../../components/footer';
 
 import { Button, TextField } from '@material-ui/core'
 import Divider from '@material-ui/core/Divider';
@@ -56,10 +57,13 @@ export default (props)=>{
 
   return (
       <div className="Login">
-        <Header path="/signup" logo={Logo} />
         
-        <Divider  style={{height:'1px', background: '#2976E6'}} />
+        <header className='login-header'>
+          <Header path="/signup" logo={Logo} />
+          <Divider  style={{height:'1px', background: '#2976E6'}} />
+        </header>
         
+        <main className='login-main'>
             <Grid className='form-container' id='form-container' container>
             
             <div  id="email">
@@ -118,6 +122,12 @@ export default (props)=>{
                 </a>
                 
            </div>  
+        </main>
+
+
+        <footer className='login-footer'>
+          <Footer />
+        </footer>
 
     </div>
   );

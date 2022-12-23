@@ -1,3 +1,44 @@
+.login-header{
+    /* border: solid 1px black; */
+    height: 30%;
+}
+
+
+
+.login-main{
+    /* border: solid 1px pink; */
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    /* border: solid 1px green; */
+    height: 85%;
+    max-width: 30%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name, #email, #password{
+    width: 100%;
+    margin: 5px 0;
+ }
+ #field_name, #field_email, #field_password{
+     width: 100vh;
+ }
+ #btn_send{
+     margin-top: 10px;
+     width: 100%;
+     background-color: #2976E6;
+     font-weight: bold;
+ }
 .text{
     display: flex;
     flex-direction: column;
@@ -24,4 +65,49 @@
 }
 .google{
     cursor: pointer;
+}
+
+
+
+
+.login-footer{
+    /* border: solid 1px goldenrod; */
+    height: 10%;
+}
+
+
+
+
+/*  responsividade                                  
+
+    foi feita com base na biblioteca de dispositivos do desenvolvedor do google chrome.
+*/
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1339px){
+    .store{
+        height: 50px;
+    }
+ }
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 1024px*/
+@media (max-width:1024px){
+   .login-header{
+    height: 75vh;
+   }
+   .login-main{
+    height: 75vh;
+   }
+   .form-container{
+    max-width: 40%;
+    }
+   .login-footer{
+    height: 10vh;
+   }
 }
