@@ -230,7 +230,7 @@ body{
         .signUp, .Login{
           height: 100vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -245,7 +245,7 @@ body{
         .signUp, .Login{
           height: 110vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -261,7 +261,7 @@ body{
         .signUp, .Login{
           height: 110vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -276,7 +276,7 @@ body{
         .signUp, .Login{
           height: 130vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -291,7 +291,20 @@ body{
         .signUp, .Login{
           height: 120vh;
           /* border: solid 1px red; */
-        }
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 640px por height 360px com orientation: portrait*/
+@media (max-device-width:640px){
+  @media (max-device-height:360px){
+        .signUp, .Login{
+          height: 320vh;
+          /* border: solid 1px red; */
     }
   }
 }
@@ -306,7 +319,7 @@ body{
         .signUp, .Login{
           height: 130vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -321,7 +334,7 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -336,7 +349,7 @@ body{
         .signUp, .Login{
           height: 140vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -351,7 +364,7 @@ body{
         .signUp, .Login{
           height: 140vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -366,7 +379,7 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -381,7 +394,7 @@ body{
         .signUp, .Login{
           height: 140vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -396,7 +409,7 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -411,7 +424,7 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -426,7 +439,7 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -441,7 +454,7 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -456,38 +469,10 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
-        }
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
-/* @media (max-device-width:384px){
-  @media (max-device-height:640px){
-      @media (orientation:portrait){
-        .signUp, .Login{
-          height: 180vh;
-        }
-    }
-  }
-} */
-
-
-
-
-/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
-/* @media (max-device-width:360px){
-  @media (max-device-height:740px){
-    @media (orientation:portrait){
-      .signUp, .Login{
-        height: 180vh;
       }
     }
   }
-} */
+}
 
 
 
@@ -499,7 +484,7 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -528,7 +513,7 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -544,7 +529,7 @@ body{
         .signUp, .Login{
           height: 200vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -558,7 +543,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 220vh;
-        }
+      }
     }
   }
 }
@@ -573,7 +558,7 @@ body{
         .signUp, .Login{
           height: 240vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -588,7 +573,7 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -602,8 +587,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 340vh;
-          border: solid 1px red;
-        }
+      }
     }
   }
 }

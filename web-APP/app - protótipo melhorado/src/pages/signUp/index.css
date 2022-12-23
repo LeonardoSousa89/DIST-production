@@ -133,7 +133,7 @@
             height: 10vh;
         }
     }
-  }
+}
 
 
 
@@ -171,8 +171,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -191,8 +191,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -211,8 +211,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -232,8 +232,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -260,6 +260,24 @@
 
 
 
+/* dispositivos especifícos width 640px por height 360px com orientation: portrait*/
+@media (max-device-width:640px){
+    @media (max-device-height:360px){
+        .signUp-header{
+            height: 155vh;
+        }
+        .signUp-main{
+            height: 155vh;
+        }
+        .signUp-footer{
+            height: 10vh;
+        }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 600px por height 1024px com orientation: portrait*/
 @media (max-device-width:600px){
     @media (max-device-height:1024px){
@@ -272,8 +290,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -292,8 +310,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -312,8 +330,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -335,8 +353,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -355,8 +373,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -378,8 +396,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
   }
 
@@ -396,13 +414,10 @@
             .signUp-main{
                 height: 85vh;
             }
-            /* .form-container{
-                max-width: 50%;
-            } */
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
   }
 
@@ -419,62 +434,12 @@
             .signUp-main{
                 height: 75vh;
             }
-            /* .form-container{
-                max-width: 50%;
-            } */
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
-
-
-
-
-/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
-/* @media (max-device-width:384px){
-    @media (max-device-height:640px){
-        @media (orientation:portrait){
-            .signUp-header{
-                height: 85vh;
-               }
-               .signUp-main{
-                height: 85vh;
-               }
-               .form-container{
-                max-width: 50%;
-                }
-               .signUp-footer{
-                height: 10vh;
-               }
-      }
-    }
-} */
-
-
-
-
-/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
-/* @media (max-device-width:360px){
-    @media (max-device-height:740px){
-      @media (orientation:portrait){
-        .signUp-header{
-            height: 85vh;
-        }
-        .signUp-main{
-            height: 85vh;
-        }
-        .form-container{
-            max-width: 50%;
-        }
-        .signUp-footer{
-            height: 10vh;
-        }
-      }
-    }
-} */
-
 
 
 
@@ -491,8 +456,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -511,8 +476,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
   }
 
@@ -531,8 +496,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -553,8 +518,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
   }
 
@@ -571,13 +536,10 @@
           .signUp-main{
               height: 95vh;
           }
-          /* .form-container{
-              max-width: 50%;
-          } */
           .signUp-footer{
               height: 10vh;
           }
-      }
+        }
     }
 }
 
@@ -606,7 +568,7 @@
             .signUp-footer{
                 height: 10vh;
             }
-      }
+        }
     }
 }
 
@@ -627,7 +589,7 @@
             .signUp-footer{
                 height: 10vh;
             }
-      }
+        }
     }
   }
 
@@ -647,7 +609,7 @@
             .signUp-footer{
                 height: 10vh;
             }
-      }
+        }
     }
 }
 
@@ -667,7 +629,7 @@
             .signUp-footer{
                 height: 10vh;
             }
-      }
+        }
     }
 }
 
@@ -686,8 +648,8 @@
             }
             .signUp-footer{
                 height: 10vh;
+            }
         }
-      }
     }
 }
 
@@ -700,20 +662,17 @@
         @media (orientation:portrait){
             .signUp-header{
                 height: 165vh;
-                border:solid 1px blueviolet;
             }
             .signUp-main{
                 height: 165vh;
-                border:solid 1px goldenrod;
             }
             .form-container{
                 max-width: 60%;
             }
             .signUp-footer{
                 height: 10vh;
-                border:solid 1px black;
-        }
-      }
+            }
+        } 
     }
 }
 
