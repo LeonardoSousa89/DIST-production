@@ -22,10 +22,16 @@ export default (props)=>{
           {
             !props.profilePhoto ? 
             (
-              <img className='clientPhoto' src={camera} alt='profile photo'/>
+              <div>
+                <img className='clientPhoto' src={camera} alt='profile photo'/>
+                <hr className='bar' />
+              </div>
             ) : 
             (
-              <img className='clientPhoto' src={props.profilePhoto} alt='profile photo'/>
+              <div>
+                <img className='clientPhoto' src={props.profilePhoto} alt='profile photo'/>
+                <hr className='bar' />
+              </div>
             ) 
           }
         </div>

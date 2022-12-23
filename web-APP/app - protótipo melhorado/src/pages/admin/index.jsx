@@ -320,11 +320,13 @@ export default (props)=>{
         ) : (
           //Card operation workers display (default)
           <div className='border'>
-              <InternalHeader profilePhoto={image}
+             <div className='header'>
+                <InternalHeader profilePhoto={image}
                               profileName={userName} 
                               profileEmail={userEmail} />
+            </div>
 
-      
+            <div className='main'>
               <div className='cardContaner'>
 
                 <form className='formUpload' 
@@ -376,7 +378,7 @@ export default (props)=>{
                 </div>
                 
               </div>
-
+            </div>
           </div>
         )
       }

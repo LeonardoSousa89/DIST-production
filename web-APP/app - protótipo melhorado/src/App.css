@@ -81,6 +81,105 @@ body{
 
 
 
+.internalHeader{
+  height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+}
+.logoContainer{
+  flex: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoIcon{
+  height: 90px;
+  width: 90px;
+  margin-right: 25px;
+}
+.logoText{
+  height: 100px;
+}
+
+
+
+
+.profileContainer{
+  flex: 1;
+
+  display: flex;
+}
+.profilePhotoContainer{
+  background-color: #2976E61A;
+  padding: 5px;
+  flex: 1;
+}
+.clientPhoto{
+  height: 120px;
+  width:  120px;
+  
+  top: 102px;
+  position: absolute;
+  
+  margin-left: 5px;
+
+  border-radius:100%;
+  border: solid 5px rgba(0,0,0,0.2);
+}
+.bar{
+  display: none;
+}
+.profilePhotoUpload{
+  display: none;
+}
+.control_label_profilePhotoUpload{
+  background-color: #2976E6;
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.4); 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.control_label_profilePhotoUpload:hover{
+  background-color: black;
+  color: #2976E6;
+}
+.formUpload{
+  width: 94%;
+  display: flex;
+}
+
+
+
+
+.profileInfoContainer{
+  background-color: #2976E61A;
+  padding: 5px;
+  flex: 3;
+}
+.profileContainer h1{
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.profileContainer h1, .profileContainer h3{
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
 /* component footer */
 .Footer{
   background-image: url('./assets/Rectangle.png');
@@ -107,8 +206,12 @@ body{
 
 /* component admin */
 .Admin{
+  height: 100vh;
+
   display: flex;
   justify-content: center;
+
+  /* border: solid 1px red; */
 }
 
 
@@ -188,6 +291,47 @@ body{
 
   .internal-sub-container-logo{
     width: 100%;
+  }
+}
+
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 768px*/
+@media (max-width:768px){
+  .logoContainer{
+    display: none;
+  }
+  .profileContainer{
+    flex-direction: column;
+  }
+  .profilePhotoContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .clientPhoto{
+    position: initial;
+    height: 100px;
+    width: 100px;
+  }
+  .bar{
+    display: flex;
+    height: 1px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 5px #2976E6;
+    background-color: #2976E6;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .profileInfoContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
   }
 }
 
@@ -408,6 +552,9 @@ body{
         .signUp, .Login{
           height: 130vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          margin-top: 5vh;
       }
     }
   }
@@ -571,6 +718,9 @@ body{
         .signUp, .Login{
           height: 130vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          margin-top: 5vh;
       }
     }
   }
@@ -691,6 +841,17 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          margin-top: 0vh;
+          height: 80px;
+          width: 80px;
+        }
+        #profileName{
+          font-size: medium;
+        }
+        #profileEmail{
+          font-size: small;
       }
     }
   }
@@ -736,6 +897,17 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          margin-top: 0vh;
+          height: 80px;
+          width: 80px;
+        }
+        #profileName{
+          font-size: medium;
+        }
+        #profileEmail{
+          font-size: small;
       }
     }
   }
@@ -766,6 +938,28 @@ body{
         .signUp, .Login{
           height: 180vh;
           /* border: solid 1px red; */
+        }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
+@media (max-device-width:360px){
+  @media (max-device-height:740px){
+    @media (orientation:portrait){
+      .clientPhoto{
+        margin-top: 0vh;
+        height: 80px;
+        width: 80px;
+      }
+      #profileName{
+        font-size: medium;
+      }
+      #profileEmail{
+        font-size: small;
       }
     }
   }
@@ -780,6 +974,22 @@ body{
     @media (orientation:portrait){
       .signUp, .Login{
         height: 200vh;
+      }
+      .clientPhoto{
+        margin-top: 0vh;
+        height: 80px;
+        width: 80px;
+      }
+      #profileName{
+        font-size: medium;
+      }
+      #profileEmail{
+        font-size: small;
+      }
+      .Admin{
+         /* border: solid 1px red; */
+         width: 100vw;
+         height: 110vh;
       }
     }
   }
@@ -840,6 +1050,17 @@ body{
         .signUp, .Login{
           height: 240vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          margin-top: 0vh;
+          height: 60px;
+          width: 60px;
+        }
+        #profileName{
+          font-size: small;
+        }
+        #profileEmail{
+          font-size: x-small;
       }
     }
   }
@@ -884,7 +1105,11 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 340vh;
-      }
+       }
+       .Admin{
+        /* border: solid 1px red; */
+        height: 160vh;
+       }
     }
   }
 }
