@@ -1057,9 +1057,12 @@ body{
 /* dispositivos abaixo ou até width 360px */
 @media (max-device-width:360px){
       .clientPhoto{
-        height: 70px;
-        width: 70px;
+        height: 100px;
+        width: 100px;
         margin-top: 2vh;
+  }
+  #profileName{
+    display: none;
   }
 }
 
