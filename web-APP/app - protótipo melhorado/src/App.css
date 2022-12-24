@@ -338,12 +338,55 @@ body{
 
 
 
-/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+/* dispositivos especifícos width 1280px por height 800px*/
+@media (max-device-width:1280px){
+  @media (max-device-height:800px){
+        .clientPhoto{
+          height: 110px;
+          width: 110px;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 1366px*/
 @media (max-device-width:1024px){
   @media (max-device-height:1366px){
         .signUp, .Login{
           height: 100vh;
           /* border: solid 1px red; */
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
+@media (max-device-width:1024px){
+  @media (max-device-height:1366px){
+    @media (orientation:portrait){
+       .clientPhoto{
+        top: 250px;
+        margin-left: 5%;
+       }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1024px por height 1366px com orientation: landscape*/
+@media (max-device-width:1366px){
+  @media (max-device-height:1024px){
+    @media (orientation:landscape){
+       .clientPhoto{
+        top: 160px;
+        margin-left: 3%;
+       }
     }
   }
 }
@@ -358,6 +401,11 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 100px;
+          width: 100px;
+          top: 120px;
       }
     }
   }
@@ -372,6 +420,11 @@ body{
         .signUp, .Login{
           height: 200vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 70px;
+          width: 70px;
+          top: 90px;
     }
   }
 }
@@ -401,6 +454,12 @@ body{
         .signUp, .Login{
           height: 100vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 130px;
+          width: 130px;
+          top: 240px;
+          margin-left: 5%;
       }
     }
   }
@@ -563,6 +622,16 @@ body{
 
 
 
+/* dispositivos abaixo ou até width 767px */
+@media (max-device-width:767px){
+  .clientPhoto{
+      margin: 0;
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 740px por height 360px com orientation: landscape*/
 @media (max-device-width:740px){
   @media (max-device-height:360px){
@@ -630,7 +699,10 @@ body{
         .signUp, .Login{
           height: 120vh;
           /* border: solid 1px red; */
-      }
+        }
+        .clientPhoto{
+          margin-top: 4vh;
+        }
     }
   }
 }
@@ -751,7 +823,17 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
-      }
+        }
+        .clientPhoto{
+          height: 90px;
+          width: 90px;
+        }
+        #profileName{
+          font-size: medium;
+        }
+        #profileEmail{
+          font-size: small;
+      } 
     }
   }
 }
@@ -843,7 +925,7 @@ body{
           /* border: solid 1px red; */
         }
         .clientPhoto{
-          margin-top: 0vh;
+          margin-top: 4vh;
           height: 80px;
           width: 80px;
         }
@@ -882,6 +964,10 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 80px;
+          width: 80px;
       }
     }
   }
@@ -899,7 +985,7 @@ body{
           /* border: solid 1px red; */
         }
         .clientPhoto{
-          margin-top: 0vh;
+          margin-top: 3vh;
           height: 80px;
           width: 80px;
         }
@@ -946,15 +1032,22 @@ body{
 
 
 
+/* dispositivos abaixo ou até width 360px */
+@media (max-device-width:360px){
+      .clientPhoto{
+        height: 70px;
+        width: 70px;
+        margin-top: 2vh;
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
 @media (max-device-width:360px){
   @media (max-device-height:740px){
     @media (orientation:portrait){
-      .clientPhoto{
-        margin-top: 0vh;
-        height: 80px;
-        width: 80px;
-      }
       #profileName{
         font-size: medium;
       }
@@ -974,11 +1067,6 @@ body{
     @media (orientation:portrait){
       .signUp, .Login{
         height: 200vh;
-      }
-      .clientPhoto{
-        margin-top: 0vh;
-        height: 80px;
-        width: 80px;
       }
       #profileName{
         font-size: medium;
@@ -1051,11 +1139,6 @@ body{
           height: 240vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
-          margin-top: 0vh;
-          height: 60px;
-          width: 60px;
-        }
         #profileName{
           font-size: small;
         }
@@ -1109,6 +1192,10 @@ body{
        .Admin{
         /* border: solid 1px red; */
         height: 160vh;
+       }
+       .clientPhoto{
+        height: 40px;
+        width: 40px;
        }
     }
   }
