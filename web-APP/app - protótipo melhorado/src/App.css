@@ -394,6 +394,37 @@ body{
 
 
 
+
+/* dispositivos especifícos width 1280px por height 800px com orientation: landscape*/
+@media (max-device-width:1280px){
+  @media (max-device-height:800px){
+    @media (orientation:landscape){
+      .clientPhoto{
+        margin: 0;
+        top: 130px;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1138px por height 712px com orientation: landscape*/
+@media (max-device-width:1138px){
+  @media (max-device-height:712px){
+    @media (orientation:landscape){
+      .clientPhoto{
+        margin: 0;
+        top: 100px;
+      }
+    }
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 1024px por height 768px com orientation: landscape*/
 @media (max-device-width:1024px){
   @media (max-device-height:768px){
@@ -638,8 +669,11 @@ body{
     @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
+        }
+        .Admin{
+          height: 200vh;
           /* border: solid 1px red; */
-      }
+        }
     }
   }
 }
@@ -668,7 +702,10 @@ body{
     @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
+        }
+        .Admin{
           /* border: solid 1px red; */
+          height: 200vh;
       }
     }
   }
@@ -732,6 +769,10 @@ body{
         .signUp, .Login{
           height: 340vh;
           /* border: solid 1px red; */
+        }
+        .Admin{
+          height: 250vh;
+          /* border: solid 1px red; */
       }
     }
   }
@@ -761,7 +802,10 @@ body{
     @media (orientation:landscape){
         .signUp, .Login{
           height: 280vh;
+        }
+        .Admin{
           /* border: solid 1px red; */
+          height: 180vh;
       }
     }
   }
@@ -776,6 +820,28 @@ body{
         .signUp, .Login{
           height: 320vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 100px;
+          width: 100px;
+        }
+        #profileName{
+          display: none;
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 640px por height 360px com orientation: landscape*/
+@media (max-device-width:640px){
+  @media (max-device-height:360px){
+    @media (orientation: landscape){
+       .Admin{
+         height: 200vh;
+         /* border: solid 1px red;  */
+       }
     }
   }
 }
@@ -1120,17 +1186,6 @@ body{
           width: 90px;
       }
     }
-  }
-}
-
-
-
-
-/* dispositivos abaixo ou até width 320px */
-@media (max-device-width:320px){
-        .clientPhoto{
-          height: 70px;
-          width: 70px;
   }
 }
 
