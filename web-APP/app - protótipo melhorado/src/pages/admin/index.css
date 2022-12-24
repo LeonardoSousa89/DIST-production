@@ -202,6 +202,20 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 384px por height 640px com orientation: portrait*/
+@media (max-device-width:384px){
+    @media (max-device-height:640px){
+        @media (orientation:portrait){
+            .formUpload{
+                margin-bottom: 1vh;
+            }
+        }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
 @media (max-device-width:360px){
     @media (max-device-height:740px){
@@ -223,6 +237,26 @@ table tbody tr td{
             .formUpload{
                 margin-bottom: 2vh;
             }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
+@media (max-device-width:320px){
+    @media (max-device-height:658px){
+        @media (orientation:portrait){
+            .formUpload{
+                margin-bottom: 1vh;
+            }
+            .cardWorker{
+                height: 160px;
+            }
+            .listWorker{
+                height: 40px;
+            }    
         }
     }
 }

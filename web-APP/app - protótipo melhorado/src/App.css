@@ -878,7 +878,11 @@ body{
         .signUp, .Login{
           height: 140vh;
           /* border: solid 1px red; */
-      }
+        }
+        .clientPhoto{
+          height: 100px;
+          width: 100px;
+        }
     }
   }
 }
@@ -893,6 +897,11 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 80px;
+          width: 80px;
+          margin: 0;
       }
     }
   }
@@ -908,6 +917,10 @@ body{
         .signUp, .Login{
           height: 140vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 100px;
+          width: 100px;
       }
     }
   }
@@ -1009,6 +1022,11 @@ body{
         .signUp, .Login{
           height: 160vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          height: 100px;
+          width: 100px;
+          margin: 0;
       }
     }
   }
@@ -1025,6 +1043,10 @@ body{
           height: 180vh;
           /* border: solid 1px red; */
         }
+        .clientPhoto{
+          height: 90px;
+          width: 90px;
+      }
     }
   }
 }
@@ -1080,6 +1102,32 @@ body{
          height: 110vh;
       }
     }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 353px por height 745px com orientation: portrait*/
+@media (max-device-width:353px){
+  @media (max-device-height:745px){
+      @media (orientation:portrait){
+        .clientPhoto{
+          height: 90px;
+          width: 90px;
+      }
+    }
+  }
+}
+
+
+
+
+/* dispositivos abaixo ou até width 320px */
+@media (max-device-width:320px){
+        .clientPhoto{
+          height: 70px;
+          width: 70px;
   }
 }
 
