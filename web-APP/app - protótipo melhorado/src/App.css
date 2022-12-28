@@ -120,7 +120,7 @@ body{
   height: 120px;
   width:  120px;
   
-  top: 102px;
+  top: 15%;
   position: absolute;
   
   margin-left: 5px;
@@ -258,6 +258,65 @@ body{
 
 
 
+/* dispositivos especifícos width 1024px por height 1366px com orientation: landscape*/
+@media (max-device-width:1366px){
+  @media (max-device-height:1024px){
+    @media (orientation:landscape){
+       /* .clientPhoto{
+        top: 160px;
+        margin-left: 3%;
+       } */
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1280px por height 800px*/
+@media (max-device-width:1280px){
+  @media (max-device-height:800px){
+        /* .clientPhoto{
+          height: 110px;
+          width: 110px;
+    } */
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1280px por height 800px com orientation: landscape*/
+@media (max-device-width:1280px){
+  @media (max-device-height:800px){
+    @media (orientation:landscape){
+      /* .clientPhoto{
+        margin: 0;
+        top: 130px;
+      } */
+    }
+  }
+}
+
+
+
+
+/* dispositivos especifícos width 1138px por height 712px com orientation: landscape*/
+@media (max-device-width:1138px){
+  @media (max-device-height:712px){
+    @media (orientation:landscape){
+      /* .clientPhoto{
+        margin: 0;
+        top: 100px;
+      } */
+    }
+  }
+}
+
+
+
+
+
 /* dispositivos gerais abaixo de ou até width 1024px*/
 @media (max-width:1024px){
   .signUp, .Login{
@@ -297,60 +356,6 @@ body{
 
 
 
-
-/* dispositivos gerais abaixo de ou até width 768px*/
-@media (max-width:768px){
-  .logoContainer{
-    display: none;
-  }
-  .profileContainer{
-    flex-direction: column;
-  }
-  .profilePhotoContainer{
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
-  .clientPhoto{
-    position: initial;
-    height: 100px;
-    width: 100px;
-  }
-  .bar{
-    display: flex;
-    height: 1px;
-    margin-top: 5px;
-    box-shadow: 0px 0px 5px #2976E6;
-    background-color: #2976E6;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-  }
-  .profileInfoContainer{
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1280px por height 800px*/
-@media (max-device-width:1280px){
-  @media (max-device-height:800px){
-        .clientPhoto{
-          height: 110px;
-          width: 110px;
-    }
-  }
-}
-
-
-
-
 /* dispositivos especifícos width 1024px por height 1366px*/
 @media (max-device-width:1024px){
   @media (max-device-height:1366px){
@@ -368,56 +373,10 @@ body{
 @media (max-device-width:1024px){
   @media (max-device-height:1366px){
     @media (orientation:portrait){
-       .clientPhoto{
+       /* .clientPhoto{
         top: 250px;
         margin-left: 5%;
-       }
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1024px por height 1366px com orientation: landscape*/
-@media (max-device-width:1366px){
-  @media (max-device-height:1024px){
-    @media (orientation:landscape){
-       .clientPhoto{
-        top: 160px;
-        margin-left: 3%;
-       }
-    }
-  }
-}
-
-
-
-
-
-/* dispositivos especifícos width 1280px por height 800px com orientation: landscape*/
-@media (max-device-width:1280px){
-  @media (max-device-height:800px){
-    @media (orientation:landscape){
-      .clientPhoto{
-        margin: 0;
-        top: 130px;
-      }
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1138px por height 712px com orientation: landscape*/
-@media (max-device-width:1138px){
-  @media (max-device-height:712px){
-    @media (orientation:landscape){
-      .clientPhoto{
-        margin: 0;
-        top: 100px;
-      }
+       } */
     }
   }
 }
@@ -433,11 +392,11 @@ body{
           height: 160vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 100px;
           width: 100px;
           top: 120px;
-      }
+      } */
     }
   }
 }
@@ -452,11 +411,10 @@ body{
           height: 200vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 70px;
           width: 70px;
-          top: 90px;
-    }
+    } */
   }
 }
 
@@ -581,6 +539,9 @@ body{
         .signUp, .Login{
           height: 110vh;
           /* border: solid 1px red; */
+        }
+        .clientPhoto{
+          margin: 0;
       }
     }
   }
@@ -629,6 +590,46 @@ body{
           /* border: solid 1px red; */
       }
     }
+  }
+}
+
+
+
+
+/* dispositivos gerais abaixo de ou até width 768px*/
+@media (max-width:768px){
+  .logoContainer{
+    display: none;
+  }
+  .profileContainer{
+    flex-direction: column;
+  }
+  .profilePhotoContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .clientPhoto{
+    position: initial;
+    height: 100px;
+    width: 100px;
+  }
+  .bar{
+    display: flex;
+    height: 1px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 5px #2976E6;
+    background-color: #2976E6;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .profileInfoContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
   }
 }
 
@@ -747,6 +748,23 @@ body{
 
 
 
+/* dispositivos baixo ou até width 700px */
+@media (max-device-width:700px){
+  #profileName{
+    font-size: medium;
+  }
+  #profileEmail{
+    font-size: small;
+  } 
+  .clientPhoto{
+    height: 110px;
+    width: 110px;
+  }
+}
+
+
+
+
 /* dispositivos especifícos width 667px por height 375px com orientation: landscape*/
 @media (max-device-width:667px){
   @media (max-device-height:375px){
@@ -825,9 +843,9 @@ body{
           height: 100px;
           width: 100px;
         }
-        #profileName{
+        /* #profileName{
           display: none;
-    }
+    } */
   }
 }
 
@@ -857,9 +875,9 @@ body{
           height: 130vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           margin-top: 5vh;
-      }
+      } */
     }
   }
 }
@@ -894,12 +912,6 @@ body{
           height: 90px;
           width: 90px;
         }
-        #profileName{
-          font-size: medium;
-        }
-        #profileEmail{
-          font-size: small;
-      } 
     }
   }
 }
@@ -945,10 +957,10 @@ body{
           height: 140vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 100px;
           width: 100px;
-        }
+        } */
     }
   }
 }
@@ -964,11 +976,11 @@ body{
           height: 160vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 80px;
           width: 80px;
           margin: 0;
-      }
+      } */
     }
   }
 }
@@ -984,10 +996,10 @@ body{
           height: 140vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 100px;
           width: 100px;
-      }
+      } */
     }
   }
 }
@@ -1003,11 +1015,11 @@ body{
           height: 180vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           margin-top: 4vh;
           height: 80px;
           width: 80px;
-        }
+        } */
         #profileName{
           font-size: medium;
         }
@@ -1063,11 +1075,11 @@ body{
           height: 180vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           margin-top: 3vh;
           height: 80px;
           width: 80px;
-        }
+        } */
         #profileName{
           font-size: medium;
         }
@@ -1089,11 +1101,11 @@ body{
           height: 160vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 100px;
           width: 100px;
           margin: 0;
-      }
+      } */
     }
   }
 }
@@ -1109,10 +1121,10 @@ body{
           height: 180vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 90px;
           width: 90px;
-      }
+      } */
     }
   }
 }
@@ -1122,11 +1134,11 @@ body{
 
 /* dispositivos abaixo ou até width 360px */
 @media (max-device-width:360px){
-      .clientPhoto{
+      /* .clientPhoto{
         height: 100px;
         width: 100px;
         margin-top: 2vh;
-  }
+  } */
   #profileName{
     display: none;
   }
@@ -1181,10 +1193,10 @@ body{
 @media (max-device-width:353px){
   @media (max-device-height:745px){
       @media (orientation:portrait){
-        .clientPhoto{
+        /* .clientPhoto{
           height: 90px;
           width: 90px;
-      }
+      } */
     }
   }
 }
@@ -1288,6 +1300,17 @@ body{
 
 
 
+/* dispositivos abaixo ou até width 240px */
+@media (max-device-width:240px){
+  .clientPhoto{
+        height: 40px;
+        width: 40px;
+       }
+}
+
+
+
+
 /* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
 @media (max-device-width:240px){
   @media (max-device-height:320px){
@@ -1298,10 +1321,6 @@ body{
        .Admin{
         /* border: solid 1px red; */
         height: 160vh;
-       }
-       .clientPhoto{
-        height: 40px;
-        width: 40px;
        }
     }
   }
