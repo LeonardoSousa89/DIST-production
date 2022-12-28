@@ -197,6 +197,24 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
+@media (max-device-width:800px){
+    @media (max-device-height:1280px){
+        @media (orientation:portrait){
+            .border, .getWorkers, .formInsertWorker{
+                width: 100vw;
+            }
+            .formUpload{
+                margin-top: -10vh;
+                margin-bottom: -5vh;
+            }
+        }
+    }
+}
+
+
+
+
 /* dispositivos gerais width 768px */
 @media (max-width:768px){
     .border{
@@ -428,6 +446,17 @@ table tbody tr td{
 
 
 
+/* dispositivos abaixo ou até width 360px */
+@media (max-device-width:360px){
+   #logo{
+    height: 90px;
+    width: 90px;
+   }
+}
+
+
+
+
 /* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
 @media (max-device-width:360px){
     @media (max-device-height:740px){
@@ -452,6 +481,23 @@ table tbody tr td{
         }
     }
 }
+
+
+
+
+/* dispositivos abaixo ou até width 320px */
+@media (max-device-width:320px){
+    #logo, #namethead, tbody #workername{
+        display: none;
+    }
+    table{
+        margin-top: 5vh;
+    }
+    .paginationBtn{
+       margin-bottom: -7vh;
+    }
+   
+ }
 
 
 
@@ -512,7 +558,7 @@ table tbody tr td{
 
 /* dispositivos gerais width 319px */
 @media (max-width:319px){
-    #namethead, #workername{
+    #namethead, tbody #workername{
      display: none;
     }
  }
@@ -551,6 +597,9 @@ table tbody tr td{
             .main{
                 /* border: solid 1px #2976E6; */
                 height: 118vh;
+            }
+            #logo{
+                display: none;
             }
             .formUpload{
                 margin-bottom: 8vh;
