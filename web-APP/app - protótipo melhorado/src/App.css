@@ -258,65 +258,6 @@ body{
 
 
 
-/* dispositivos especifícos width 1024px por height 1366px com orientation: landscape*/
-@media (max-device-width:1366px){
-  @media (max-device-height:1024px){
-    @media (orientation:landscape){
-       /* .clientPhoto{
-        top: 160px;
-        margin-left: 3%;
-       } */
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1280px por height 800px*/
-@media (max-device-width:1280px){
-  @media (max-device-height:800px){
-        /* .clientPhoto{
-          height: 110px;
-          width: 110px;
-    } */
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1280px por height 800px com orientation: landscape*/
-@media (max-device-width:1280px){
-  @media (max-device-height:800px){
-    @media (orientation:landscape){
-      /* .clientPhoto{
-        margin: 0;
-        top: 130px;
-      } */
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1138px por height 712px com orientation: landscape*/
-@media (max-device-width:1138px){
-  @media (max-device-height:712px){
-    @media (orientation:landscape){
-      /* .clientPhoto{
-        margin: 0;
-        top: 100px;
-      } */
-    }
-  }
-}
-
-
-
-
-
 /* dispositivos gerais abaixo de ou até width 1024px*/
 @media (max-width:1024px){
   .signUp, .Login{
@@ -356,34 +297,6 @@ body{
 
 
 
-/* dispositivos especifícos width 1024px por height 1366px*/
-@media (max-device-width:1024px){
-  @media (max-device-height:1366px){
-        .signUp, .Login{
-          height: 100vh;
-          /* border: solid 1px red; */
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
-@media (max-device-width:1024px){
-  @media (max-device-height:1366px){
-    @media (orientation:portrait){
-       /* .clientPhoto{
-        top: 250px;
-        margin-left: 5%;
-       } */
-    }
-  }
-}
-
-
-
-
 /* dispositivos especifícos width 1024px por height 768px com orientation: landscape*/
 @media (max-device-width:1024px){
   @media (max-device-height:768px){
@@ -392,11 +305,6 @@ body{
           height: 160vh;
           /* border: solid 1px red; */
         }
-        /* .clientPhoto{
-          height: 100px;
-          width: 100px;
-          top: 120px;
-      } */
     }
   }
 }
@@ -444,12 +352,12 @@ body{
           height: 100vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           height: 130px;
           width: 130px;
           top: 240px;
           margin-left: 5%;
-      }
+      } */
     }
   }
 }
@@ -644,9 +552,9 @@ body{
           height: 130vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           margin-top: 5vh;
-      }
+      } */
     }
   }
 }
@@ -656,9 +564,9 @@ body{
 
 /* dispositivos abaixo ou até width 767px */
 @media (max-device-width:767px){
-  .clientPhoto{
+  /* .clientPhoto{
       margin: 0;
-  }
+  } */
 }
 
 
@@ -738,9 +646,9 @@ body{
           height: 120vh;
           /* border: solid 1px red; */
         }
-        .clientPhoto{
+        /* .clientPhoto{
           margin-top: 4vh;
-        }
+        } */
     }
   }
 }
