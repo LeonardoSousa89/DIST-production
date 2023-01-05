@@ -3,6 +3,7 @@ import '../../App.css';
 import './index.css'
 
 import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 import { Button, TextField } from '@material-ui/core'
 import Divider from '@material-ui/core/Divider';
@@ -57,76 +58,84 @@ export default (props)=>{
   return (
     <div className="signUp">
 
-        <Header path="/login" logo={Logo} />
-        <Divider  style={{height:'1px', background: '#2976E6'}} />
+        <header className='signUp-header'>
+          <Header path="/login" logo={Logo} />
+          <Divider  style={{height:'1px', background: '#2976E6'}} />
+        </header>
 
-        <Grid className='form-container' id='form-container' container>
-            
-            <div id="name">
-              <TextField  label="name"
-                          variant="filled"
-                          id="field_name"
-                          value={username}
-                          onChange={(e)=>setName(e.target.value)}
+        <main className='signUp-main'>
+          <Grid className='form-container' id='form-container' container>
+              
+              <div id="name">
+                <TextField  label="name"
+                            variant="filled"
+                            id="field_name"
+                            value={username}
+                            onChange={(e)=>setName(e.target.value)}
+                  />
+              </div>
+
+              <div  id="email">
+                <TextField  label="email"
+                            id="field_email"
+                            variant="filled"
+                            value={email}
+                            onChange={(e)=>setEmail(e.target.value)}
+                  />
+              </div>
+              
+              <div  id="password">
+                <TextField  label="password"
+                            id="field_password"
+                            type={'password'}
+                            variant="filled"    
+                            value={password}
+                            onChange={(e)=>setPassword(e.target.value)}
                 />
-            </div>
+              </div>
+              
+              <Button     type="submit"
+                          variant="contained" 
+                          size="large"
+                          id="btn_send"
+                          endIcon={<SendIcon  />}
+                          onClick={createUser}
+              > send
+              </Button>
 
-            <div  id="email">
-              <TextField  label="email"
-                          id="field_email"
-                          variant="filled"
-                          value={email}
-                          onChange={(e)=>setEmail(e.target.value)}
-                />
-            </div>
-            
-            <div  id="password">
-              <TextField  label="password"
-                          id="field_password"
-                          type={'password'}
-                          variant="filled"    
-                          value={password}
-                          onChange={(e)=>setPassword(e.target.value)}
-              />
-            </div>
-            
-            <Button     type="submit"
-                        variant="contained" 
-                        size="large"
-                        id="btn_send"
-                        endIcon={<SendIcon  />}
-                        onClick={createUser}
-            > send
-            </Button>
+              <div className='text'>
+                      <p>or</p>
+                      <strong>SignUp with</strong>
+              </div>
 
-            <div className='text'>
-                    <p>or</p>
-                    <strong>SignUp with</strong>
-            </div>
+              <div className='socialLogin'>
 
-            <div className='socialLogin'>
+                <img className='google' 
+                      src={Google} 
+                      alt='google icon' 
+                      onClick={accessUsingGoogle}
+                  /> 
 
-               <img className='google' 
-                    src={Google} 
-                    alt='google icon' 
-                    onClick={accessUsingGoogle}
-                /> 
+            </div>                  
+                  
+          </Grid>
 
-           </div>                  
-                
-            </Grid>
+              <div className='play-store' >
+                  <a  
+                  href='https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG' 
+                  target='blank'>
+                          <img className='store' 
+                                  src={Store} 
+                                  alt='google icon' 
+                                  /> 
+                  </a>
+                  
+            </div> 
+        </main>
 
-            <div className='play-store' >
-                <a  
-                href='https://drive.google.com/drive/folders/1XpKr7JwtjR6C3-so_2ZYETvIsfRrMeSG' 
-                target='blank'>
-                        <img className='store' 
-                                src={Store} 
-                                alt='google icon' 
-                                /> 
-                </a>
-                
-           </div> 
+        <footer className='signUp-footer'>
+          <Footer />
+        </footer>
 
     </div>
   );

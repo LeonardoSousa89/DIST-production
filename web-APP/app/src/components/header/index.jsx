@@ -1,4 +1,4 @@
-import '../../App.css'
+import '../../App.css';
 
 import Logo from '../../assets/dist-icon.png'
 import DIST from '../../assets/DIST.png'

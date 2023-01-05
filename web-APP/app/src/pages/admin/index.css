@@ -2,102 +2,19 @@
 
 
 
+.border{
+    /* border: solid 0.5pc pink; */
+    background-color: #2976E60F;
+    height: 100vh;
+    width: 40%;
+}
 
-.internalHeader{
+
+
+.header{
+    /* border: solid 5px goldenrod; */
     height: 30vh;
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-.logoContainer{
-    flex: 2;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logoIcon{
-    height: 90px;
-    width: 90px;
-    margin-right: 25px;
-}
-.logoText{
-    height: 100px;
-}
-
-
-
-
-.profileContainer{
-    flex: 1;
-
-    display: flex;
-}
-.profilePhotoContainer{
-    background-color: #2976E61A;
-    padding: 5px;
-    flex: 1;
-}
-.clientPhoto{
-    height: 120px;
-    width:  120px;
-    
-    top: 102px;
-    position: absolute;
-    
-    margin-left: 5px;
-
-    border-radius:100%;
-    border: solid 5px rgba(0,0,0,0.2);
-}
-.profilePhotoUpload{
-    display: none;
-}
-.control_label_profilePhotoUpload{
-    background-color: #2976E6;
-    padding: 10px;
-    border-radius: 100%;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-
-    box-shadow: 0px 2px 0px rgba(0,0,0,0.4); 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    transition-property: all;
-    transition-duration: 0.5s;
-}
-.control_label_profilePhotoUpload:hover{
-    background-color: black;
-    color: #2976E6;
-}
-.formUpload{
-    width: 94%;
-    display: flex;
-}
-
-
-
-
-.profileInfoContainer{
-    background-color: #2976E61A;
-    padding: 5px;
-    flex: 3;
-}
-.profileContainer h1{
-    margin-top: 5px;
-    margin-bottom: 3px;
-}
-.profileContainer h1, .profileContainer h3{
-    font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -124,7 +41,7 @@
     cursor: pointer;
 }
 .logout{
-    width: 80%;
+    width: 100%;
 
     display: flex;
     justify-content: flex-end;
@@ -132,7 +49,18 @@
 
 
 
+.insertWorker{
+    /* border: goldenrod 1px solid; */
+    background-color: #2976E60F;
+    overflow: hidden;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .formInsertWorker{
+    /* border: #2976E6 1px solid; */
     height: 100%;
     width: 40%;
 
@@ -160,7 +88,12 @@
 
 
 
-
+.listWorkers{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .getWorkers{
     width: 40%;
     height: 100%;
@@ -168,6 +101,7 @@
     background-color: #2976E60F;
 }
 .main{
+    /* border: solid 0.5pc #2976E6; */
     flex: 1;
     height: 67%;
 
@@ -233,133 +167,32 @@ table tbody tr td{
 
 
 
-/* dispositivos gerais abaixo de ou até width 1339px*/
+/* dispositivos gerais width 1339px */
 @media (max-width:1339px){
-    .formInsertWorker, .getWorkers{
-      width: 50%;
-    }
+  .border, .getWorkers, .formInsertWorker{
+    width: 50vw;
+  }
 }
-  
-  
-  
 
-/* dispositivos gerais abaixo de ou até width 1024px*/
-@media (max-width:1024px){
-    .formInsertWorker, .getWorkers{
-      width: 60%;
-    }
-    .profileInfoContainer{
-        flex: 2;
-    }
-}
-  
-  
-  
 
-/* dispositivos especifícos width 1024px por height 1366px com orientation: portrait*/
-@media (max-device-width:1024px){
-    @media (max-device-height:1366px){
-      @media (orientation:portrait){
-        .clientPhoto{
-            top: 250px;
-        }
-      }
+
+
+/* dispositivos gerais width 1100px */
+@media (max-width:1100px){
+    .border, .getWorkers, .formInsertWorker{
+      width: 60vw;
     }
 }
 
 
 
 
-/* dispositivos especifícos width 1366pxpx por height 1024px com orientation: landscape*/
-@media (max-device-width:1366px){
-    @media (max-device-height:1024px){
-      @media (orientation:landscape){
-        .clientPhoto{
-            top: 170px;
-        }
-      }
+/* dispositivos gerais width 900px */
+@media (max-width:900px){
+    .border, .getWorkers, .formInsertWorker{
+      width: 70vw;
     }
 }
-
-
-
-
-/* dispositivos gerais abaixo de ou até width 767px*/
-@media (max-width:767px){
-    .formInsertWorker, .getWorkers{
-      width: 100%;
-    }
-    #workeraddress, #addressthead{
-        display: none;
-    }
-    .logoContainer{
-        display: none;
-    }
-    .clientPhoto{
-        margin: 0;
-        position: inherit;
-    } 
-}
-
-
-
-
-
-/* dispositivos gerais abaixo de ou até width 350px*/
-@media (max-width:350px){
-    .cardWorker{
-        width: 280px;
-    }
-    .listWorker{
-        width: 180px;
-    }
-    
-}
-
-
-
-
-/* dispositivos gerais abaixo de ou até width 350px*/
-@media (max-width:240px){
-    .cardWorker{
-        width: 220px;
-    }
-    
-}
-
-
-
-
-/* dispositivos abaixo de ou até width 1339px */
-@media (max-device-width:1339px){
-    .formInsertWorker, .getWorkers{
-      width: 50%;
-    }
-}
-  
-  
-  
-  
-/* dispositivos abaixo de ou até width 1024px */
-@media (max-device-width:1024px){
-   .formInsertWorker, .getWorkers{
-      width: 80%;
-    }
-}
-  
-
-
-
-/* dispositivos especifícos width 912px por height 1368px com orientation: portrait*/
-@media (max-device-width:912px){
-    @media (max-device-height:1368px){
-      @media (orientation:portrait){
-        .clientPhoto{
-            top: 250px;
-        }
-      }
-    }
-}  
 
 
 
@@ -367,13 +200,57 @@ table tbody tr td{
 /* dispositivos especifícos width 800px por height 1280px com orientation: portrait*/
 @media (max-device-width:800px){
     @media (max-device-height:1280px){
-      @media (orientation:portrait){
-        .clientPhoto{
-            top: 230px;
+        @media (orientation:portrait){
+            .border, .getWorkers, .formInsertWorker{
+                width: 100vw;
+            }
+            .formUpload{
+                margin-top: -10vh;
+                margin-bottom: -5vh;
+            }
         }
-      }
     }
-}   
+}
+
+
+
+
+/* dispositivos gerais width 768px */
+@media (max-width:768px){
+    .border{
+        height: 110vh;
+        width: 100vw;
+    }
+    .getWorkers, .formInsertWorker{
+        width: 100vw;
+    }
+    .header{
+         /* border: solid 1px goldenrod; */
+         height: 33vh;
+    }
+    .main{
+         /* border: solid 1px #2976E6; */
+         height: 77vh;
+    }
+    .formUpload{
+        margin-top: -10vh;
+    }
+     #logo{
+        height: 130px;
+    }
+}
+
+
+
+
+/* dispositivos abaixo ou até width 768px com orientation: landscape*/
+@media (max-width:768px){
+    @media (orientation: landscape){
+        .formInsertWorker .size{
+            width: 40%;
+        }
+    }
+}
 
 
 
@@ -381,35 +258,150 @@ table tbody tr td{
 /* dispositivos especifícos width 768px por height 1024px com orientation: portrait*/
 @media (max-device-width:768px){
     @media (max-device-height:1024px){
-      @media (orientation:portrait){
-        .clientPhoto{
-            top: 160px;
+        @media (orientation:portrait){
+            .formUpload{
+                margin-top: -10vh;
+                margin-bottom: -5vh;
+            }
         }
-      }
-    }
-}  
-
-
-
-
-/* dispositivos abaixo de ou até width 767px */
-@media (max-device-width:767px){
-    .formInsertWorker, .getWorkers{
-      width: 100%;
     }
 }
 
 
 
 
-/* dispositivos especifícos width 712px por height 1138px com orientation: portrait*/
-@media (max-device-width:712px){
-    @media (max-device-height:1138px){
-      @media (orientation:portrait){
-        .clientPhoto{
-            margin-top: 5vh;
+/* dispositivos especifícos width 740px por height 360px com orientation: landscape*/
+@media (max-device-width:740px){
+    @media (max-device-height:360px){
+        @media (orientation:landscape){
+            .border{
+                height: 200vh;
+            }
+            .header{
+                /* border:solid 1px pink; */
+                height: 50vh;
+            }
+            .main{
+                /* border:solid 1px #2976E6; */
+                height: 150vh;
+            }
+            .formUpload{
+                margin-bottom: 5vh;
+            }
+            .signOut{
+                margin-top: 10vh;
+            }
         }
-      }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 732px por height 412px com orientation: landscape*/
+@media (max-device-width:732px){
+    @media (max-device-height:412px){
+        @media (orientation:landscape){
+            .border{
+                height: 200vh;
+            }
+            .header{
+                /* border:solid 1px pink; */
+                height: 50vh;
+            }
+            .main{
+                /* border:solid 1px #2976E6; */
+                height: 150vh;
+            }
+            .formUpload{
+                margin-top: -20vh;
+                margin-bottom: 5vh;
+            }
+            .signOut{
+                margin-top: 10vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 658px por height 320px com orientation: landscape*/
+@media (max-device-width:658px){
+    @media (max-device-height:320px){
+        @media (orientation:landscape){
+            .border{
+                height: 250vh;
+            }
+            .header{
+                height: 55vh;
+                /* border: solid 1px #2976E6; */
+            }
+            .main{
+                height: 195vh;
+                /* border: solid 1px blue; */
+            }
+            .formUpload{
+                margin-top: -30vh;
+            }
+            .signOut{
+                margin-top: 20vh;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* dispositivos especifícos width 640px por height 384px com orientation: landscape*/
+@media (max-device-width:640px){
+    @media (max-device-height:384px){
+        @media (orientation:landscape){
+            .border{
+                height: 180vh;
+            }
+            .header{
+                height: 55vh;
+                /* border: solid 1px #2976E6; */
+            }
+            .main{
+                height: 125vh;
+                /* border: solid 1px blue; */
+            }
+            .formUpload{
+                /* margin-top: -50vh; */
+                margin-bottom: 5vh;
+            }
+            .signOut{
+                margin-top: 5vh;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 640px por height 360px com orientation: landscape*/
+@media (max-device-width:640px){
+    @media (max-device-height:360px){
+        @media (orientation: landscape){
+            .border{
+                height: 200vh;
+            }   
+            .header{
+                height: 50vh;
+            }
+           .main{
+                height: 150vh;
+            }
+           .formUpload{
+                margin-bottom: 5vh;
+           }
+        }
     }
 }
 
@@ -419,104 +411,22 @@ table tbody tr td{
 /* dispositivos especifícos width 600px por height 1024px com orientation: portrait*/
 @media (max-device-width:600px){
     @media (max-device-height:1024px){
-      @media (orientation:portrait){
-        .listWorkers{
-            height: 90vh;
-        }
-      }
-    }
-}
-
-
-
-
-/* dispositivos especifícos width 540px por height 720px com orientation: portrait*/
-@media (max-device-width:540px){
-    @media (max-device-height:720px){
-      @media (orientation:portrait){
-        #logo{
-           height: 100px;
-           width: 100px;
-        }
-        .cardContaner{
-            height: 80vh;
-        }
-        #logo{
-            margin-top: 25vh;
-        }
-        .listWorkers{
-            height: 110vh;
-        }
-      }
-    }
-}
-
-
-
-
-/* dispositivos especifícos width 480px por height 854px com orientation: portrait*/
-@media (max-device-width:480px){
-    @media (max-device-height:854px){
-      @media (orientation:portrait){
-        #logo{
-           height: 100px;
-           width: 100px;
-        }
-      }
-    }
-}
-
-
-
-
-/* dispositivos especifícos width 414px por height 736px com orientation: portrait*/
-@media (max-device-width:414px){
-    @media (max-device-height:736px){
-      @media (orientation:portrait){
-        #logo{
-           height: 100px;
-           width: 100px;
-        }
-        .formUpload{
-            margin-top: 10vh;
-            margin-bottom: 5vh;
-        }
-        table{
-            margin-top: 3vh;
-        }
-      }
-    }
-}
-
-
-
-
-/* dispositivos especifícos width 412px por height 732px com orientation: portrait*/
-@media (max-device-width:412px){
-    @media (max-device-height:732px){
         @media (orientation:portrait){
-            #logo{
-                height: 80px;
-                width: 80px;
-                margin-bottom: 1vh;
+            .formUpload{
+                margin-top: -12vh;
+            }
         }
-        .listWorkers{
-            height: 100vh;
-        }
-        table{
-            margin-top: 10vh;
-        }
-        #logo{
-            margin-top: 10vh;
-        }
-        .formUpload{
-            margin-top: 14vh;
-        }
-        .cardWorker{
-            margin-top: 3vh;
-        }
-      }
     }
+}
+
+
+
+
+/* dispositivos gerais width 500px */
+@media (max-width:500px){
+   #addressthead, #workeraddress{
+    display: none;
+   }
 }
 
 
@@ -526,50 +436,22 @@ table tbody tr td{
 @media (max-device-width:384px){
     @media (max-device-height:640px){
         @media (orientation:portrait){
-            #logo{
-                height: 100px;
-                width: 100px;
-                margin-top: 16vh;
-                margin-bottom: 2vh;
+            .formUpload{
+                margin-bottom: 1vh;
+            }
         }
-        .listWorkers{
-            height: 120vh;
-        }
-      }
     }
 }
 
 
 
 
-/* dispositivos especifícos width 375px por height 812px com orientation: portrait*/
-@media (max-device-width:375px){
-    @media (max-device-height:812px){
-      @media (orientation:portrait){
-        #logo{
-           height: 100px;
-           width: 100px;
-        }
-      }
-    }
-}
-
-
-
-
-/* dispositivos especifícos width 375px por height 667px com orientation: portrait*/
-@media (max-device-width:375px){
-    @media (max-device-height:667px){
-        @media (orientation:portrait){
-           .formUpload{
-            margin-top: -7vh;
-            margin-bottom: -7vh;
-           }
-           .signOut{
-            margin-top: -5vh;
-           }
-        }
-    }
+/* dispositivos abaixo ou até width 360px */
+@media (max-device-width:360px){
+   #logo{
+    height: 90px;
+    width: 90px;
+   }
 }
 
 
@@ -578,24 +460,11 @@ table tbody tr td{
 /* dispositivos especifícos width 360px por height 740px com orientation: portrait*/
 @media (max-device-width:360px){
     @media (max-device-height:740px){
-      @media (orientation:portrait){
-        .formUpload{
-            margin-top: 10vh;
-            margin-bottom: 5vh;
+        @media (orientation:portrait){
+            .formUpload{
+                margin-top: -8vh;
+            }
         }
-        .signOut{
-            margin-top: 5vh;
-        }
-        #logo{
-           height: 100px;
-           width: 100px;
-           margin-top: 4vh;
-           margin-bottom: 2vh;
-        }
-        table{
-            margin-top: 5vh;
-        }
-      }
     }
 }
 
@@ -605,46 +474,30 @@ table tbody tr td{
 /* dispositivos especifícos width 360px por height 640px com orientation: portrait*/
 @media (max-device-width:360px){
     @media (max-device-height:640px){
-      @media (orientation:portrait){
-        .cardContaner{
-            height: 80vh;
-        }
-        .formUpload{
-            margin-top: 5vh;
-            margin-bottom: 0;
-        }
-        #logo{
-           height: 100px;
-           width: 100px;
-           margin-top: 25vh;
-           margin-bottom: 2vh;
-        }
-        .listWorkers{
-            height: 120vh;
-        }
-        table{
-            margin-top: 20vh;
-        }
-      }
-    }
-}
-
-
-
-
-/* dispositivos especifícos width 353px por height 745px com orientation: portrait*/
-@media (max-device-width:353px){
-    @media (max-device-height:745px){
         @media (orientation:portrait){
-        .formUpload{
-            margin-top: 5vh;
+            .formUpload{
+                margin-bottom: 2vh;
+            }
         }
-        table{
-            margin-top: 5vh;
-        }
-      }
     }
 }
+
+
+
+
+/* dispositivos abaixo ou até width 320px */
+@media (max-device-width:320px){
+    #logo, #namethead, tbody #workername{
+        display: none;
+    }
+    table{
+        margin-top: 5vh;
+    }
+    .paginationBtn{
+       margin-bottom: -7vh;
+    }
+   
+ }
 
 
 
@@ -652,27 +505,17 @@ table tbody tr td{
 /* dispositivos especifícos width 320px por height 658px com orientation: portrait*/
 @media (max-device-width:320px){
     @media (max-device-height:658px){
-      @media (orientation:portrait){
-        .formUpload{
-            margin-top: -1vh;
-            margin-bottom: -8vh;
+        @media (orientation:portrait){
+            .formUpload{
+                margin-bottom: 1vh;
+            }
+            .cardWorker{
+                height: 160px;
+            }
+            .listWorker{
+                height: 40px;
+            }    
         }
-        .signOut{
-            margin-top: -5vh;
-        }
-        #logo{
-           height: 60px;
-           width: 60px;
-           margin-top: 6vh;
-           margin-bottom: 1vh;
-        }
-        .listWorkers{
-            height: 100vh;
-        }
-        table{
-            margin-top: 10vh;
-        }
-      }
     }
 }
 
@@ -682,35 +525,14 @@ table tbody tr td{
 /* dispositivos especifícos width 320px por height 568px com orientation: portrait*/
 @media (max-device-width:320px){
     @media (max-device-height:568px){
-      @media (orientation:portrait){
-        #logo{
-           margin-top: 18vh;
+        @media (orientation:portrait){
+            .cardWorker{
+                height: 160px;
+            }
+            .listWorker{
+                height: 40px;
+            }    
         }
-        .listWorkers{
-            height: 120vh;
-        }
-      }
-    }
-}
-
-
-
-
-
-/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
-@media (max-device-width:320px){
-    @media (max-device-height:480px){
-      @media (orientation:portrait){  
-        .cardContaner{
-            height: 60vh;
-        }  
-        table{
-            margin-bottom: 3vh;
-        } 
-        .paginationBtn{
-            margin-bottom: -10vh;
-        }
-      }
     }
 }
 
@@ -721,42 +543,25 @@ table tbody tr td{
 @media (max-device-width:320px){
     @media (max-device-height:533px){
         @media (orientation:portrait){
-        .formUpload{
-            margin-top: 35vh;
-            margin-bottom: 5vh;
+            .cardWorker{
+                height: 150px;
+            }
+            .listWorker{
+                height: 30px;
+            }    
         }
-        .signOut{
-            margin-top: 5vh;
-        }
-        #logo{
-            margin-top: 50vh;
-        }
-        .listWorkers{
-            height: 135vh;
-        }
-        table{
-            margin-top: 25vh;
-        }
-      }
     }
 }
 
 
 
 
-/* dispositivos especifícos width 320px por height 480px com orientation: portrait*/
-@media (max-device-width:320px){
-    @media (max-device-height:480px){
-      @media (orientation:portrait){
-        #logo{
-            margin-top: 28vh;
-        }  
-        .formUpload{
-            margin-top: 45vh;
-        }      
-      }
+/* dispositivos gerais width 319px */
+@media (max-width:319px){
+    #namethead, tbody #workername{
+     display: none;
     }
-}
+ }
 
 
 
@@ -764,13 +569,16 @@ table tbody tr td{
 /* dispositivos especifícos width 280px por height 653px com orientation: portrait*/
 @media (max-device-width:280px){
     @media (max-device-height:653px){
-      @media (orientation:portrait){
-        tbody #workername, #namethead{
-            display: none;
+        @media (orientation:portrait){
+            .cardWorker{
+                height: 130px;
+            }
+            .listWorker{
+                height: 30px;
+            }  
         }
-      }
     }
-  }
+}
 
 
 
@@ -778,32 +586,31 @@ table tbody tr td{
 /* dispositivos especifícos width 240px por height 320px com orientation: portrait*/
 @media (max-device-width:240px){
     @media (max-device-height:320px){
-      @media (orientation:portrait){
-        .formInsertWorker{
-            height: 280vh;
+        @media (orientation:portrait){
+            .border{
+                height: 160vh;
+            }
+            .header{
+                /* border: solid 1px salmon; */
+                height: 42vh;
+            }
+            .main{
+                /* border: solid 1px #2976E6; */
+                height: 118vh;
+            }
+            #logo{
+                display: none;
+            }
+            .formUpload{
+                margin-bottom: 8vh;
+            }
+            .cardWorker{
+                height: 100px;
+            }
+            .listWorker{
+                height: 30px;
+                margin-bottom: 10vh;
+            }  
         }
-        .cardContaner{
-            height: 120vh;
-        }
-        .formUpload{
-            margin-top: 80vh;
-            margin-bottom: 5vh;
-        }
-        #logo{
-            margin-top: 100vh;
-        }
-        .signOut{
-            margin-top: 20vh;
-        }
-        .listWorkers{
-            height: 200vh;
-        }
-        table{
-            margin-top: 80vh;
-        }
-        tbody #workername, #namethead{
-            display: none;
-        }
-      }
     }
 }

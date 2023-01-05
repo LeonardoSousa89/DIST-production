@@ -4,7 +4,6 @@ import SignUp from '../pages/signUp'
 import Login from '../pages/login'
 import Admin from '../pages/admin'
 import Error from '../pages/error'
-import Footer from '../components/footer'
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,7 +19,6 @@ export default (props)=>{
           <Route exact path="*"         element={<Error/>} />
           <Route exact path="/dist/:id/administration" element={<Admin/>} />
       </Routes>
-    <Footer />
     </BrowserRouter>
   );
 }
