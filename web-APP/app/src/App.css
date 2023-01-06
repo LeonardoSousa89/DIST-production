@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
 
@@ -337,6 +337,10 @@ body{
           height: 280vh;
           /* border: solid 1px red; */
       }
+      .Admin{
+        /* border: solid 1px red; */
+        height: 150vh;
+      }
     }
   }
 }
@@ -372,6 +376,10 @@ body{
         .signUp, .Login{
           height: 280vh;
           /* border: solid 1px red; */
+       }
+       .Admin{
+        /* border: solid 1px red; */
+        height: 150vh;
       }
     }
   }
@@ -387,6 +395,10 @@ body{
         .signUp, .Login{
           height: 240vh;
           /* border: solid 1px red; */
+        }
+        .Admin{
+          /* border: solid 1px red; */
+          height: 150vh;
       }
     }
   }
@@ -1185,6 +1197,10 @@ body{
         .signUp, .Login{
           height: 480vh;
           /* border: solid 1px red; */
+        }
+        .Admin{
+          /* border: solid 1px red; */
+          height: 250vh;
       }
     }
   }

@@ -187,10 +187,99 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 1024px por height 600px com orientation: landscape*/
+@media (max-width:1024px){
+    @media (max-height:600px){
+        @media (orientation:landscape){
+            #logo{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 915px por height 412px com orientation: landscape*/
+@media (max-device-width:915px){
+    @media (max-device-height:412px){
+        @media (orientation:landscape){
+            .border{
+                height: 150vh;
+            }
+            .header{
+                /* border: solid 1px goldenrod; */
+                height: 50vh;
+           }
+           .main{
+                /* border: solid 1px #2976E6; */
+                height: 100vh;
+           }
+           .formUpload{
+            margin-bottom: 3vh;
+           }
+        }
+    }
+}
+
+
+
+
 /* dispositivos gerais width 900px */
 @media (max-width:900px){
     .border, .getWorkers, .formInsertWorker{
       width: 70vw;
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 896px por height 414px com orientation: landscape*/
+@media (max-device-width:896px){
+    @media (max-device-height:414px){
+        @media (orientation:landscape){
+            .border{
+                height: 150vh;
+            }
+            .header{
+                /* border: solid 1px goldenrod; */
+                height: 50vh;
+           }
+           .main{
+                /* border: solid 1px #2976E6; */
+                height: 100vh;
+           }
+           .formUpload{
+            margin-bottom: 3vh;
+           }
+        }
+    }
+}
+
+
+
+
+/* dispositivos especifícos width 854px por height 480px com orientation: landscape*/
+@media (max-device-width:854px){
+    @media (max-device-height:480px){
+        @media (orientation:landscape){
+            .border{
+                height: 150vh;
+            }
+            .header{
+                /* border: solid 1px goldenrod; */
+                height: 50vh;
+           }
+           .main{
+                /* border: solid 1px #2976E6; */
+                height: 100vh;
+           }
+           .formUpload{
+            margin-bottom: 3vh;
+           }
+        }
     }
 }
 
@@ -270,6 +359,34 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 745px por height 353px com orientation: landscape*/
+@media (max-device-width:745px){
+    @media (max-device-height:353px){
+        @media (orientation:landscape){
+            .border{
+                height: 150vh;
+            }
+            .header{
+                /* border: solid 1px goldenrod; */
+                height: 50vh;
+           }
+           .main{
+                /* border: solid 1px #2976E6; */
+                height: 100vh;
+           }
+           .cardWorker{
+            height: 150px;
+           }
+           .listWorker{
+            height: 30px;
+           }
+        }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 740px por height 360px com orientation: landscape*/
 @media (max-device-width:740px){
     @media (max-device-height:360px){
@@ -307,11 +424,11 @@ table tbody tr td{
             }
             .header{
                 /* border:solid 1px pink; */
-                height: 50vh;
+                height: 53vh;
             }
             .main{
                 /* border:solid 1px #2976E6; */
-                height: 150vh;
+                height: 147vh;
             }
             .formUpload{
                 margin-top: -20vh;
@@ -352,6 +469,25 @@ table tbody tr td{
     }
 }
 
+
+
+
+
+/* dispositivos especifícos width 653px por height 280px com orientation: landscape*/
+@media (max-device-width:653px){
+    @media (max-device-height:280px){
+        @media (orientation:landscape){
+            .header{
+                /* border: solid 1px goldenrod; */
+                height: 70vh;
+           }
+           .main{
+                /* border: solid 1px #2976E6; */
+                height: 180vh;
+           }
+        }
+    }
+}
 
 
 
@@ -532,6 +668,27 @@ table tbody tr td{
             .listWorker{
                 height: 40px;
             }    
+        }
+    }
+}
+
+
+
+
+
+/* dispositivos especifícos width 320px por height 240px com orientation: landscape*/
+@media (max-device-width:320px){
+    @media (max-device-height:240px){
+        @media (orientation:landscape){
+          .border{
+            height: 250vh;
+          }
+          .header{
+            height: 70vh;
+          }
+          .main{
+            height: 180vh;
+          }
         }
     }
 }
