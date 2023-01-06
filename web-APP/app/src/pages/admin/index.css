@@ -415,6 +415,28 @@ table tbody tr td{
 
 
 
+/* dispositivos especifícos width 736px por height 414px com orientation: landscape*/
+@media (max-device-width:736px){
+    @media (max-device-height:414px){
+        @media (orientation:landscape){
+            .border{
+                height: 200vh;
+            }
+            .header{
+                /* border: solid 1px goldenrod; */
+                height: 50vh;
+           }
+           .main{
+                /* border: solid 1px #2976E6; */
+                height: 150vh;
+           }
+        }
+    }
+}
+
+
+
+
 /* dispositivos especifícos width 732px por height 412px com orientation: landscape*/
 @media (max-device-width:732px){
     @media (max-device-height:412px){
