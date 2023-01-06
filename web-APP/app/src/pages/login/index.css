@@ -1,12 +1,10 @@
 .login-header{
-    /* border: solid 1px black; */
     height: 30%;
 }
 
 
 
 .login-main{
-    /* border: solid 1px pink; */
     height: 60%;
 
     display: flex;
@@ -15,7 +13,6 @@
     justify-content: center;
 }
 .form-container{
-    /* border: solid 1px green; */
     height: 85%;
     max-width: 30%;
 
@@ -71,7 +68,6 @@
 
 
 .login-footer{
-    /* border: solid 1px goldenrod; */
     height: 10%;
 }
 
