@@ -98,8 +98,8 @@ export default (props)=>{
 
   function listWorkersDisplay(){
     setDisplay(false)
-    setDisplayListWorkers(true)  
     setDisplayInsert(false)  
+    setDisplayListWorkers(true)  
   }
 
   function saveWorker(){

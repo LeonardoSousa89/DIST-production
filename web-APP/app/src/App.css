@@ -210,8 +210,6 @@ body{
 
   display: flex;
   justify-content: center;
-
-  /* border: solid 1px red; */
 }
 
 
@@ -303,8 +301,7 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 160vh;
-          /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -317,12 +314,7 @@ body{
   @media (max-device-height:600px){
         .signUp, .Login{
           height: 200vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 70px;
-          width: 70px;
-    } */
+    }
   }
 }
 
@@ -335,10 +327,9 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 280vh;
-          /* border: solid 1px red; */
-      }
-      .Admin{
-        /* border: solid 1px red; */
+          
+        }
+        .Admin{
         height: 150vh;
       }
     }
@@ -354,14 +345,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 100vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 130px;
-          width: 130px;
-          top: 240px;
-          margin-left: 5%;
-      } */
+      }
     }
   }
 }
@@ -375,10 +359,8 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 280vh;
-          /* border: solid 1px red; */
-       }
+        }
        .Admin{
-        /* border: solid 1px red; */
         height: 150vh;
       }
     }
@@ -394,10 +376,8 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 240vh;
-          /* border: solid 1px red; */
         }
         .Admin{
-          /* border: solid 1px red; */
           height: 150vh;
       }
     }
@@ -413,7 +393,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -428,7 +407,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -443,7 +421,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 280vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -458,7 +435,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 110vh;
-          /* border: solid 1px red; */
         }
         .clientPhoto{
           margin: 0;
@@ -477,7 +453,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -492,7 +467,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 110vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -507,7 +481,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -562,23 +535,9 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 130vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          margin-top: 5vh;
-      } */
+      }
     }
   }
-}
-
-
-
-
-/* dispositivos abaixo ou até width 767px */
-@media (max-device-width:767px){
-  /* .clientPhoto{
-      margin: 0;
-  } */
 }
 
 
@@ -593,8 +552,7 @@ body{
         }
         .Admin{
           height: 200vh;
-          /* border: solid 1px red; */
-        }
+      }
     }
   }
 }
@@ -608,7 +566,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 280vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -625,7 +582,6 @@ body{
           height: 300vh;
         }
         .Admin{
-          /* border: solid 1px red; */
           height: 200vh;
       }
     }
@@ -641,7 +597,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 220vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -656,11 +611,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 120vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          margin-top: 4vh;
-        } */
+      }
     }
   }
 }
@@ -691,7 +642,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 300vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -706,11 +656,9 @@ body{
     @media (orientation:landscape){
         .signUp, .Login{
           height: 340vh;
-          /* border: solid 1px red; */
         }
         .Admin{
           height: 250vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -725,7 +673,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 400vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -742,7 +689,6 @@ body{
           height: 280vh;
         }
         .Admin{
-          /* border: solid 1px red; */
           height: 180vh;
       }
     }
@@ -757,15 +703,11 @@ body{
   @media (max-device-height:360px){
         .signUp, .Login{
           height: 320vh;
-          /* border: solid 1px red; */
         }
         .clientPhoto{
           height: 100px;
           width: 100px;
-        }
-        /* #profileName{
-          display: none;
-    } */
+    }
   }
 }
 
@@ -778,8 +720,7 @@ body{
     @media (orientation: landscape){
        .Admin{
          height: 200vh;
-         /* border: solid 1px red;  */
-       }
+      }
     }
   }
 }
@@ -793,11 +734,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 130vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          margin-top: 5vh;
-      } */
+      }
     }
   }
 }
@@ -811,7 +748,6 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 340vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -826,12 +762,11 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 160vh;
-          /* border: solid 1px red; */
         }
         .clientPhoto{
           height: 90px;
           width: 90px;
-        }
+      }
     }
   }
 }
@@ -845,7 +780,6 @@ body{
     @media (orientation:landscape){
         .signUp, .Login{
           height: 340vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -860,7 +794,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 140vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -875,12 +808,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 140vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 100px;
-          width: 100px;
-        } */
+      }
     }
   }
 }
@@ -894,13 +822,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 160vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 80px;
-          width: 80px;
-          margin: 0;
-      } */
+      }
     }
   }
 }
@@ -914,12 +836,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 140vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 100px;
-          width: 100px;
-      } */
+      }
     }
   }
 }
@@ -933,13 +850,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 180vh;
-          /* border: solid 1px red; */
         }
-        /* .clientPhoto{
-          margin-top: 4vh;
-          height: 80px;
-          width: 80px;
-        } */
         #profileName{
           font-size: medium;
         }
@@ -959,7 +870,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 160vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -974,7 +884,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 160vh;
-          /* border: solid 1px red; */
         }
         .clientPhoto{
           height: 80px;
@@ -993,13 +902,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 180vh;
-          /* border: solid 1px red; */
         }
-        /* .clientPhoto{
-          margin-top: 3vh;
-          height: 80px;
-          width: 80px;
-        } */
         #profileName{
           font-size: medium;
         }
@@ -1019,13 +922,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 160vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 100px;
-          width: 100px;
-          margin: 0;
-      } */
+      }
     }
   }
 }
@@ -1039,12 +936,7 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 180vh;
-          /* border: solid 1px red; */
-        }
-        /* .clientPhoto{
-          height: 90px;
-          width: 90px;
-      } */
+      }
     }
   }
 }
@@ -1054,11 +946,6 @@ body{
 
 /* dispositivos abaixo ou até width 360px */
 @media (max-device-width:360px){
-      /* .clientPhoto{
-        height: 100px;
-        width: 100px;
-        margin-top: 2vh;
-  } */
   #profileName{
     display: none;
   }
@@ -1098,25 +985,9 @@ body{
         font-size: small;
       }
       .Admin{
-         /* border: solid 1px red; */
-         width: 100vw;
-         height: 110vh;
+        width: 100vw;
+        height: 110vh;
       }
-    }
-  }
-}
-
-
-
-
-/* dispositivos especifícos width 353px por height 745px com orientation: portrait*/
-@media (max-device-width:353px){
-  @media (max-device-height:745px){
-      @media (orientation:portrait){
-        /* .clientPhoto{
-          height: 90px;
-          width: 90px;
-      } */
     }
   }
 }
@@ -1130,7 +1001,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 180vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -1146,7 +1016,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 200vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -1175,7 +1044,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 240vh;
-          /* border: solid 1px red; */
         }
         #profileName{
           font-size: small;
@@ -1196,10 +1064,8 @@ body{
       @media (orientation:landscape){
         .signUp, .Login{
           height: 480vh;
-          /* border: solid 1px red; */
         }
         .Admin{
-          /* border: solid 1px red; */
           height: 250vh;
       }
     }
@@ -1215,7 +1081,6 @@ body{
       @media (orientation:portrait){
         .signUp, .Login{
           height: 180vh;
-          /* border: solid 1px red; */
       }
     }
   }
@@ -1229,7 +1094,7 @@ body{
   .clientPhoto{
         height: 40px;
         width: 40px;
-       }
+  }
 }
 
 
@@ -1243,7 +1108,6 @@ body{
           height: 340vh;
        }
        .Admin{
-        /* border: solid 1px red; */
         height: 160vh;
        }
     }
