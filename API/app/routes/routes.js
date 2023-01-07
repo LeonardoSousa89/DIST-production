@@ -29,7 +29,7 @@ server.route('/dist/worker/user-account/:userId/administration').get(async(req, 
               .then(response=>{
  
                  if(response<=0) {
-                     return res.status(404).send('User not found.')
+                     return res.status(404).send('Resource not found')
                  }
                  
                  return res.status(200).json(response)
@@ -80,8 +80,8 @@ server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
              .paginate({ perPage: size, currentPage: page })
              .then(response=>{
 
-                if(response.pagination.total<=0) {
-                    return res.status(404).send('User not found.')
+                if(response.data<=0) {
+                    return res.status(404).send('Resource not found')
                 }
 
                 return res.status(200).json(response)
