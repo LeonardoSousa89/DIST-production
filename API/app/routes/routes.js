@@ -1,6 +1,22 @@
 const knex=require('../db/db.js')
+
+//https://www.npmjs.com/package/knex-paginate
+const { attachPaginate } = require('knex-paginate');
+attachPaginate();
+
 const express=require('express')
 const server=express.Router()
+
+
+
+
+server.route('/dist/worker/user-account/administration').post(async(req, res)=>{
+
+    
+    
+})
+
+
 
 
 server.route('/dist/worker/user-account/:userId/administration').get(async(req, res)=>{
@@ -13,7 +29,7 @@ server.route('/dist/worker/user-account/:userId/administration').get(async(req, 
               .then(response=>{
  
                  if(response<=0) {
-                     return res.status(404).json({msg:'User not found.'})
+                     return res.status(404).send('User not found.')
                  }
                  
                  return res.status(200).json(response)
@@ -26,9 +42,31 @@ server.route('/dist/worker/user-account/:userId/administration').get(async(req, 
 
 
 
+server.route('/dist/worker/administration').post(async(req, res)=>{
+   
+    
+})
+
+
+
+
 server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
    
    let userid=req.params.userId
+
+
+   let size=req.query.size
+   
+   if(!size){ 
+       size=5 
+    }
+    
+    
+    let page=req.query.page
+   
+    if(page<=0){
+        page=1
+    }
 
    await knex.select(['workername', 
                       'workeremail', 
@@ -39,10 +77,11 @@ server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
              .from('dist_users')
              .innerJoin('dist_workers', 'userid' , 'user_id')
              .where('userid', userid)
+             .paginate({ perPage: size, currentPage: page })
              .then(response=>{
 
-                if(response<=0) {
-                    return res.status(404).json({msg:'User not found.'})
+                if(response.pagination.total<=0) {
+                    return res.status(404).send('User not found.')
                 }
 
                 return res.status(200).json(response)
@@ -51,23 +90,7 @@ server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
              .catch(err=>res.status(404).json(err))
 
 })
-
-
-
-//create user
-server.route('/dist/worker/user-account/administration').post(async(req, res)=>{
-   
-    
-})
  
-
-
-//create worker
-server.route('/dist/worker/administration').post(async(req, res)=>{
-   
-    
-})
-
 
 
 
