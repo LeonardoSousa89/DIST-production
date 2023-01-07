@@ -9,7 +9,7 @@ require('dotenv').config()
 module.exports = {
 
   development: {
-    client: process.env.LOCAL_CLIENT,
+    client:     process.env.LOCAL_CLIENT,
     connection: {
       database: process.env.LOCAL_DB,
       user:     process.env.LOCAL_USER_DB,
@@ -22,11 +22,12 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client:     process.env.PROD_CLIENT,
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      host :    process.env.PROD_HOST,
+      database: process.env.PROD_DB,
+      user:     process.env.PROD_USER_DB,
+      password: process.env.PROD_PASSWORD_DB
     },
     pool: {
       min: 2,

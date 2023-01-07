@@ -21,9 +21,7 @@ server.route('/dist/worker/user-account/administration').post(async(req, res)=>{
     await knex.insert(data)
               .from('dist_users')
               .then(_=>{res.status(201).send('Account successfully created')})
-              .catch(err=>res.status(400) 
-                             .send('Was an error, verify if some field is empty or perhaps your email already exists')
-                            )  
+              .catch(err=>res.status(400).send('Was an error, verify if some field is empty or perhaps your email already exists'))  
 
 })
 
@@ -46,7 +44,7 @@ server.route('/dist/worker/user-account/:userId/administration').get(async(req, 
                  return res.status(200).json(response)
  
               })
-              .catch(err=>res.status(404).json(err))
+              .catch(err=>res.status(404).send(err))
  
 })
 
@@ -55,7 +53,21 @@ server.route('/dist/worker/user-account/:userId/administration').get(async(req, 
 
 server.route('/dist/worker/administration').post(async(req, res)=>{
    
-    
+    let data={
+        workername: req.body.workername,
+        workeremail: req.body.workeremail,
+        workerpost: req.body.workerpost,
+        workeraddress: req.body.workeraddress,  
+        workerphonenumber: req.body.workerphonenumber,
+        workerage: req.body.workerage,
+        user_id: req.body.user_id 
+    }
+
+    await knex.insert(data)
+              .from('dist_workers')
+              .then(_=>res.status(201).send('Worker created'))
+              .catch(err=>res.status(400).send('Was an error, verify if some field is empty or perhaps your email already exists'))
+
 })
 
 
@@ -98,7 +110,7 @@ server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
                 return res.status(200).json(response)
 
              })
-             .catch(err=>res.status(404).json(err))
+             .catch(err=>res.status(404).send(err))
 
 })
  
