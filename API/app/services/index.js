@@ -67,7 +67,7 @@ async function createWorker(req, res){
 
 
 
-async function getWorkerById(req, res){
+async function getWorkersByUserId(req, res){
 
     let userid=req.params.userId
 
@@ -111,4 +111,4 @@ async function getWorkerById(req, res){
 
 
 
-module.exports={ createUser, getUserById, createWorker, getWorkerById }
+module.exports={ createUser, getUserById, createWorker, getWorkersByUserId }

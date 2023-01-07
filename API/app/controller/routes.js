@@ -1,4 +1,4 @@
-const { createUser, getUserById, createWorker, getWorkerById }=require('../services')
+const { createUser, getUserById, createWorker, getWorkersByUserId }=require('../services')
 
 const express=require('express')
 const server=express.Router()
@@ -35,7 +35,7 @@ server.route('/dist/worker/administration').post(async(req, res)=>{
 
 server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
    
-   getWorkerById(req, res)
+   getWorkersByUserId(req, res)
 
 })
  
