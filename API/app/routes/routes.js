@@ -12,8 +12,19 @@ const server=express.Router()
 
 server.route('/dist/worker/user-account/administration').post(async(req, res)=>{
 
-    
-    
+    let data={
+        userid: req.body.userid,
+        username: req.body.username,
+        email: req.body.email
+    }
+
+    await knex.insert(data)
+              .from('dist_users')
+              .then(_=>{res.status(201).send('Account successfully created')})
+              .catch(err=>res.status(400) 
+                             .send('Was an error, verify if some field is empty or perhaps your email already exists')
+                            )  
+
 })
 
 
