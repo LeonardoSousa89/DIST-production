@@ -1,4 +1,4 @@
-FROM node:14     
+FROM node     
 
 WORKDIR /src
 		
@@ -10,4 +10,4 @@ COPY . .
 		
 EXPOSE 8766
 		
-CMD ["node","index.js"]	
+CMD ["node", "index.js"]	
