@@ -1,5 +1,4 @@
-const { workers }=require('../model/workers.js')
-const { users }=require('../model/users.js')
+const { users, workers }=require('../model')
 
 const knex=require('../repository/db.js')
 

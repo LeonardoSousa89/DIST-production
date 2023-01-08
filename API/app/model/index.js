@@ -1,3 +1,16 @@
+let users=(req)=>{
+
+    let data={
+        userid: req.body.userid,
+        username: req.body.username,
+        email: req.body.email
+    }
+
+    return data
+
+}
+
+
 let workers=(req)=>{
 
     let data={
@@ -15,4 +28,4 @@ let workers=(req)=>{
 }
 
 
-module.exports={ workers }
+module.exports={ users, workers }
