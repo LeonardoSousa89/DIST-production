@@ -14,8 +14,8 @@ async function createUser(req, res){
 
     await knex.insert(data)
               .from('dist_users')
-              .then(_=>{res.status(201).send('Account successfully created')})
-              .catch(err=>res.status(400).send('Was an error, verify if some field is empty or perhaps your email already exists'))  
+              .then(_=>{res.status(201).json({msg: 'Account successfully created'})})
+              .catch(err=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))  
 
 }
 
@@ -32,13 +32,13 @@ async function getUserById(req, res){
               .then(response=>{
  
                  if(response<=0) {
-                     return res.status(404).send('Resource not found')
+                     return res.status(404).json({msg: 'Resource not found'})
                  }
                  
                  return res.status(200).json(response)
  
               })
-              .catch(err=>res.status(404).send(err))
+              .catch(err=>res.status(404).json(err))
 
 }
 
@@ -59,8 +59,8 @@ async function createWorker(req, res){
 
     await knex.insert(data)
               .from('dist_workers')
-              .then(_=>res.status(201).send('Worker created'))
-              .catch(err=>res.status(400).send('Was an error, verify if some field is empty or perhaps your email already exists'))
+              .then(_=>res.status(201).json({msg: 'Worker created'}))
+              .catch(err=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))
 
 }
 
@@ -98,13 +98,13 @@ async function getWorkersByUserId(req, res){
               .then(response=>{
  
                  if(response.data<=0) {
-                     return res.status(404).send('Resource not found')
+                     return res.status(404).json({msg: 'Resource not found'})
                  }
  
                  return res.status(200).json(response)
  
               })
-              .catch(err=>res.status(404).send(err))
+              .catch(err=>res.status(404).json(err))
 
 }
 
