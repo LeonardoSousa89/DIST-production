@@ -96,7 +96,7 @@ git clone -b node-api https://github.com/LeonardoSousa89/DIST-production.git
 
 ```
 
-### docker-swarm:
+### docker:
 
 - container:
 
