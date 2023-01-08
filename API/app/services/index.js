@@ -19,8 +19,6 @@ async function createUser(req, res){
 }
 
 
-
-
 async function getUserById(req, res){
 
     let userid=req.params.userId
@@ -42,8 +40,6 @@ async function getUserById(req, res){
 }
 
 
-
-
 async function createWorker(req, res){
 
     let _WORKERS=workers(req)
@@ -54,8 +50,6 @@ async function createWorker(req, res){
               .catch(err=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))
 
 }
-
-
 
 
 async function getWorkersByUserId(req, res){
@@ -98,8 +92,6 @@ async function getWorkersByUserId(req, res){
               .catch(err=>res.status(404).json(err))
 
 }
-
-
 
 
 module.exports={ createUser, getUserById, createWorker, getWorkersByUserId }

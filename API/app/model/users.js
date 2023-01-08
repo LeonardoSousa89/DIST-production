@@ -11,6 +11,4 @@ let users=(req)=>{
 }
 
 
-
-
 module.exports={ users }
