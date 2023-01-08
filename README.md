@@ -98,78 +98,15 @@ git clone -b node-api https://github.com/LeonardoSousa89/DIST-production.git
 
 ### docker-swarm:
 
-- first create a docker-compose.yaml:
+- container:
 
 ```bash
-version: '3.9'
-
-services:
-  dstproject-application:
-    image: leozin89/dstproject-application:v6
-    environment:
-      - DB=your_db
-      - USER_DB=your_user_db
-      - PASSWORD_DB=your_password_db
-    ports:
-      - 8762:8762
-    networks:
-      - distnetworkcluster
-    deploy:
-      replicas: 3
-      resources:
-        limits:
-          cpus: '0.25'
-          memory: 256M
-      restart_policy:
-        condition: on-failure
-
-  visualizer:
-    image: dockersamples/visualizer
-    ports:
-      - 8080:8080
-    networks:
-      - distnetworkcluster
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    deploy:
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.25'
-          memory: 256M
-      restart_policy:
-        condition: on-failure
-      placement:
-        constraints:
-          - node.role == manager
-
-networks:
-  distnetworkcluster:
-    driver: overlay
-    ipam:
-      config:
-        - subnet: 172.16.238.0/24
+sudo docker run -d -p 8766:8766 --name app -e PROD_CLIENT=your_prod_client_db -e PROD_HOST=your_prod_host_db -e PROD_DB=your_prod_db -e PROD_USER_DB=your_prod_user_db -e PROD_PASSWORD_DB=your_prod_password_db leozin89/dist-node-api:v1
 ```
 
-- in your instance after install docker
-
+- service on swarm:
 ```bash
-sudo docker swarm init 
-```
-
-- get the join code created to insert in others instances at the cluster (insert a sudo command)
-```bash 
-EX:  sudo docker swarm join --token SWMTKN-1-1tp5cgcittlmhimcjewcw4zhlo45cs9l36xatwpcvy9eqtnj5k-dj4ukw9w61tf0zz2qog4tu409 172.31.82.24:2377
-```
-
-- to run docker-swarm orquestred containers and services use this command:
-```bash
-sudo docker stack deploy --compose-file docker-compose.yaml dist
-```
-
-- verify if your services is running
-```bash
-sudo docker service ls 
+ sudo docker service create -p 8766:8766 --name node-api -e PROD_CLIENT=your_prod_client_db -e PROD_HOST=your_prod_host_db -e PROD_ DB=your_prod_db -e PROD_USER_DB=your_prod_user_db -e PROD_PASSWORD_DB=your_prod_password_db leozin89/dist-node-api:v1
 ```
 
 # Author
