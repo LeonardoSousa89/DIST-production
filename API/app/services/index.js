@@ -1,3 +1,6 @@
+const { workers }=require('../model/workers.js')
+const { users }=require('../model/users.js')
+
 const knex=require('../repository/db.js')
 
 //https://www.npmjs.com/package/knex-paginate
@@ -5,14 +8,10 @@ const { attachPaginate } = require('knex-paginate');
 attachPaginate();
 
 async function createUser(req, res){
-    
-    let data={
-        userid: req.body.userid,
-        username: req.body.username,
-        email: req.body.email
-    }
 
-    await knex.insert(data)
+    let _USERS=users(req)
+
+    await knex.insert(_USERS)
               .from('dist_users')
               .then(_=>{res.status(201).json({msg: 'Account successfully created'})})
               .catch(err=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))  
@@ -47,17 +46,9 @@ async function getUserById(req, res){
 
 async function createWorker(req, res){
 
-    let data={
-        workername: req.body.workername,
-        workeremail: req.body.workeremail,
-        workerpost: req.body.workerpost,
-        workeraddress: req.body.workeraddress,  
-        workerphonenumber: req.body.workerphonenumber,
-        workerage: req.body.workerage,
-        user_id: req.body.user_id 
-    }
+    let _WORKERS=workers(req)
 
-    await knex.insert(data)
+    await knex.insert(_WORKERS)
               .from('dist_workers')
               .then(_=>res.status(201).json({msg: 'Worker created'}))
               .catch(err=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))
