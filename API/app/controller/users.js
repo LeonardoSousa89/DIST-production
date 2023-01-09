@@ -1,5 +1,4 @@
 const { createUser, getUserById }=require('../services/users.js')
-const { policy }=require('../config/security/cross-origin-police/cors.js')
 
 const express=require('express')
 const server=express.Router()

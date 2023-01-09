@@ -1,4 +1,4 @@
-const { Users } =require('../model/users.js')
+const { Users }=require('../model/users.js')
 
 let users=(req)=>{
 
