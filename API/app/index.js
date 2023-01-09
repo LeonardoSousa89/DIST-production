@@ -1,20 +1,20 @@
-const port=8766
+const { security }=require('./config/security/cross-origin-police/cors.js')
 
-const cors=require('cors')
-const server=require('./controller/routes.js')
+const usersController=require('./controller/users.js')
+const workersController=require('./controller/workers.js')
+
+require('dotenv').config()
+
+const port=process.env.HOST_PORT
+
 const express=require('express')
 const app=express()
 
-app.use((req, res, next)=>{
-    res.header("Access-Control-Allow-Origin", "*")
-    res.header("Access-Control-Allow-Methods",['GET','POST'])
-    res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept")
-    app.use(cors())
-    next()
-})
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-app.use('/', server)
+app.use('/', security)
+app.use('/', usersController)
+app.use('/', workersController)
 
 app.listen(port)

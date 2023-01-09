@@ -1,4 +1,5 @@
-const { createUser, getUserById, createWorker, getWorkersByUserId }=require('../services')
+const { createUser, getUserById }=require('../services/users.js')
+const { policy }=require('../config/security/cross-origin-police/cors.js')
 
 const express=require('express')
 const server=express.Router()
@@ -15,20 +16,6 @@ server.route('/dist/worker/user-account/:userId/administration').get(async(req, 
 
     getUserById(req, res)
    
-})
-
-
-server.route('/dist/worker/administration').post(async(req, res)=>{
-   
-    createWorker(req, res)
-
-})
-
-
-server.route('/dist/worker/:userId/administration').get(async(req, res)=>{
-   
-   getWorkersByUserId(req, res)
-
 })
  
 
