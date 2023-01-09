@@ -15,7 +15,7 @@ async function createWorker(req, res){
 
     await knex.insert(_WORKERS)
               .from('dist_workers')
-              .then(_=>res.status(201).json({msg: 'Worker created'}))
+              .then( _=>res.status(201).json({msg: 'Worker created'}))
               .catch(_=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))
 
 }

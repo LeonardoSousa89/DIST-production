@@ -9,7 +9,7 @@ async function createUser(req, res){
 
     await knex.insert(_USERS)
               .from('dist_users')
-              .then(_=>res.status(201).json({msg: 'Account successfully created'}))
+              .then( _=>res.status(201).json({msg: 'Account successfully created'}))
               .catch(_=>res.status(400).json({msg: 'Was an error, verify if some field is empty or perhaps your email already exists'}))
 
 }
