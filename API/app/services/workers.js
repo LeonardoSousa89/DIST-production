@@ -5,7 +5,7 @@ const knex=require('../repository/db.js')
 
 
 //https://www.npmjs.com/package/knex-paginate
-const { attachPaginate } = require('knex-paginate');
+const { attachPaginate }=require('knex-paginate')
 attachPaginate();
 
 
