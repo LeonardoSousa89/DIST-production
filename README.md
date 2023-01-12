@@ -52,7 +52,7 @@ sudo docker run -d -p 8766:8766 --name app -e PROD_CLIENT=your_prod_client_db -e
             }
         }
 
-        //dockerhub** reference a credentials ENV saved in manager credentials in jenkins
+        //dockerhub** reference a credentials saved in manager credentials in jenkins
         stage('push Image') {
             steps {
                 script {
