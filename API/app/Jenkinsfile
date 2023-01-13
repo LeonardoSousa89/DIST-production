@@ -26,7 +26,7 @@
 
         stage('Deploy Container Image on Server') {
             steps {
-                   sh 'docker run -d -p 8766:8766 --name app -e PROD_CLIENT=your_prod_client_db -e PROD_HOST=your_prod_host_db -e PROD_DB=your_prod_db -e PROD_USER_DB=your_prod_user_db -e PROD_PASSWORD_DB=your_prod_password_db leozin89/dist-node-api:latest'
+                   sh 'docker run -d -p 8766:8766 --name app -e HOST_PORT=your_port -e PROD_CLIENT=your_prod_client_db -e PROD_HOST=your_prod_host_db -e PROD_DB=your_prod_db -e PROD_USER_DB=your_prod_user_db -e PROD_PASSWORD_DB=your_prod_password_db leozin89/dist-node-api:latest'
             }
         }
 
